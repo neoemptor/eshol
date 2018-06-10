@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+
+<head>
+	<meta charset="utf-8">
+	<title>ESHOL</title>
+
+	<style>
+		* {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		body,
+		html {
+			background-color: #222122;
+			margin: 0px;
+			padding: 0px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<svg id="svg" xml:space="preserve">
+		<style>
+			* {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+		</style>
+	</svg>
+
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script>
+		"use strict";
+		Object.defineProperty(exports, "__esModule", {
+			value: true
+		});
+		var path = require("path");
+		var url = require("url");
+		var buttons_1 = require("./buttons");
+		var screenWidth;
+		var screenHeight;
+		var win;
+
+		function mainWindow() {
+			var onOffKnob;
+			var snap = require("snapsvg");
+			var s = snap("#svg");
+			var test = document.getElementById("svg");
+			var screenWidth = window.screen.width;
+			var screenHeight = window.screen.height;
+			var g;
+
+			function initPanel(vpWidth, vpHeight) {
+				var panel;
+				var vpX;
+				var vpY;
+				var image;
+				var imgWidth;
+				var imgHeight;
+				vpX = 0;
+				vpY = 0;
+				s.attr({
+					viewBox: (-vpWidth / 20).toString() +
+						" " + (-vpHeight / 11).toString() + " " +
+						(vpWidth).toString() + " " + (vpHeight).toString()
+				});
+				image = s.image("images/panel.svg", 0, 0, vpWidth, vpHeight);
+			}
+			initPanel(screenWidth, screenHeight);
+			onOffKnob = new buttons_1.OnOffKnob();
+			onOffKnob.knobObject = g;
+			onOffKnob.addHandler();
+		}
+	</script>
+</body>
+
+</html>
