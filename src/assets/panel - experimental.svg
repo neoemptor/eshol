@@ -13,17 +13,17 @@
    version="1.1"
    x="0px"
    y="0px"
-   viewBox="-500 -200 1306 906"
+   viewBox="-500 -200 1346 946"
    style="font-family:Arial, Helvetica, sans-serif"
    xml:space="preserve"
    id="panel"
-   sodipodi:docname="panel.svg"
+   sodipodi:docname="panel - Copy.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   width="1306"
-   height="906"><metadata
+   width="1346"
+   height="946"><metadata
    id="metadata108"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
    id="defs106"><clipPath
    id="clip-path"><path
      inkscape:connector-curvature="0"
@@ -3757,397 +3757,477 @@
      id="path4-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1194-6"><path
      id="path1192-8"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1198-6"><path
      id="path1196-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1202-6"><path
      id="path1200-8"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1206-0"><path
      id="path1204-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1210-6"><path
      id="path1208-8"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1214-7"><path
      id="path1212-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1218-4"><path
      id="path1216-9"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1222-5"><path
      id="path1220-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-6"><path
      id="path7-30"
      d="M 0,0 Z M 0,0 V 0"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1228-4"><path
      id="path1226-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1232-6"><path
      id="path1230-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1236-4"><path
      id="path1234-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1240-6"><path
      id="path1238-0"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-56"><polyline
      id="polyline10-2"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     class="cls-1" /></clipPath><clipPath
+     class="cls-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1246-8"><path
      id="path1244-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-2-1"><path
      id="path4-5-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2866-8"><path
      id="path2864-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2870-0"><path
      id="path2868-2"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2874-4"><path
      id="path2872-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2878-8"><path
      id="path2876-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2882-0"><path
      id="path2880-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2886-5"><path
      id="path2884-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2890-1"><path
      id="path2888-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2894-5"><path
      id="path2892-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-1-6"><path
      id="path7-6-9"
      d="M 0,0 Z M 0,0 V 0"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2900-1"><path
      id="path2898-8"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2904-5"><path
      id="path2902-0"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2908-2"><path
      id="path2906-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2912-1"><path
      id="path2910-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-4-0"><polyline
      id="polyline10-7-2"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     class="cls-1" /></clipPath><clipPath
+     class="cls-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2918-2"><path
      id="path2916-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-9-3"><path
      id="path4-7-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3338-6"><path
      id="path3336-0"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3342-2"><path
      id="path3340-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3346-4"><path
      id="path3344-9"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3350-1"><path
      id="path3348-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3354-0"><path
      id="path3352-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3358-2"><path
      id="path3356-2"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3362-2"><path
      id="path3360-8"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3366-8"><path
      id="path3364-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-0-1"><path
      id="path7-3-2"
      d="M 0,0 Z M 0,0 V 0"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3372-9"><path
      id="path3370-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3376-9"><path
      id="path3374-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3380-0"><path
      id="path3378-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3384-0"><path
      id="path3382-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-8-4"><polyline
      id="polyline10-0-4"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     class="cls-1" /></clipPath><clipPath
+     class="cls-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3390-3"><path
      id="path3388-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-1-1"><path
      id="path4-1-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3812-9"><path
      id="path3810-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3816-4"><path
      id="path3814-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3820-4"><path
      id="path3818-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3824-5"><path
      id="path3822-9"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3828-7"><path
      id="path3826-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3832-7"><path
      id="path3830-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3836-3"><path
      id="path3834-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3840-4"><path
      id="path3838-2"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-3-1"><path
      id="path7-2-1"
      d="M 0,0 Z M 0,0 V 0"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3846-8"><path
      id="path3844-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3850-2"><path
      id="path3848-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3854-5"><path
      id="path3852-0"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3858-4"><path
      id="path3856-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-7-2"><polyline
      id="polyline10-71-8"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     class="cls-1" /></clipPath><clipPath
+     class="cls-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3864-2"><path
      id="path3862-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-6-2"><path
      id="path4-0-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4333-5"><path
      id="path4331-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4337-4"><path
      id="path4335-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4341-3"><path
      id="path4339-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4345-4"><path
      id="path4343-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4349-1"><path
      id="path4347-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4353-2"><path
      id="path4351-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4357-9"><path
      id="path4355-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4361-6"><path
      id="path4359-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-8-9"><path
      id="path7-1-1"
      d="M 0,0 Z M 0,0 V 0"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4367-7"><path
      id="path4365-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4371-6"><path
      id="path4369-0"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4375-7"><path
      id="path4373-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4379-4"><path
      id="path4377-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-5-4"><polyline
      id="polyline10-6-2"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     class="cls-1" /></clipPath><clipPath
+     class="cls-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4385-8"><path
      id="path4383-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><linearGradient
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><linearGradient
    gradientUnits="userSpaceOnUse"
    y2="2"
    x2="50"
@@ -5913,397 +5993,477 @@
      id="path4-2"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1194-8"><path
      id="path1192-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1198-34"><path
      id="path1196-01"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1202-4"><path
      id="path1200-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1206-7"><path
      id="path1204-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1210-1"><path
      id="path1208-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1214-3"><path
      id="path1212-41"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1218-0"><path
      id="path1216-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1222-8"><path
      id="path1220-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-2"><path
      id="path7-7"
      d="M 0,0 Z M 0,0 V 0"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1228-41"><path
      id="path1226-60"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1232-1"><path
      id="path1230-90"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1236-0"><path
      id="path1234-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1240-9"><path
      id="path1238-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-73"><polyline
      id="polyline10-4"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     class="cls-1" /></clipPath><clipPath
+     class="cls-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1246-2"><path
      id="path1244-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-2-0"><path
      id="path4-5-2"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2866-42"><path
      id="path2864-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2870-1"><path
      id="path2868-26"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2874-46"><path
      id="path2872-29"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2878-13"><path
      id="path2876-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2882-01"><path
      id="path2880-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2886-8"><path
      id="path2884-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2890-7"><path
      id="path2888-006"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2894-6"><path
      id="path2892-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-1-94"><path
      id="path7-6-6"
      d="M 0,0 Z M 0,0 V 0"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2900-0"><path
      id="path2898-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2904-3"><path
      id="path2902-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2908-4"><path
      id="path2906-8"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2912-9"><path
      id="path2910-37"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-4-1"><polyline
      id="polyline10-7-7"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     class="cls-1" /></clipPath><clipPath
+     class="cls-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2918-8"><path
      id="path2916-32"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-9-6"><path
      id="path4-7-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3338-5"><path
      id="path3336-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3342-3"><path
      id="path3340-41"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3346-2"><path
      id="path3344-45"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3350-4"><path
      id="path3348-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3354-61"><path
      id="path3352-9"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3358-6"><path
      id="path3356-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3362-8"><path
      id="path3360-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3366-9"><path
      id="path3364-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-0-91"><path
      id="path7-3-0"
      d="M 0,0 Z M 0,0 V 0"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3372-1"><path
      id="path3370-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3376-7"><path
      id="path3374-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3380-2"><path
      id="path3378-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3384-6"><path
      id="path3382-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-8-3"><polyline
      id="polyline10-0-91"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     class="cls-1" /></clipPath><clipPath
+     class="cls-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3390-2"><path
      id="path3388-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-1-0"><path
      id="path4-1-2"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3812-4"><path
      id="path3810-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3816-3"><path
      id="path3814-0"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3820-6"><path
      id="path3818-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3824-1"><path
      id="path3822-96"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3828-70"><path
      id="path3826-70"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3832-6"><path
      id="path3830-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3836-96"><path
      id="path3834-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3840-58"><path
      id="path3838-8"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-3-11"><path
      id="path7-2-0"
      d="M 0,0 Z M 0,0 V 0"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3846-04"><path
      id="path3844-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3850-6"><path
      id="path3848-48"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3854-50"><path
      id="path3852-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3858-3"><path
      id="path3856-8"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-7-0"><polyline
      id="polyline10-71-84"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     class="cls-1" /></clipPath><clipPath
+     class="cls-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3864-27"><path
      id="path3862-2"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-6-5"><path
      id="path4-0-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4333-2"><path
      id="path4331-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4337-0"><path
      id="path4335-55"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4341-38"><path
      id="path4339-09"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4345-16"><path
      id="path4343-80"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4349-2"><path
      id="path4347-9"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4353-9"><path
      id="path4351-60"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4357-91"><path
      id="path4355-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4361-54"><path
      id="path4359-77"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-8-0"><path
      id="path7-1-3"
      d="M 0,0 Z M 0,0 V 0"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4367-2"><path
      id="path4365-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4371-72"><path
      id="path4369-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4375-3"><path
      id="path4373-2"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4379-5"><path
      id="path4377-0"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-5-61"><polyline
      id="polyline10-6-5"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     class="cls-1" /></clipPath><clipPath
+     class="cls-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4385-5"><path
      id="path4383-2"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><linearGradient
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><linearGradient
    gradientUnits="userSpaceOnUse"
    y2="2"
    x2="50"
@@ -8069,397 +8229,477 @@
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4-4-8" /></clipPath><clipPath
+     id="path4-4-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1194-6-0"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1192-8-3" /></clipPath><clipPath
+     id="path1192-8-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1198-6-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1196-3-0" /></clipPath><clipPath
+     id="path1196-3-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1202-6-9"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1200-8-68" /></clipPath><clipPath
+     id="path1200-8-68"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1206-0-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1204-1-2" /></clipPath><clipPath
+     id="path1204-1-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1210-6-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1208-8-4" /></clipPath><clipPath
+     id="path1208-8-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1214-7-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1212-1-0" /></clipPath><clipPath
+     id="path1212-1-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1218-4-18"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1216-9-34" /></clipPath><clipPath
+     id="path1216-9-34"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1222-5-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1220-5-0" /></clipPath><clipPath
+     id="path1220-5-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-6-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z M 0,0 V 0"
-     id="path7-30-6" /></clipPath><clipPath
+     id="path7-30-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1228-4-97"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1226-6-8" /></clipPath><clipPath
+     id="path1226-6-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1232-6-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1230-5-3" /></clipPath><clipPath
+     id="path1230-5-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1236-4-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1234-4-9" /></clipPath><clipPath
+     id="path1234-4-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1240-6-62"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1238-0-1" /></clipPath><clipPath
+     id="path1238-0-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-56-9"><polyline
      class="cls-1"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     id="polyline10-2-4" /></clipPath><clipPath
+     id="polyline10-2-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1246-8-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1244-3-1" /></clipPath><clipPath
+     id="path1244-3-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-2-1-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4-5-1-8" /></clipPath><clipPath
+     id="path4-5-1-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2866-8-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2864-7-7" /></clipPath><clipPath
+     id="path2864-7-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2870-0-0"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2868-2-8" /></clipPath><clipPath
+     id="path2868-2-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2874-4-40"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2872-6-7" /></clipPath><clipPath
+     id="path2872-6-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2878-8-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2876-4-9" /></clipPath><clipPath
+     id="path2876-4-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2882-0-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2880-3-9" /></clipPath><clipPath
+     id="path2880-3-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2886-5-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2884-5-7" /></clipPath><clipPath
+     id="path2884-5-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2890-1-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2888-7-0" /></clipPath><clipPath
+     id="path2888-7-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2894-5-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2892-6-25" /></clipPath><clipPath
+     id="path2892-6-25"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-1-6-9"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z M 0,0 V 0"
-     id="path7-6-9-3" /></clipPath><clipPath
+     id="path7-6-9-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2900-1-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2898-8-6" /></clipPath><clipPath
+     id="path2898-8-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2904-5-3"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2902-0-7" /></clipPath><clipPath
+     id="path2902-0-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2908-2-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2906-6-1" /></clipPath><clipPath
+     id="path2906-6-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2912-1-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2910-3-77" /></clipPath><clipPath
+     id="path2910-3-77"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-4-0-39"><polyline
      class="cls-1"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     id="polyline10-7-2-1" /></clipPath><clipPath
+     id="polyline10-7-2-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2918-2-83"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2916-3-4" /></clipPath><clipPath
+     id="path2916-3-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-9-3-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4-7-6-9" /></clipPath><clipPath
+     id="path4-7-6-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3338-6-43"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3336-0-6" /></clipPath><clipPath
+     id="path3336-0-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3342-2-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3340-7-4" /></clipPath><clipPath
+     id="path3340-7-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3346-4-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3344-9-9" /></clipPath><clipPath
+     id="path3344-9-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3350-1-0"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3348-1-2" /></clipPath><clipPath
+     id="path3348-1-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3354-0-30"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3352-6-8" /></clipPath><clipPath
+     id="path3352-6-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3358-2-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3356-2-9" /></clipPath><clipPath
+     id="path3356-2-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3362-2-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3360-8-9" /></clipPath><clipPath
+     id="path3360-8-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3366-8-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3364-4-5" /></clipPath><clipPath
+     id="path3364-4-5"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-0-1-3"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z M 0,0 V 0"
-     id="path7-3-2-9" /></clipPath><clipPath
+     id="path7-3-2-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3372-9-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3370-1-4" /></clipPath><clipPath
+     id="path3370-1-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3376-9-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3374-5-9" /></clipPath><clipPath
+     id="path3374-5-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3380-0-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3378-7-9" /></clipPath><clipPath
+     id="path3378-7-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3384-0-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3382-3-1" /></clipPath><clipPath
+     id="path3382-3-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-8-4-0"><polyline
      class="cls-1"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     id="polyline10-0-4-6" /></clipPath><clipPath
+     id="polyline10-0-4-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3390-3-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3388-1-1" /></clipPath><clipPath
+     id="path3388-1-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-1-1-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4-1-6-7" /></clipPath><clipPath
+     id="path4-1-6-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3812-9-0"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3810-6-99" /></clipPath><clipPath
+     id="path3810-6-99"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3816-4-3"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3814-7-0" /></clipPath><clipPath
+     id="path3814-7-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3820-4-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3818-3-9" /></clipPath><clipPath
+     id="path3818-3-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3824-5-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3822-9-3" /></clipPath><clipPath
+     id="path3822-9-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3828-7-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3826-1-4" /></clipPath><clipPath
+     id="path3826-1-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3832-7-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3830-1-8" /></clipPath><clipPath
+     id="path3830-1-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3836-3-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3834-5-45" /></clipPath><clipPath
+     id="path3834-5-45"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3840-4-29"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3838-2-6" /></clipPath><clipPath
+     id="path3838-2-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-3-1-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z M 0,0 V 0"
-     id="path7-2-1-8" /></clipPath><clipPath
+     id="path7-2-1-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3846-8-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3844-5-8" /></clipPath><clipPath
+     id="path3844-5-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3850-2-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3848-6-2" /></clipPath><clipPath
+     id="path3848-6-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3854-5-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3852-0-9" /></clipPath><clipPath
+     id="path3852-0-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3858-4-0"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3856-6-4" /></clipPath><clipPath
+     id="path3856-6-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-7-2-8"><polyline
      class="cls-1"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     id="polyline10-71-8-2" /></clipPath><clipPath
+     id="polyline10-71-8-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3864-2-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3862-5-3" /></clipPath><clipPath
+     id="path3862-5-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-6-2-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4-0-6-1" /></clipPath><clipPath
+     id="path4-0-6-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4333-5-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4331-7-8" /></clipPath><clipPath
+     id="path4331-7-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4337-4-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4335-1-9" /></clipPath><clipPath
+     id="path4335-1-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4341-3-3"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4339-6-9" /></clipPath><clipPath
+     id="path4339-6-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4345-4-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4343-4-1" /></clipPath><clipPath
+     id="path4343-4-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4349-1-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4347-6-2" /></clipPath><clipPath
+     id="path4347-6-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4353-2-0"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4351-1-2" /></clipPath><clipPath
+     id="path4351-1-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4357-9-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4355-7-35" /></clipPath><clipPath
+     id="path4355-7-35"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4361-6-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4359-7-6" /></clipPath><clipPath
+     id="path4359-7-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-8-9-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z M 0,0 V 0"
-     id="path7-1-1-4" /></clipPath><clipPath
+     id="path7-1-1-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4367-7-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4365-4-6" /></clipPath><clipPath
+     id="path4365-4-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4371-6-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4369-0-4" /></clipPath><clipPath
+     id="path4369-0-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4375-7-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4373-6-6" /></clipPath><clipPath
+     id="path4373-6-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4379-4-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4377-4-5" /></clipPath><clipPath
+     id="path4377-4-5"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-5-4-4"><polyline
      class="cls-1"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     id="polyline10-6-2-5" /></clipPath><clipPath
+     id="polyline10-6-2-5"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4385-8-9"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4383-5-8" /></clipPath><linearGradient
+     id="path4383-5-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><linearGradient
    id="linear-gradient-32-2-5"
    y1="2"
    x2="50"
@@ -10225,397 +10465,477 @@
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4-9" /></clipPath><clipPath
+     id="path4-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1194-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1192-9" /></clipPath><clipPath
+     id="path1192-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1198-62"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1196-39" /></clipPath><clipPath
+     id="path1196-39"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1202-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1200-88" /></clipPath><clipPath
+     id="path1200-88"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1206-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1204-2" /></clipPath><clipPath
+     id="path1204-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1210-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1208-1" /></clipPath><clipPath
+     id="path1208-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1214-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1212-4" /></clipPath><clipPath
+     id="path1212-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1218-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1216-6" /></clipPath><clipPath
+     id="path1216-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1222-50"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1220-3" /></clipPath><clipPath
+     id="path1220-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z M 0,0 V 0"
-     id="path7-4" /></clipPath><clipPath
+     id="path7-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1228-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1226-8" /></clipPath><clipPath
+     id="path1226-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1232-9"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1230-4" /></clipPath><clipPath
+     id="path1230-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1236-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1234-7" /></clipPath><clipPath
+     id="path1234-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1240-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1238-8" /></clipPath><clipPath
+     id="path1238-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-1"><polyline
      class="cls-1"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     id="polyline10-1" /></clipPath><clipPath
+     id="polyline10-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1246-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1244-9" /></clipPath><clipPath
+     id="path1244-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-2-10"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4-5-6" /></clipPath><clipPath
+     id="path4-5-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2866-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2864-75" /></clipPath><clipPath
+     id="path2864-75"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2870-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2868-0" /></clipPath><clipPath
+     id="path2868-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2874-48"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2872-7" /></clipPath><clipPath
+     id="path2872-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2878-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2876-0" /></clipPath><clipPath
+     id="path2876-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2882-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2880-7" /></clipPath><clipPath
+     id="path2880-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2886-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2884-4" /></clipPath><clipPath
+     id="path2884-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2890-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2888-0" /></clipPath><clipPath
+     id="path2888-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2894-53"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2892-0" /></clipPath><clipPath
+     id="path2892-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-1-9"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z M 0,0 V 0"
-     id="path7-6-91" /></clipPath><clipPath
+     id="path7-6-91"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2900-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2898-86" /></clipPath><clipPath
+     id="path2898-86"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2904-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2902-8" /></clipPath><clipPath
+     id="path2902-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2908-25"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2906-68" /></clipPath><clipPath
+     id="path2906-68"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2912-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2910-6" /></clipPath><clipPath
+     id="path2910-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-4-07"><polyline
      class="cls-1"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     id="polyline10-7-6" /></clipPath><clipPath
+     id="polyline10-7-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2918-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2916-1" /></clipPath><clipPath
+     id="path2916-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-9-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4-7-2" /></clipPath><clipPath
+     id="path4-7-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3338-9"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3336-6" /></clipPath><clipPath
+     id="path3336-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3342-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3340-4" /></clipPath><clipPath
+     id="path3340-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3346-0"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3344-4" /></clipPath><clipPath
+     id="path3344-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3350-3"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3348-8" /></clipPath><clipPath
+     id="path3348-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3354-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3352-1" /></clipPath><clipPath
+     id="path3352-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3358-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3356-8" /></clipPath><clipPath
+     id="path3356-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3362-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3360-9" /></clipPath><clipPath
+     id="path3360-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3366-89"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3364-5" /></clipPath><clipPath
+     id="path3364-5"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-0-9"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z M 0,0 V 0"
-     id="path7-3-9" /></clipPath><clipPath
+     id="path7-3-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3372-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3370-2" /></clipPath><clipPath
+     id="path3370-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3376-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3374-8" /></clipPath><clipPath
+     id="path3374-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3380-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3378-2" /></clipPath><clipPath
+     id="path3378-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3384-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3382-7" /></clipPath><clipPath
+     id="path3382-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-8-5"><polyline
      class="cls-1"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     id="polyline10-0-3" /></clipPath><clipPath
+     id="polyline10-0-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3390-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3388-14" /></clipPath><clipPath
+     id="path3388-14"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-1-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4-1-9" /></clipPath><clipPath
+     id="path4-1-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3812-3"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3810-1" /></clipPath><clipPath
+     id="path3810-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3816-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3814-79" /></clipPath><clipPath
+     id="path3814-79"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3820-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3818-6" /></clipPath><clipPath
+     id="path3818-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3824-51"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3822-0" /></clipPath><clipPath
+     id="path3822-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3828-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3826-2" /></clipPath><clipPath
+     id="path3826-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3832-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3830-5" /></clipPath><clipPath
+     id="path3830-5"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3836-9"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3834-7" /></clipPath><clipPath
+     id="path3834-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3840-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3838-9" /></clipPath><clipPath
+     id="path3838-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-3-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z M 0,0 V 0"
-     id="path7-2-3" /></clipPath><clipPath
+     id="path7-2-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3846-0"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3844-6" /></clipPath><clipPath
+     id="path3844-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3850-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3848-9" /></clipPath><clipPath
+     id="path3848-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3854-9"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3852-9" /></clipPath><clipPath
+     id="path3852-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3858-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3856-2" /></clipPath><clipPath
+     id="path3856-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-7-29"><polyline
      class="cls-1"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     id="polyline10-71-4" /></clipPath><clipPath
+     id="polyline10-71-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3864-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3862-6" /></clipPath><clipPath
+     id="path3862-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-6-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4-0-9" /></clipPath><clipPath
+     id="path4-0-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4333-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4331-9" /></clipPath><clipPath
+     id="path4331-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4337-3"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4335-5" /></clipPath><clipPath
+     id="path4335-5"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4341-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4339-0" /></clipPath><clipPath
+     id="path4339-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4345-3"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4343-1" /></clipPath><clipPath
+     id="path4343-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4349-9"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4347-8" /></clipPath><clipPath
+     id="path4347-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4353-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4351-5" /></clipPath><clipPath
+     id="path4351-5"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4357-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4355-4" /></clipPath><clipPath
+     id="path4355-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4361-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4359-5" /></clipPath><clipPath
+     id="path4359-5"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-8-90"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z M 0,0 V 0"
-     id="path7-1-12" /></clipPath><clipPath
+     id="path7-1-12"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4367-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4365-5" /></clipPath><clipPath
+     id="path4365-5"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4371-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4369-3" /></clipPath><clipPath
+     id="path4369-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4375-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4373-61" /></clipPath><clipPath
+     id="path4373-61"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4379-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4377-7" /></clipPath><clipPath
+     id="path4377-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-5-7"><polyline
      class="cls-1"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     id="polyline10-6-7" /></clipPath><clipPath
+     id="polyline10-6-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4385-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4383-58" /></clipPath><linearGradient
+     id="path4383-58"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><linearGradient
    id="linear-gradient-32-3"
    y1="2"
    x2="50"
@@ -12381,397 +12701,477 @@
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4-8" /></clipPath><clipPath
+     id="path4-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1194-3"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1192-3" /></clipPath><clipPath
+     id="path1192-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1198-3"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1196-0" /></clipPath><clipPath
+     id="path1196-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1202-9"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1200-1" /></clipPath><clipPath
+     id="path1200-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1206-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1204-0" /></clipPath><clipPath
+     id="path1204-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1210-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1208-0" /></clipPath><clipPath
+     id="path1208-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1214-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1212-47" /></clipPath><clipPath
+     id="path1212-47"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1218-42"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1216-4" /></clipPath><clipPath
+     id="path1216-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1222-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1220-7" /></clipPath><clipPath
+     id="path1220-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z M 0,0 V 0"
-     id="path7-9" /></clipPath><clipPath
+     id="path7-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1228-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1226-2" /></clipPath><clipPath
+     id="path1226-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1232-3"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1230-9" /></clipPath><clipPath
+     id="path1230-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1236-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1234-41" /></clipPath><clipPath
+     id="path1234-41"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1240-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1238-6" /></clipPath><clipPath
+     id="path1238-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-9"><polyline
      class="cls-1"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     id="polyline10-69" /></clipPath><clipPath
+     id="polyline10-69"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1246-0"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path1244-8" /></clipPath><clipPath
+     id="path1244-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-2-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4-5-10" /></clipPath><clipPath
+     id="path4-5-10"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2866-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2864-3" /></clipPath><clipPath
+     id="path2864-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2870-9"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2868-9" /></clipPath><clipPath
+     id="path2868-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2874-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2872-2" /></clipPath><clipPath
+     id="path2872-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2878-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2876-2" /></clipPath><clipPath
+     id="path2876-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2882-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2880-9" /></clipPath><clipPath
+     id="path2880-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2886-3"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2884-6" /></clipPath><clipPath
+     id="path2884-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2890-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2888-00" /></clipPath><clipPath
+     id="path2888-00"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2894-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2892-8" /></clipPath><clipPath
+     id="path2892-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-1-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z M 0,0 V 0"
-     id="path7-6-2" /></clipPath><clipPath
+     id="path7-6-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2900-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2898-3" /></clipPath><clipPath
+     id="path2898-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2904-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2902-2" /></clipPath><clipPath
+     id="path2902-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2908-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2906-7" /></clipPath><clipPath
+     id="path2906-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2912-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2910-7" /></clipPath><clipPath
+     id="path2910-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-4-8"><polyline
      class="cls-1"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     id="polyline10-7-0" /></clipPath><clipPath
+     id="polyline10-7-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2918-18"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path2916-13" /></clipPath><clipPath
+     id="path2916-13"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-9-30"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4-7-65" /></clipPath><clipPath
+     id="path4-7-65"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3338-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3336-8" /></clipPath><clipPath
+     id="path3336-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3342-9"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3340-2" /></clipPath><clipPath
+     id="path3340-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3346-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3344-8" /></clipPath><clipPath
+     id="path3344-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3350-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3348-5" /></clipPath><clipPath
+     id="path3348-5"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3354-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3352-7" /></clipPath><clipPath
+     id="path3352-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3358-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3356-86" /></clipPath><clipPath
+     id="path3356-86"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3362-3"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3360-2" /></clipPath><clipPath
+     id="path3360-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3366-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3364-6" /></clipPath><clipPath
+     id="path3364-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-0-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z M 0,0 V 0"
-     id="path7-3-3" /></clipPath><clipPath
+     id="path7-3-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3372-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3370-8" /></clipPath><clipPath
+     id="path3370-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3376-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3374-3" /></clipPath><clipPath
+     id="path3374-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3380-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3378-3" /></clipPath><clipPath
+     id="path3378-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3384-3"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3382-8" /></clipPath><clipPath
+     id="path3382-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-8-8"><polyline
      class="cls-1"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     id="polyline10-0-9" /></clipPath><clipPath
+     id="polyline10-0-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3390-0"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3388-8" /></clipPath><clipPath
+     id="path3388-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-1-9"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4-1-7" /></clipPath><clipPath
+     id="path4-1-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3812-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3810-5" /></clipPath><clipPath
+     id="path3810-5"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3816-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3814-8" /></clipPath><clipPath
+     id="path3814-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3820-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3818-0" /></clipPath><clipPath
+     id="path3818-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3824-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3822-98" /></clipPath><clipPath
+     id="path3822-98"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3828-72"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3826-7" /></clipPath><clipPath
+     id="path3826-7"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3832-9"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3830-0" /></clipPath><clipPath
+     id="path3830-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3836-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3834-4" /></clipPath><clipPath
+     id="path3834-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3840-3"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3838-4" /></clipPath><clipPath
+     id="path3838-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-3-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z M 0,0 V 0"
-     id="path7-2-6" /></clipPath><clipPath
+     id="path7-2-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3846-87"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3844-57" /></clipPath><clipPath
+     id="path3844-57"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3850-9"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3848-4" /></clipPath><clipPath
+     id="path3848-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3854-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3852-1" /></clipPath><clipPath
+     id="path3852-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3858-0"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3856-0" /></clipPath><clipPath
+     id="path3856-0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-7-5"><polyline
      class="cls-1"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     id="polyline10-71-9" /></clipPath><clipPath
+     id="polyline10-71-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3864-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path3862-3" /></clipPath><clipPath
+     id="path3862-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-6-82"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4-0-95" /></clipPath><clipPath
+     id="path4-0-95"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4333-8"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4331-3" /></clipPath><clipPath
+     id="path4331-3"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4337-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4335-9" /></clipPath><clipPath
+     id="path4335-9"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4341-0"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4339-63" /></clipPath><clipPath
+     id="path4339-63"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4345-1"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4343-8" /></clipPath><clipPath
+     id="path4343-8"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4349-5"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4347-60" /></clipPath><clipPath
+     id="path4347-60"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4353-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4351-6" /></clipPath><clipPath
+     id="path4351-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4357-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4355-2" /></clipPath><clipPath
+     id="path4355-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4361-3"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4359-51" /></clipPath><clipPath
+     id="path4359-51"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-8-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z M 0,0 V 0"
-     id="path7-1-5" /></clipPath><clipPath
+     id="path7-1-5"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4367-4"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4365-41" /></clipPath><clipPath
+     id="path4365-41"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4371-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4369-2" /></clipPath><clipPath
+     id="path4369-2"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4375-6"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4373-66" /></clipPath><clipPath
+     id="path4373-66"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4379-2"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4377-6" /></clipPath><clipPath
+     id="path4377-6"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-5-6"><polyline
      class="cls-1"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     id="polyline10-6-73" /></clipPath><clipPath
+     id="polyline10-6-73"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4385-7"><path
      inkscape:connector-curvature="0"
      class="cls-1"
      d="M 0,0 Z"
-     id="path4383-4" /></clipPath><linearGradient
+     id="path4383-4"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><linearGradient
    id="linear-gradient-32-1"
    y1="2"
    x2="50"
@@ -14537,397 +14937,477 @@
      id="path4-4-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1194-6-9"><path
      id="path1192-8-9"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1198-6-7"><path
      id="path1196-3-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1202-6-1"><path
      id="path1200-8-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1206-0-4"><path
      id="path1204-1-0"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1210-6-1"><path
      id="path1208-8-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1214-7-3"><path
      id="path1212-1-8"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1218-4-1"><path
      id="path1216-9-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1222-5-1"><path
      id="path1220-5-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-6-8"><path
      id="path7-30-2"
      d="M 0,0 Z M 0,0 V 0"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1228-4-9"><path
      id="path1226-6-0"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1232-6-4"><path
      id="path1230-5-9"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1236-4-4"><path
      id="path1234-4-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1240-6-6"><path
      id="path1238-0-9"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-56-6"><polyline
      id="polyline10-2-7"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     class="cls-1" /></clipPath><clipPath
+     class="cls-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath1246-8-8"><path
      id="path1244-3-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-2-1-9"><path
      id="path4-5-1-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2866-8-7"><path
      id="path2864-7-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2870-0-2"><path
      id="path2868-2-0"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2874-4-4"><path
      id="path2872-6-8"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2878-8-7"><path
      id="path2876-4-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2882-0-9"><path
      id="path2880-3-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2886-5-6"><path
      id="path2884-5-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2890-1-6"><path
      id="path2888-7-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2894-5-0"><path
      id="path2892-6-2"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-1-6-2"><path
      id="path7-6-9-9"
      d="M 0,0 Z M 0,0 V 0"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2900-1-4"><path
      id="path2898-8-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2904-5-5"><path
      id="path2902-0-0"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2908-2-8"><path
      id="path2906-6-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2912-1-1"><path
      id="path2910-3-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-4-0-3"><polyline
      id="polyline10-7-2-8"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     class="cls-1" /></clipPath><clipPath
+     class="cls-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath2918-2-8"><path
      id="path2916-3-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-9-3-2"><path
      id="path4-7-6-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3338-6-4"><path
      id="path3336-0-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3342-2-4"><path
      id="path3340-7-0"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3346-4-5"><path
      id="path3344-9-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3350-1-5"><path
      id="path3348-1-8"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3354-0-3"><path
      id="path3352-6-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3358-2-8"><path
      id="path3356-2-2"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3362-2-2"><path
      id="path3360-8-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3366-8-2"><path
      id="path3364-4-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-0-1-0"><path
      id="path7-3-2-6"
      d="M 0,0 Z M 0,0 V 0"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3372-9-2"><path
      id="path3370-1-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3376-9-3"><path
      id="path3374-5-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3380-0-4"><path
      id="path3378-7-1"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3384-0-5"><path
      id="path3382-3-9"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-8-4-5"><polyline
      id="polyline10-0-4-3"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     class="cls-1" /></clipPath><clipPath
+     class="cls-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3390-3-7"><path
      id="path3388-1-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-1-1-9"><path
      id="path4-1-6-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3812-9-9"><path
      id="path3810-6-9"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3816-4-1"><path
      id="path3814-7-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3820-4-6"><path
      id="path3818-3-2"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3824-5-0"><path
      id="path3822-9-9"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3828-7-5"><path
      id="path3826-1-2"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3832-7-7"><path
      id="path3830-1-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3836-3-3"><path
      id="path3834-5-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3840-4-2"><path
      id="path3838-2-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-3-1-6"><path
      id="path7-2-1-2"
      d="M 0,0 Z M 0,0 V 0"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3846-8-1"><path
      id="path3844-5-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3850-2-7"><path
      id="path3848-6-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3854-5-2"><path
      id="path3852-0-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3858-4-8"><path
      id="path3856-6-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-7-2-3"><polyline
      id="polyline10-71-8-0"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     class="cls-1" /></clipPath><clipPath
+     class="cls-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath3864-2-6"><path
      id="path3862-5-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-6-2-2"><path
      id="path4-0-6-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4333-5-2"><path
      id="path4331-7-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4337-4-8"><path
      id="path4335-1-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4341-3-9"><path
      id="path4339-6-8"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4345-4-0"><path
      id="path4343-4-4"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4349-1-7"><path
      id="path4347-6-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4353-2-3"><path
      id="path4351-1-0"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4357-9-8"><path
      id="path4355-7-3"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4361-6-5"><path
      id="path4359-7-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-10-8-9-6"><path
      id="path7-1-1-2"
      d="M 0,0 Z M 0,0 V 0"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4367-7-6"><path
      id="path4365-4-7"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4371-6-9"><path
      id="path4369-0-5"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4375-7-7"><path
      id="path4373-6-8"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4379-4-8"><path
      id="path4377-4-6"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><clipPath
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clip-path-15-5-4-0"><polyline
      id="polyline10-6-2-3"
      points="38 21 38 23 37 25 37 27 36 28 35 30 34 31 33 33 31 34 30 35 28 36 27 37 25 37 23 38 21 38 20 38 18 38 16 38 14 37 12 37 11 36 9 35 8 34 6 33 5 31 4 30 3 28 2 27 2 25 1 23 1 21 1 20 1 18 1 16 2 14 2 12 3 11 4 9 5 8 6 6 8 5 9 4 11 3 12 2 14 2 16 1 18 1 20 1 21 1 23 1 25 2 27 2 28 3 30 4 31 5 33 6 34 8 35 9 36 11 37 12 37 14 38 16 38 18 38 20 38 21"
-     class="cls-1" /></clipPath><clipPath
+     class="cls-1"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><clipPath
    id="clipPath4385-8-5"><path
      id="path4383-5-0"
      d="M 0,0 Z"
      class="cls-1"
-     inkscape:connector-curvature="0" /></clipPath><linearGradient
+     inkscape:connector-curvature="0"
+     style="font-family:Arial, Helvetica, sans-serif" /></clipPath><linearGradient
    gradientUnits="userSpaceOnUse"
    y2="2"
    x2="50"
@@ -16720,12 +17200,12 @@
    showgrid="false"
    inkscape:snap-object-midpoints="false"
    inkscape:zoom="1"
-   inkscape:cx="648.86607"
-   inkscape:cy="451.37856"
+   inkscape:cx="688.39649"
+   inkscape:cy="547.59296"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
-   inkscape:current-layer="options-top"
+   inkscape:current-layer="panel"
    inkscape:snap-text-baseline="false"
    inkscape:snap-bbox="false"
    inkscape:showpageshadow="false"
@@ -16841,7 +17321,8 @@
 <g
    id="whole-panel"
    style="font-family:Arial, Helvetica, sans-serif;display:inline"
-   inkscape:label="#whole-panel"><g
+   inkscape:label="#whole-panel"
+   transform="translate(0,40)"><g
      inkscape:label="#outer-panel"
      style="font-family:Arial, Helvetica, sans-serif"
      transform="matrix(1.2993501,0,0,1.2362819,-500,-200.19463)"
@@ -16858,25 +17339,25 @@
      inkscape:label="#left-inset"
      transform="matrix(1.150291,0,0,1.2628927,-489.14604,-209.34096)"
      class="st2"
-     points="109,94 109,641 123,627 123,108 "
+     points="123,108 109,94 109,641 123,627 "
      id="left-inset"
      style="font-family:Arial, Helvetica, sans-serif;fill:url(#SVGID_1_)" /><polygon
      inkscape:label="#right-inset"
      transform="matrix(1.150291,0,0,1.2643072,-365.14604,-210.24771)"
      class="st3"
-     points="881,108 895,94 895,641 881,627 "
+     points="881,627 881,108 895,94 895,641 "
      id="right-inset"
      style="font-family:Arial, Helvetica, sans-serif;fill:url(#SVGID_2_)" /><polygon
      inkscape:label="#bottom-inset"
      transform="matrix(1.3092435,0,0,1.150291,-506.70768,-137.16328)"
      class="st4"
-     points="109,641 895,641 881,627 123,627 "
+     points="123,627 109,641 895,641 881,627 "
      id="bottom-inset"
      style="font-family:Arial, Helvetica, sans-serif;fill:url(#SVGID_3_)" /><polygon
      inkscape:label="#top-inset"
      transform="matrix(1.3081383,0,0,1.150291,-506.88449,-199.16327)"
      class="st5"
-     points="123,108 109,94 895,94 881,108 "
+     points="881,108 123,108 109,94 895,94 "
      id="top-inset"
      style="font-family:Arial, Helvetica, sans-serif;display:inline;fill:url(#SVGID_4_)" /><g
      inkscape:label="#back-panel"
@@ -16893,7 +17374,7 @@
 					<polygon
    style="font-family:Arial, Helvetica, sans-serif;fill:#4c4c4c"
    id="polygon69"
-   points="881,108 123,108 "
+   points="123,108 881,108 "
    class="st10" />
 				</g>
 				<g
@@ -16902,7 +17383,7 @@
 					<polygon
    style="font-family:Arial, Helvetica, sans-serif;fill:#505050"
    id="polygon73"
-   points="881,627 123,627 127,623 877,623 "
+   points="877,623 881,627 123,627 127,623 "
    class="st11" />
 				</g>
 				<g
@@ -16911,7 +17392,7 @@
 					<polygon
    style="font-family:Arial, Helvetica, sans-serif;fill:#525252"
    id="polygon77"
-   points="123,627 123,108 127,112 127,623 "
+   points="127,623 123,627 123,108 127,112 "
    class="st12" />
 				</g>
 				<g
@@ -16920,7 +17401,7 @@
 					<polygon
    style="font-family:Arial, Helvetica, sans-serif;fill:#212121"
    id="polygon81"
-   points="123,108 881,108 877,112 127,112 "
+   points="127,112 123,108 881,108 877,112 "
    class="st13" />
 				</g>
 				<g
@@ -16929,7 +17410,7 @@
 					<polygon
    style="font-family:Arial, Helvetica, sans-serif;fill:#1b1b1b"
    id="polygon85"
-   points="881,108 881,627 877,623 877,112 "
+   points="877,112 881,108 881,627 877,623 "
    class="st14" />
 				</g>
 				<g
@@ -17342,10 +17823,6 @@
 
 
 
-
-
-
-
 	<text
    inkscape:label="lbl-on"
    style="font-size:16.13574982px;font-family:'Arial Narrow';fill:#e6e6e6;stroke-width:0.91301697"
@@ -17354,10 +17831,6 @@
    transform="scale(0.91301697,1.0952699)"
    x="115.55097"
    y="48.008259">ON</text>
-
-
-
-
 
 
 
@@ -17534,7 +18007,7 @@
    id="buttons-left"
    inkscape:label="#buttons-left"
    style="font-family:Arial, Helvetica, sans-serif;display:inline"
-   transform="translate(-331.62482,-82.081637)"><g
+   transform="translate(-331.62482,-42.081637)"><g
      id="btn-back"
      transform="translate(-148.89459,106.59182)"
      inkscape:label="#btn-back"
@@ -17766,7 +18239,7 @@
    id="buttons-right"
    inkscape:label="#buttons-right"
    style="font-family:Arial, Helvetica, sans-serif;display:inline"
-   transform="translate(-331.62482,-82.081637)"><g
+   transform="translate(-331.62482,-42.081637)"><g
      id="btn-light"
      transform="translate(1047.1054,106.59182)"
      style="font-family:Arial, Helvetica, sans-serif"
@@ -17998,7 +18471,7 @@
    id="buttons-bottom"
    inkscape:label="#buttons-bottom"
    style="font-family:Arial, Helvetica, sans-serif;display:inline"
-   transform="translate(-331.62482,-82.081637)"><g
+   transform="translate(-331.62482,-42.081637)"><g
      style="font-family:Arial, Helvetica, sans-serif;enable-background:new"
      id="btn-cda"
      transform="translate(117.65537,736.69983)"
@@ -18306,11 +18779,11 @@
    id="buttons-top"
    inkscape:label="#buttons-top"
    style="font-family:Arial, Helvetica, sans-serif;display:inline"
-   transform="translate(-331.62482,-82.081637)"><g
+   transform="translate(-331.62482,-42.081637)"><g
      style="font-family:Arial, Helvetica, sans-serif;enable-background:new"
-     id="btn-menu"
+     id="btn-menu-active-display"
      transform="translate(117.04062,-93.86134)"
-     inkscape:label="#btn-menu"><rect
+     inkscape:label="#btn-menu-active-display"><rect
        transform="matrix(1.1496471,0,0,1.1496471,-5.1310491,-2.2990749)"
        inkscape:label="#face-menu-active-display"
        style="font-family:Arial, Helvetica, sans-serif;opacity:1;fill:#000000;fill-opacity:0.98492462;filter:url(#filter875-5)"
@@ -18612,7 +19085,7 @@
        id="light-spare"
        inkscape:label="#light-spare" /></g></g><g
    id="on-off-knob"
-   transform="matrix(1.3137923,0,0,1.3137923,-871.75023,-71.15176)"
+   transform="matrix(1.3137923,0,0,1.3137923,-871.75023,-31.15176)"
    inkscape:label="#on-off-knob"
    style="font-family:Arial, Helvetica, sans-serif;display:inline"><desc
      id="desc10049">On Off Knob</desc><title
@@ -18653,12 +19126,13 @@
    id="display"
    height="647.52814"
    width="984.77173"
-   y="-68.52771"
+   y="-28.52771"
    x="-343.57251"
    inkscape:label="#display" /><g
    id="active-shol-display"
-   style="font-family:Arial, Helvetica, sans-serif;display:none"
-   inkscape:label="#active-shol-display"><g
+   style="font-family:Arial, Helvetica, sans-serif;display:inline"
+   inkscape:label="#active-shol-display"
+   transform="translate(0,40)"><g
      transform="translate(-331.62482,-82.081637)"
      style="font-family:Arial, Helvetica, sans-serif"
      inkscape:label="#options-right"
@@ -18674,10 +19148,6 @@
      x="925.16034"
      y="131.7664"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;fill:#ffffff;fill-opacity:1">LIGHT</tspan></text>
-
-
-
-
 
 
 
@@ -18722,10 +19192,6 @@
 
 
 
-
-
-
-
 <text
    inkscape:label="opt-heavy"
    xml:space="preserve"
@@ -18738,10 +19204,6 @@
      y="323.38116"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2-5-9">HEAVY</tspan></text>
-
-
-
-
 
 
 
@@ -18786,10 +19248,6 @@
 
 
 
-
-
-
-
 <text
    inkscape:label="opt-emergency"
    xml:space="preserve"
@@ -18818,10 +19276,6 @@
 
 
 
-
-
-
-
 </g><g
      style="font-family:Arial, Helvetica, sans-serif"
      transform="translate(-26,-174)"
@@ -18829,7 +19283,7 @@
      id="roll-indicators"><polygon
        inkscape:label="#roll-starboard-max-indicator"
        class="cls-8"
-       points="308,440 308,434 302,428 295,434 295,440 295,446 302,446 308,446 "
+       points="295,446 302,446 308,446 308,440 308,434 302,428 295,434 295,440 "
        id="roll-starboard-max-indicator"
        style="font-family:Arial, Helvetica, sans-serif;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        transform="translate(-63.756167,259.16837)" /><path
@@ -18854,7 +19308,7 @@
        inkscape:connector-curvature="0" /><polygon
        inkscape:label="#roll-port-max-indicator"
        class="cls-8"
-       points="222,440 222,434 216,428 209,434 209,440 209,446 216,446 222,446 "
+       points="209,446 216,446 222,446 222,440 222,434 216,428 209,434 209,440 "
        id="roll-port-max-indicator"
        style="font-family:Arial, Helvetica, sans-serif;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        transform="translate(-63.756167,259.16837)" /><path
@@ -18871,7 +19325,7 @@
      id="pitch-indicators"><polygon
        style="font-family:Arial, Helvetica, sans-serif;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"
        id="pitch-up-max-indicator"
-       points="29,154 23,154 17,161 23,167 29,167 35,167 35,161 35,154 "
+       points="35,167 35,161 35,154 29,154 23,154 17,161 23,167 29,167 "
        class="cls-8"
        transform="translate(73.86865,143.25)"
        inkscape:label="#pitch--up-max-indicator"><desc
@@ -18901,7 +19355,7 @@
          id="title4598">Last Pitch Down Pos Indicator</title></path><polygon
        style="font-family:Arial, Helvetica, sans-serif;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"
        id="pitch-down-max-indicator"
-       points="29,240 23,240 17,247 23,253 29,253 35,253 35,247 35,240 "
+       points="35,253 35,247 35,240 29,240 23,240 17,247 23,253 29,253 "
        class="cls-8"
        transform="translate(73.86865,143.25)"><desc
          id="desc4579">Shows the maximum pitch down boundary</desc><title
@@ -19158,20 +19612,12 @@
 
 
 
-
-
-
-
 <text
    y="351.25"
    x="434.86865"
    class="cls-5"
    id="lbl20kt-west"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">20KT</text>
-
-
-
-
 
 
 
@@ -19210,20 +19656,12 @@
 
 
 
-
-
-
-
 <text
    y="351.25"
    x="353.86865"
    class="cls-5"
    id="lbl40kt-west"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">40KT</text>
-
-
-
-
 
 
 
@@ -19262,20 +19700,12 @@
 
 
 
-
-
-
-
 <text
    y="351.25"
    x="551.86865"
    class="cls-5"
    id="lbl10kt-east"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">10KT</text>
-
-
-
-
 
 
 
@@ -19314,20 +19744,12 @@
 
 
 
-
-
-
-
 <text
    y="351.25"
    x="632.86865"
    class="cls-5"
    id="lbl30kt-east"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">30KT</text>
-
-
-
-
 
 
 
@@ -19366,20 +19788,12 @@
 
 
 
-
-
-
-
 <text
    y="351.25"
    x="712.86865"
    class="cls-5"
    id="lbl50kt-east"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">50KT</text>
-
-
-
-
 
 
 
@@ -19418,20 +19832,12 @@
 
 
 
-
-
-
-
 <text
    y="312.25"
    x="513.86865"
    class="cls-5"
    id="lbl10kt-north"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">10KT</text>
-
-
-
-
 
 
 
@@ -19470,20 +19876,12 @@
 
 
 
-
-
-
-
 <text
    y="469.25"
    x="513.86865"
    class="cls-5"
    id="lbl30kt-south"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">30KT</text>
-
-
-
-
 
 
 
@@ -19522,10 +19920,6 @@
 
 
 
-
-
-
-
 <text
    y="549.25"
    x="513.86865"
@@ -19548,20 +19942,12 @@
 
 
 
-
-
-
-
 <text
    y="152.25"
    x="513.86865"
    class="cls-5"
    id="lbl50kt-north"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">50KT</text>
-
-
-
-
 
 
 
@@ -19601,10 +19987,6 @@
 
 
 
-
-
-
-
 <text
    y="232.25"
    x="513.86865"
@@ -19627,20 +20009,12 @@
 
 
 
-
-
-
-
 <text
    y="192.25"
    x="513.86865"
    class="cls-5"
    id="lbl40kt-north"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">40KT</text>
-
-
-
-
 
 
 
@@ -19687,10 +20061,6 @@
 
 
 
-
-
-
-
 <text
    id="r40"
    class="cls-1"
@@ -19698,10 +20068,6 @@
    y="-226.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#r40">R40</text>
-
-
-
-
 
 
 
@@ -19745,10 +20111,6 @@
 
 
 
-
-
-
-
 <text
    id="r80"
    class="cls-1"
@@ -19774,10 +20136,6 @@
 
 
 
-
-
-
-
 <text
    id="r100"
    class="cls-1"
@@ -19785,10 +20143,6 @@
    y="-30.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#r100">R100</text>
-
-
-
-
 
 
 
@@ -19836,10 +20190,6 @@
 
 
 
-
-
-
-
 <text
    id="r140"
    class="cls-1"
@@ -19847,10 +20197,6 @@
    y="93.969238"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#r140">R140</text>
-
-
-
-
 
 
 
@@ -19894,10 +20240,6 @@
 
 
 
-
-
-
-
 <text
    id="g20"
    class="cls-1"
@@ -19905,10 +20247,6 @@
    y="-260.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g20">G20</text>
-
-
-
-
 
 
 
@@ -19952,10 +20290,6 @@
 
 
 
-
-
-
-
 <text
    id="g60"
    class="cls-1"
@@ -19963,10 +20297,6 @@
    y="-171.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g60">G60</text>
-
-
-
-
 
 
 
@@ -20010,10 +20340,6 @@
 
 
 
-
-
-
-
 <text
    id="g100"
    class="cls-1"
@@ -20021,10 +20347,6 @@
    y="-30.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g100">G100</text>
-
-
-
-
 
 
 
@@ -20072,10 +20394,6 @@
 
 
 
-
-
-
-
 <text
    id="g140"
    class="cls-1"
@@ -20101,10 +20419,6 @@
 
 
 
-
-
-
-
 <text
    id="g160"
    class="cls-1"
@@ -20112,10 +20426,6 @@
    y="130.96924"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g160">G160</text>
-
-
-
-
 
 
 
@@ -20167,10 +20477,6 @@
 
 
 
-
-
-
-
 <text
    inkscape:label="#opt-day"
    xml:space="preserve"
@@ -20183,10 +20489,6 @@
      y="230.75429"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2">DAY</tspan></text>
-
-
-
-
 
 
 
@@ -20231,10 +20533,6 @@
 
 
 
-
-
-
-
 <text
    inkscape:label="#opt-fwd"
    xml:space="preserve"
@@ -20247,10 +20545,6 @@
      y="420.16571"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2-5-4">FWD</tspan></text>
-
-
-
-
 
 
 
@@ -20295,10 +20589,6 @@
 
 
 
-
-
-
-
 <text
    inkscape:label="#opt-into-wind"
    xml:space="preserve"
@@ -20327,10 +20617,6 @@
 
 
 
-
-
-
-
 </g><g
      transform="translate(-331.62482,-82.081637)"
      style="font-family:Arial, Helvetica, sans-serif;display:inline"
@@ -20338,7 +20624,7 @@
      id="options-top"
      sodipodi:insensitive="true"><g
    id="lbl-aircraft"
-   style="font-family:Arial, Helvetica, sans-serif;display:inline"
+   style="font-family:Arial, Helvetica, sans-serif"
    inkscape:label="#lbl-aircraft"
    transform="matrix(1.9842527,0,0,1.6869961,-140.2839,-9.7328925)"
    sodipodi:insensitive="true"><rect
@@ -20360,11 +20646,7 @@
      y="26.912212"
      x="88.218292"
      id="tspan4716"
-     sodipodi:role="line">*****</tspan></text>
-
-
-
-
+     sodipodi:role="line">MRH90</tspan></text>
 
 
 
@@ -20393,10 +20675,6 @@
      x="132.40964"
      y="30.367226"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;fill:#009bff;fill-opacity:1">MENU</tspan></text>
-
-
-
-
 
 
 
@@ -20446,10 +20724,6 @@
 
 
 
-
-
-
-
 <text
    inkscape:label="#txt-shutdown"
    id="txt-shutdown"
@@ -20462,10 +20736,6 @@
      y="116.06002"
      x="211.33458"
      sodipodi:role="line">SHUTDOWN</tspan></text>
-
-
-
-
 
 
 
@@ -20511,10 +20781,6 @@
 
 
 
-
-
-
-
 <text
    inkscape:label="#opt-launch"
    xml:space="preserve"
@@ -20527,10 +20793,6 @@
      y="30.578163"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-8-6">LAUNCH</tspan></text>
-
-
-
-
 
 
 
@@ -20575,10 +20837,6 @@
 
 
 
-
-
-
-
 <text
    inkscape:label="#opt-vertrep"
    xml:space="preserve"
@@ -20591,10 +20849,6 @@
      y="30.367226"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-8-6-5-0">VERTREP</tspan></text>
-
-
-
-
 
 
 
@@ -20633,14 +20887,10 @@
 
 
 
-
-
-
-
 <g
    transform="matrix(1.9842527,0,0,1.6869961,-140.2839,32.124237)"
    inkscape:label="#lbl-aircraft-id"
-   style="font-family:Arial, Helvetica, sans-serif;display:none;opacity:1;fill:#009bff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1"
+   style="font-family:Arial, Helvetica, sans-serif;opacity:1;fill:#009bff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1"
    id="lbl-aircraft-id"><rect
    inkscape:label="#opt-aircraft-id-highlight"
    style="font-family:Arial, Helvetica, sans-serif;opacity:1;fill:#0066fb;fill-opacity:1;stroke:#ffffff;stroke-width:0.73950696;stroke-miterlimit:4;stroke-dasharray:0, 8.13457686;stroke-dashoffset:0;stroke-opacity:1"
@@ -20661,10 +20911,6 @@
      x="95.626427"
      y="28.858688"
      style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.42674479;stroke-opacity:1">921</tspan></text>
-
-
-
-
 
 
 
@@ -20739,10 +20985,6 @@
 
 
 
-
-
-
-
 <text
    inkscape:label="#opt-1"
    xml:space="preserve"
@@ -20765,10 +21007,6 @@
 
 
 
-
-
-
-
 <text
    inkscape:label="#opt-2"
    xml:space="preserve"
@@ -20781,10 +21019,6 @@
      y="655.65924"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-8-6-5-0-0">2</tspan></text>
-
-
-
-
 
 
 
@@ -20829,10 +21063,6 @@
 
 
 
-
-
-
-
 <text
    inkscape:label="#opt-4"
    xml:space="preserve"
@@ -20845,10 +21075,6 @@
      y="655.87018"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-8-6-6">4</tspan></text>
-
-
-
-
 
 
 
@@ -20881,10 +21107,6 @@
 
 
 
-
-
-
-
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:Arial, sans-serif;letter-spacing:0px;word-spacing:0px;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -20907,10 +21129,6 @@
 
 
 
-
-
-
-
 <text
    inkscape:label="#opt-cda"
    xml:space="preserve"
@@ -20923,10 +21141,6 @@
      x="132.8031"
      y="655.65924"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;fill:#ffffff;fill-opacity:1">CDA</tspan></text>
-
-
-
-
 
 
 
@@ -21072,7 +21286,7 @@
 </style><g
    style="font-family:Arial, Helvetica, sans-serif;display:none;fill:#ffffff"
    id="aircraft-shol-menu"
-   transform="translate(0.0135574,-0.0433279)"
+   transform="translate(0.0135574,39.956672)"
    inkscape:label="#aircraft-shol-menu">
 
 
@@ -21090,10 +21304,6 @@
      y="534.06891"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2-5-4-8-4-7">FOREIGN</tspan></text>
-
-
-
-
 
 
 
@@ -21129,10 +21339,6 @@
 
 
 
-
-
-
-
 <text
    id="opt-flyco-standard-checklists"
    y="148.67265"
@@ -21146,10 +21352,6 @@
      y="148.67265"
      x="-339.73917"
      sodipodi:role="line">MH60R (NOT AVAILABLE)</tspan></text>
-
-
-
-
 
 
 
@@ -21185,10 +21387,6 @@
 
 
 
-
-
-
-
 <text
    id="opt-bridge-emergency-cards"
    y="338.08408"
@@ -21202,10 +21400,6 @@
      y="338.08408"
      x="-339.73917"
      sodipodi:role="line">CH47F (NOT AVAILABLE)</tspan></text>
-
-
-
-
 
 
 
@@ -21241,10 +21435,6 @@
 
 
 
-
-
-
-
 <text
    inkscape:label="#lbl-main-menu-aircraft-shol-select"
    id="lbl-main-menu-aircraft-shol-select"
@@ -21258,10 +21448,6 @@
      style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
      id="tspan1390-0"
      sodipodi:role="line">AIRCRAFT SHOL SELECT PAGE</tspan></text>
-
-
-
-
 
 
 
@@ -21341,15 +21527,11 @@
 
 
 
-
-
-
-
 </g>
 </g><g
    style="font-family:Arial, Helvetica, sans-serif;display:none"
    id="main-menu"
-   transform="translate(1.4597356,0.1126941)"
+   transform="translate(1.4597356,40.112694)"
    inkscape:label="#main-menu">
 
 <text
@@ -21365,10 +21547,6 @@
      y="338.08408"
      x="-339.73917"
      sodipodi:role="line">BRIDGE EMERGENCY CARDS (NOT AVAILABLE)</tspan></text>
-
-
-
-
 
 
 
@@ -21403,10 +21581,6 @@
 
 
 
-
-
-
-
 <text
    id="opt-mh60r"
    y="148.67265"
@@ -21420,10 +21594,6 @@
      y="148.67265"
      x="-339.73917"
      sodipodi:role="line">FLYCO STANDARD CHECKLISTS (NOT AVAILABLE)</tspan></text>
-
-
-
-
 
 
 
@@ -21458,10 +21628,6 @@
 
 
 
-
-
-
-
 <text
    inkscape:label="#lbl-main-menu"
    id="lbl-main-menu"
@@ -21475,10 +21641,6 @@
      style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
      id="tspan1390"
      sodipodi:role="line">MAIN MENU</tspan></text>
-
-
-
-
 
 
 

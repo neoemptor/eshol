@@ -2,12 +2,13 @@
     "name": "eshol",
     "version": "0.0.2",
     "description": "Electronic Ship Helicopter Operating Limits System",
-    "main": "views/main.html",
+    "main": "src/views/main.html",
     "window": {
         "title": "ESHOL",
-        "icon": "link.png",
+        "icon": "src/assets/link.png",
         "toolbar": false,
         "frame": false,
+        "fullscreen": true,
         "width": 1920,
         "height": 1080,
         "min_width": 400,
@@ -20,28 +21,30 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+github https://github.com/neoemptor/eshol.git",
-        "path": "src/"
+        "url": "git+github https://github.com/neoemptor/eshol.git"
     },
     "author": "Darren Bailey <darren.bailey@dsbaileyfreelancer.com.au>",
     "license": "MIT",
     "homepage": "https://dsbaileyfreelancer.com.au",
     "scripts": {
         "tsc-build": "gulp",
+        "start": "nw",
         "dev": "nw",
         "prod": "nwbuild --platforms win32,win64,osx64,linux32,linux64 --buildDir dist/ ./"
     },
+    "devDependencies": {
+        "@types/node": "^10.3.2",
+        "gulp": "^3.9.1",
+        "gulp-typescript": "^4.0.2",
+        "jquery": "2.2.4",
+        "snapsvg": "^0.5.1",
+        "typescript": "^2.9.1"
+    },
     "title": "eshol",
+    "database": "./model/eshol-db",
     "type": "simple",
     "dependencies": {
-        "layersnap": "^1.1.0",
-        "path": "^0.12.7",
-        "snapsvg": "^0.5.1",
-        "sqlite3": "^4.0.0",
-        "svg.js": "^2.6.5",
-        "url": "^0.11.0"
-    },
-    "devDependencies": {
-        "jquery": "^3.3.1"
+        "fs": "0.0.1-security",
+        "glob": "^7.1.2"
     }
 }

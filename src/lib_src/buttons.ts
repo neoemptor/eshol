@@ -1,13 +1,10 @@
-import Snap from "snapsvg";
-
-export class OnOffKnob {
+class OnOffKnob {
     private _state: boolean;
     private _x: number;
     private _y: number;
     private _radiusOn: number;
     private _radiusOff: number;
     private _knobId: string;
-    private _knobObject: Snap;
 
     constructor() {
         // init on-off knob
@@ -17,11 +14,6 @@ export class OnOffKnob {
         this._radiusOn = 35;
         this._radiusOff = 45;
         this._knobId = "";
-        this._knobObject = null; // snap.select("#on-off-knob");
-    }
-
-    public addHandler(): void {
-        this._knobObject.click(this.toggle());
     }
 
     public get state(): boolean {
@@ -56,24 +48,16 @@ export class OnOffKnob {
         this._knobId = knobId;
     }
 
-    public get knobObject(): Snap {
-        return this._knobObject;
-    }
-
-    public set knobObject(knobObject: Snap) {
-        this._knobObject = knobObject;
-    }
-
-    public toggle(): void {
+    public toggle(): number {
         let toggleResult: number;
 
         if (this._state) {
-            toggleResult = this._radiusOn;
-        } else {
             toggleResult = this._radiusOff;
+        } else {
+            toggleResult = this._radiusOn;
         }
-
-        this._knobObject.animate({ transform: "r" + toggleResult + ", 0, 0" }, 1000, null);
         this._state = !this._state;
+
+        return toggleResult;
     }
 }

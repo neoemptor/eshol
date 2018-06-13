@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "dom",
+      "es6"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "es5"
+  },
+  "include": [
+    "src/lib_src/*",
+  ],
+  "exclude": [
+    "node_modules",
+    "src/lib_src/*.spec.ts",
+    "src/lib_src/**/__tests__/*.ts"
+  ],
+  "compileOnSave": false,
+  "atom": {
+    "rewriteTsconfig": false
+  }
+}

@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var OnOffKnob = (function () {
     function OnOffKnob() {
         this._state = false;
@@ -8,11 +6,7 @@ var OnOffKnob = (function () {
         this._radiusOn = 35;
         this._radiusOff = 45;
         this._knobId = "";
-        this._knobObject = null;
     }
-    OnOffKnob.prototype.addHandler = function () {
-        this._knobObject.click(this.toggle());
-    };
     Object.defineProperty(OnOffKnob.prototype, "state", {
         get: function () {
             return this._state;
@@ -53,27 +47,16 @@ var OnOffKnob = (function () {
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(OnOffKnob.prototype, "knobObject", {
-        get: function () {
-            return this._knobObject;
-        },
-        set: function (knobObject) {
-            this._knobObject = knobObject;
-        },
-        enumerable: true,
-        configurable: true
-    });
     OnOffKnob.prototype.toggle = function () {
         var toggleResult;
         if (this._state) {
-            toggleResult = this._radiusOn;
-        }
-        else {
             toggleResult = this._radiusOff;
         }
-        this._knobObject.animate({ transform: "r" + toggleResult + ", 0, 0" }, 1000, null);
+        else {
+            toggleResult = this._radiusOn;
+        }
         this._state = !this._state;
+        return toggleResult;
     };
     return OnOffKnob;
 }());
-exports.OnOffKnob = OnOffKnob;
