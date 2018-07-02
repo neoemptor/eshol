@@ -34,10 +34,12 @@
     "title": "eshol",
     "type": "simple",
     "dependencies": {
+        "d3": "^5.4.0",
+        "greensock": "^1.20.2",
         "layersnap": "^1.1.0",
         "path": "^0.12.7",
+        "path-__dirname": "^2.1.0",
         "snapsvg": "^0.5.1",
-        "sqlite3": "^4.0.0",
         "svg.js": "^2.6.5",
         "url": "^0.11.0"
     },

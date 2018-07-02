@@ -17,6 +17,13 @@
 			margin: 0px;
 			padding: 0px;
 			overflow: hidden;
+
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
 		}
 	</style>
 </head>
@@ -29,284 +36,23 @@
 			}
 		</style>
 	</svg>
-	<script>
-		const url = require("url");
-		const path = require("path");
-		// const sqlite3 = require("sqlite3");
-	</script>
-	<!-- <script src="../node_modules/path/path.js"></script>
-	 <script src="../node_modules/url/url.js"></script>
-	 <script src="../node_modules/sqlite3/sqlite3.js"></script>
-	 -->
-	<script src="../node_modules/jquery/dist/jquery.js"></script>
+
+	<script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+	<script src="../node_modules//d3/dist/d3.min.js"></script>
 	<script src="../node_modules/snapsvg/dist/snap.svg.js"></script>
+	<script src="../node_modules/greensock/dist/TweenMax.js"></script>
+	<script src="../node_modules/greensock/dist/jquery.gsap.js"></script>
+	<!-- <script src="../app/controller.js"></script> -->
 	<script src="../app/buttons.js"></script>
-	<script src="../app/shol.js"></script>
+	<script src="../app/model.js"></script>
+	<script src="../app/declarations.js"></script>
+	<script src="../app/initialise.js"></script>
+	<script src="../app/functions.js"></script>
+	<script src="../app/events.js"></script>
+
 
 	<script>
 		window.onload = function () {
-			var screenWidth = screen.availWidth,
-				vpWidth = screenWidth,
-				screenHeight = screen.availHeight,
-				vpHeight = screenHeight,
-				vpX,
-				vpY,
-				deadend,
-				selectedAircraft,
-				onOffKnob,
-				g,
-				svgOnOffKnob,
-				svgOnOffKnobCx,
-				svgOnOffKnobCy,
-				mainMenu,
-				lblMainMenu,
-				optMrh90,
-				optMh60r,
-				optS70a9,
-				optCh47f,
-				aircraftSholMenu, // group
-				optionsTopAircraftSholSelect, // group
-				optMenuAircraftSholSelect,
-				lblMainMenuAircraftSholSelect,
-				optAircraftSholsSelect,
-				optBridgeEmergencyCards,
-				optFlycoEmergencyChecklists,
-				optFlycoStandardChecklists,
-				optArhTiger,
-				optForeign,
-				activeSholDisplay, // group
-				optionsBottom, // group
-				optCda,
-				opt6,
-				opt5,
-				opt4,
-				opt3,
-				opt2,
-				opt1,
-				optCdf,
-				optionsTop, // group
-				lblAircraftId, // group
-				optAircraftIdIndicator,
-				optAircraftIdHighlight,
-				optXfer,
-				optVertrep,
-				optLand,
-				optLaunch,
-				optTaxi,
-				optEngageShutdown, // group
-				txtShutdown,
-				txtEngage,
-				optMenu,
-				lblAircraft, // group
-				optAircraftIndicator,
-				optHighlight,
-				optionsLeft, // group
-				optIntoWind,
-				optAft,
-				optFwd,
-				optNight,
-				optDay,
-				optBack,
-				polarGraph, // group
-				anglesKnotsLabels, // group
-				g160,
-				g140,
-				g120,
-				g100,
-				g80,
-				g60,
-				g40,
-				g20,
-				r160,
-				r140,
-				r120,
-				r100,
-				r80,
-				r60,
-				r40,
-				r20,
-				knotsLabels, // group
-				polarGridLines, // group
-				redGreenCircle, // group
-				pitchIndicators, // group
-				pitchGraph, // group
-				pitchDownMaxIndicator,
-				lastPitchDownPosIndicator,
-				pitchBarIndicator,
-				lastPitchUpPosIndicator,
-				pitchUpMaxIndicator,
-				rollIndicators,
-				rollGraph,
-				rollPortMaxIndicator,
-				lastRollPortIndicator,
-				rollBar,
-				lastRollStarboardIndicator,
-				rollStarboardMaxIndicator,
-				optionsRight, // group
-				display,
-				onOffKnob, // group
-				onOffKnobIndicator,
-				onOffKnobHighlight,
-				onOffKnobFace,
-				onOffKnobShadow,
-				buttonsTop,
-				btnSpareTop, // group
-				lightSpare,
-				lightOutlineSpareTop,
-				gradientSpareTop,
-				faceSpareTop,
-				btnXfer, // group
-				lightXfer,
-				lightOutlineXfer,
-				gradientXfer,
-				faceXfer,
-				btnVertrep, // group
-				lightVertrep,
-				lightOutlineVertrep,
-				gradientVertrep,
-				faceVertrep,
-				btnLand, // group
-				lightLand,
-				lightOutlineLand,
-				gradientLand,
-				faceLand,
-				btnLaunch, // group
-				lightLaunch,
-				lightOutlineLaunch,
-				gradientLaunch,
-				faceLaunch,
-				btnTaxi, // group
-				lightTaxi,
-				lightOutlineTaxi,
-				gradientTaxi,
-				faceTaxi,
-				btnEngageShutdown, // group
-				lightEngageShutdown,
-				lightOutlineEngageShutdown,
-				gradientEngageShutdown,
-				faceEngageShutdown,
-				btnMenu, // group
-				lightMenuActiveDisplay,
-				lightOutlineMenuActiveDisplay,
-				gradientMenuActiveDisplay,
-				faceMenuActiveDisplay,
-				buttonsBottom,
-				btnCdf, // group
-				lightCdf,
-				lightOutlineCdf,
-				gradientCdf,
-				faceCdf,
-				btn1,
-				light1,
-				lightOutline1,
-				gradient1,
-				face1,
-				btn2,
-				light2,
-				lightOutline2,
-				gradient2,
-				face2,
-				btn3,
-				light3,
-				lightOutline3,
-				gradient3,
-				face3,
-				btn4,
-				light4,
-				lightOutline4,
-				gradient4,
-				face4,
-				btn5,
-				light5,
-				lightOutline5,
-				gradient5,
-				face5,
-				btn6,
-				light6,
-				lightOutline6,
-				gradient6,
-				face6,
-				btnCda,
-				lightCda,
-				lightOutlineCda,
-				gradientCda,
-				faceCda,
-				buttonsRight, // group
-				btnEmergency, // group
-				lightEmergency,
-				lightOutlineEmergency,
-				gradientEmergency,
-				faceGradientEmergency,
-				btnSpareRight, // group
-				lightSpareRight,
-				lightOutlineSpareRight,
-				gradientSpareRight,
-				faceSpareRight,
-				btnHotHeavy, // group
-				lightHotHeavy,
-				lightOutlineHotHeavy,
-				gradientHotHeavy,
-				faceHotHeavy,
-				btnHeavy,
-				lightHeavy,
-				lightOutlineHeavy,
-				gradientHeavy,
-				faceHeavy,
-				btnMedium,
-				lightMedium,
-				lightOutlineMedium,
-				gradientMedium,
-				faceMedium,
-				btnLight, // group
-				lightLight,
-				lightOutlineLight,
-				gradientLight,
-				faceLight,
-				buttonsLeft, // group
-				btnIntoWind, // group
-				lightIntoWind,
-				lightOutlineIntoWind,
-				gradientIntoWind,
-				faceIntoWind,
-				btnAft, // group
-				lightAft,
-				lightOutlineAft,
-				gradientAft,
-				faceAft,
-				btnFwd, // group
-				lightFwd,
-				lightOutlineFwd,
-				gradientFwd,
-				faceFwd,
-				btnNight, // group
-				lightNight,
-				lightOutlineNight,
-				gradientNight,
-				faceNight,
-				btnDay, // group
-				lightDay,
-				lightOutlineDay,
-				gradientDay,
-				faceDay,
-				btnBack, // group
-				lightBack,
-				lightOutlineBack,
-				gradientBack,
-				faceBack,
-				wholePanel, // group
-				panelLightsTop,
-				onOffLabel, // group
-				panelLightsRight, // group
-				panelLightsLeft, // group
-				panelLightsBottom, // group
-				backPanel, // group
-				topInset,
-				bottomInset,
-				rightInset,
-				leftInset,
-				outerPanel; // group
-
-
 			selectedAircraft = "";
 			vpX = 0;
 			vpY = 0;
@@ -322,329 +68,40 @@
 				height: screenWidth,
 			});
 
-			Snap.load("/src/assets/panel.svg", function (f) {
-				svgOnOffKnob = f.select("#on-off-knob");
-				svgOnOffKnobCx = svgOnOffKnob.attr("cx");
-				svgOnOffKnobCy = svgOnOffKnob.attr("cy");
-				mainMenu = f.select("#main-menu");
-				lblMainMenu = f.select("#lbl-main-menu");
-				optMrh90 = f.select("#opt-mrh90");
-				optMh60r = f.select("#opt-mh60r");
-				optS70a9 = f.select("#opt-s70a9");
-				optCh47f = f.select("#opt-ch47f");
-				aircraftSholMenu = f.select("#aircraft-shol-menu"); // group
-				optionsTopAircraftSholSelect = f.select("#options-top-aircraft-shol-select"); // group
-				optMenuAircraftSholSelect = f.select("#opt-menu-aircraft-shol-select");
-				lblMainMenuAircraftSholSelect = f.select("#lbl-main-menu-aircraft-shol-select");
-				optAircraftSholsSelect = f.select("#opt-aircraft-shols-select");
-				optBridgeEmergencyCards = f.select("#opt-bridge-emergency-cards");
-				optFlycoEmergencyChecklists = f.select("#opt-flyco-emergency-checklists");
-				optFlycoStandardChecklists = f.select("#opt-flyco-standard-checklists");
-				optArhTiger = f.select("#opt-arh-tiger");
-				optForeign = f.select("#opt-foreign");
-				activeSholDisplay = f.select("#active-shol-display"); // group
-				optionsBottom = f.select("#options-bottom"); // group
-				optCda = f.select("#opt-cda");
-				opt6 = f.select("#opt-6");
-				opt5 = f.select("#opt-5");
-				opt4 = f.select("#opt-4");
-				opt3 = f.select("#opt-3");
-				opt2 = f.select("#opt-2");
-				opt1 = f.select("#opt-1");
-				optCdf = f.select("#opt-cdf");
-				optionsTop = f.select("#options-top"); // group
-				lblAircraftId = f.select("#lbl-aircraft-id"); // group
-				optAircraftIdIndicator = f.select("#opt-aircraft-id-indicator");
-				optAircraftIdHighlight = f.select("#opt-aircraft-id-highlight");
-				optXfer = f.select("#opt-xfer");
-				optVertrep = f.select("#opt-vertrep");
-				optLand = f.select("#opt-land");
-				optLaunch = f.select("#opt-launch");
-				optTaxi = f.select("#opt-taxi");
-				optEngageShutdown = f.select("#opt-engage-shutdown"); // group
-				txtShutdown = f.select("#txt-shutdown");
-				txtEngage = f.select("#txt-engage");
-				optMenu = f.select("#opt-menu");
-				lblAircraft = f.select("#lbl-aircraft"); // group
-				optAircraftIndicator = f.select("#opt-aircraft-indicator");
-				optHighlight = f.select("#opt-highlight");
-				optionsLeft = f.select("#options-left"); // group
-				optIntoWind = f.select("#opt-into-wind");
-				optAft = f.select("#opt-aft");
-				optFwd = f.select("#opt-fwd");
-				optNight = f.select("#opt-night");
-				optDay = f.select("#opt-day");
-				optBack = f.select("#opt-back");
-				polarGraph = f.select("#polar-graph"); // group
-				anglesKnotsLabels = f.select("#angles-knots-labels"); // group
-				g160 = f.select("#g160");
-				g140 = f.select("#g140");
-				g120 = f.select("#g120");
-				g100 = f.select("#g100");
-				g80 = f.select("#g80");
-				g60 = f.select("#g60");
-				g40 = f.select("#g40");
-				g20 = f.select("#g20");
-				r160 = f.select("#r160");
-				r140 = f.select("#r140");
-				r120 = f.select("#r120");
-				r100 = f.select("#r100");
-				r80 = f.select("#r80");
-				r60 = f.select("#r60");
-				r40 = f.select("#r40");
-				r20 = f.select("#r20");
-				knotsLabels = f.select("#knots-labels"); // group
-				polarGridLines = f.select("#polar-grid-lines"); // group
-				redGreenCircle = f.select("#red-green-circle"); // group
-				pitchIndicators = f.select("#pitch-indicators"); // group
-				pitchGraph = f.select("#pitch-graph"); // group
-				pitchDownMaxIndicator = f.select("#pitch-down-max-indicator");
-				lastPitchDownPosIndicator = f.select("#last-pitch-down-pos-indicator");
-				pitchBarIndicator = f.select("#pitch-bar-indicator");
-				lastPitchUpPosIndicator = f.select("#last-pitch-up-pos-indicator");
-				pitchUpMaxIndicator = f.select("#pitch-up-max-indicator");
-				rollIndicators = f.select("#roll-indicators");
-				rollGraph = f.select("#roll-graph");
-				rollPortMaxIndicator = f.select("#roll-port-max-indicator");
-				lastRollPortIndicator = f.select("#last-roll-port-indicator");
-				rollBar = f.select("#roll-bar");
-				lastRollStarboardIndicator = f.select("#last-roll-starboard-indicator");
-				rollStarboardMaxIndicator = f.select("#roll-starboard-max-indicator");
-				optionsRight = f.select("#options-right"); // group
-				display = f.select("#display");
-				onOffKnob = f.select("#on-off-knob"); // group
-				onOffKnobIndicator = f.select("#on-off-knob-indicator");
-				onOffKnobHighlight = f.select("#on-off-knob-highlight");
-				onOffKnobFace = f.select("#on-off-knob-face");
-				onOffKnobShadow = f.select("#on-off-knob-shadow");
-				buttonsTop = f.select("#buttons-top");
-				btnSpareTop = f.select("#btn-spare-top"); // group
-				lightSpare = f.select("#light-spare");
-				lightOutlineSpareTop = f.select("#light-outline-spare-top");
-				gradientSpareTop = f.select("#gradient-spare-top");
-				faceSpareTop = f.select("#face-spare-top");
-				btnXfer = f.select("#btn-xfer"); // group
-				lightXfer = f.select("#light-xfer");
-				lightOutlineXfer = f.select("#light-outline-xfer");
-				gradientXfer = f.select("#gradient-xfer");
-				faceXfer = f.select("#face-xfer");
-				btnVertrep = f.select("#btn-vertrep"); // group
-				lightVertrep = f.select("#light-vertrep");
-				lightOutlineVertrep = f.select("#light-outline-vertrep");
-				gradientVertrep = f.select("#gradient-vertrep");
-				faceVertrep = f.select("#face-vertrep");
-				btnLand = f.select("#btn-land"); // group
-				lightLand = f.select("#light-land");
-				lightOutlineLand = f.select("#light-outline-land");
-				gradientLand = f.select("#gradient-land");
-				faceLand = f.select("#face-land");
-				btnLaunch = f.select("#btn-launch"); // group
-				lightLaunch = f.select("#light-launch");
-				lightOutlineLaunch = f.select("#light-outline-launch");
-				gradientLaunch = f.select("#gradient-launch");
-				faceLaunch = f.select("#face-launch");
-				btnTaxi = f.select("#btn-taxi"); // group
-				lightTaxi = f.select("#light-taxi");
-				lightOutlineTaxi = f.select("#light-outline-taxi");
-				gradientTaxi = f.select("#gradient-taxi");
-				faceTaxi = f.select("#face-taxi");
-				btnEngageShutdown = f.select("#btn-engage-shutdown"); // group
-				lightEngageShutdown = f.select("#light-engage-shutdown");
-				lightOutlineEngageShutdown = f.select("#light-outline-engage-shutdown");
-				gradientEngageShutdown = f.select("#gradient-engage-shutdown");
-				faceEngageShutdown = f.select("#face-engage-shutdown");
-				btnMenu = f.select("#btn-menu"); // group
-				lightMenuActiveDisplay = f.select("#light-menu-active-display");
-				lightOutlineMenuActiveDisplay = f.select("#light-outline-menu-active-display");
-				gradientMenuActiveDisplay = f.select("#gradient-menu-active-display");
-				faceMenuActiveDisplay = f.select("#face-menu-active-display");
-				buttonsBottom = f.select("#buttons-bottom");
-				btnCdf = f.select("#btn-cdf"); // group
-				lightCdf = f.select("#light-cdf");
-				lightOutlineCdf = f.select("#light-outline-cdf");
-				gradientCdf = f.select("#gradient-cdf");
-				faceCdf = f.select("#face-cdf");
-				btn1 = f.select("#btn-1");
-				light1 = f.select("#light-1");
-				lightOutline1 = f.select("#light-outline-1");
-				gradient1 = f.select("#gradient-1");
-				face1 = f.select("#face-1");
-				btn2 = f.select("#btn-2");
-				light2 = f.select("#light-2");
-				lightOutline2 = f.select("#light-outline-2");
-				gradient2 = f.select("#gradient-2");
-				face2 = f.select("#face-2");
-				btn3 = f.select("#btn-3");
-				light3 = f.select("#light-3");
-				lightOutline3 = f.select("#light-outline-3");
-				gradient3 = f.select("#gradient-3");
-				face3 = f.select("#face-3");
-				btn4 = f.select("#btn-4");
-				light4 = f.select("#light-4");
-				lightOutline4 = f.select("#light-outline-4");
-				gradient4 = f.select("#gradient-4");
-				face4 = f.select("#face-4");
-				btn5 = f.select("#btn-5");
-				light5 = f.select("#light-5");
-				lightOutline5 = f.select("#light-outline-5");
-				gradient5 = f.select("#gradient-5");
-				face5 = f.select("#face-5");
-				btn6 = f.select("#btn-6");
-				light6 = f.select("#light-6");
-				lightOutline6 = f.select("#light-outline-6");
-				gradient6 = f.select("#gradient-6");
-				face6 = f.select("#face-6");
-				btnCda = f.select("#btn-cda");
-				lightCda = f.select("#light-cda");
-				lightOutlineCda = f.select("#light-outline-cda");
-				gradientCda = f.select("#gradient-cda");
-				faceCda = f.select("#face-cda");
-				buttonsRight = f.select("#buttons-right"); // group
-				btnEmergency = f.select("#btn-emergency"); // group
-				lightEmergency = f.select("#light-emergency");
-				lightOutlineEmergency = f.select("#light-outline-emergency");
-				gradientEmergency = f.select("#gradient-emergency");
-				faceGradientEmergency = f.select("#face-gradient-emergency");
-				btnSpareRight = f.select("#btn-spare-right"); // group
-				lightSpareRight = f.select("#light-spare-right");
-				lightOutlineSpareRight = f.select("#light-outline-spare-right");
-				gradientSpareRight = f.select("#gradient-spare-right");
-				faceSpareRight = f.select("#face-spare-right");
-				btnHotHeavy = f.select("#btn-hot-heavy"); // group
-				lightHotHeavy = f.select("#light-hot-heavy");
-				lightOutlineHotHeavy = f.select("#light-outline-hot-heavy");
-				gradientHotHeavy = f.select("#gradient-hot-heavy");
-				faceHotHeavy = f.select("#face-hot-heavy");
-				btnHeavy = f.select("#btn-heavy");
-				lightHeavy = f.select("#light-heavy");
-				lightOutlineHeavy = f.select("#light-outline-heavy");
-				gradientHeavy = f.select("#gradient-heavy");
-				faceHeavy = f.select("#face-heavy");
-				btnMedium = f.select("#btn-medium");
-				lightMedium = f.select("#light-medium");
-				lightOutlineMedium = f.select("#light-outline-medium");
-				gradientMedium = f.select("#gradient-medium");
-				faceMedium = f.select("#face-medium");
-				btnLight = f.select("#btn-light"); // group
-				lightLight = f.select("#light-light");
-				lightOutlineLight = f.select("#light-outline-light");
-				gradientLight = f.select("#gradient-light");
-				faceLight = f.select("#face-light");
-				buttonsLeft = f.select("#buttons-left"); // group
-				btnIntoWind = f.select("#btn-into-wind"); // group
-				lightIntoWind = f.select("#light-into-wind");
-				lightOutlineIntoWind = f.select("#light-outline-into-wind");
-				gradientIntoWind = f.select("#gradient-into-wind");
-				faceIntoWind = f.select("#face-into-wind");
-				btnAft = f.select("#btn-aft"); // group
-				lightAft = f.select("#light-aft");
-				lightOutlineAft = f.select("#light-outline-aft");
-				gradientAft = f.select("gradient-aft");
-				faceAft = f.select("#face-aft");
-				btnFwd = f.select("#btn-fwd"); // group
-				lightFwd = f.select("#light-fwd");
-				lightOutlineFwd = f.select("#light-outline-fwd");
-				gradientFwd = f.select("#gradient-fwd");
-				faceFwd = f.select("#face-fwd");
-				btnNight = f.select("#btn-night"); // group
-				lightNight = f.select("#light-night");
-				lightOutlineNight = f.select("#light-outline-night");
-				gradientNight = f.select("#gradient-night");
-				faceNight = f.select("#face-night");
-				btnDay = f.select("#btn-day"); // group
-				lightDay = f.select("#light-day");
-				lightOutlineDay = f.select("#light-outline-day");
-				gradientDay = f.select("#gradient-day");
-				faceDay = f.select("#face-day");
-				btnBack = f.select("#btn-back"); // group
-				lightBack = f.select("#light-back");
-				lightOutlineBack = f.select("#light-outline-back");
-				gradientBack = f.select("#gradient-back");
-				faceBack = f.select("#face-back");
-				wholePanel = f.select("#whole-panel"); // group
-				panelLightsTop = f.select("#panel-lights-top");
-				onOffLabel = f.select("#on-off-label"); // group
-				panelLightsRight = f.select("#panel-lights-right"); // group
-				panelLightsLeft = f.select("#panel-lights-left"); // group
-				panelLightsBottom = f.select("#panel-lights-bottom"); // group
-				backPanel = f.select("#back-panel"); // group
-				topInset = f.select("#top-inset");
-				bottomInset = f.select("#bottom-inset");
-				rightInset = f.select("#right-inset");
-				leftInset = f.select("#left-inset");
-				outerPanel = f.select("#outer-panel"); // group
-				onOffKnob = new OnOffKnob();
+			Snap.load("../assets/panel.svg", function (f) {
 
+				initialise(f);
 				// ------------------- On Off Knob ---------------------
-				// todo: knob rotation animation
-				svgOnOffKnob.click(function () {
-					var toggleResult = 0,
-						position,
-						rotate,
-						theCx,
-						theCy,
-						theX,
-						theY;
-
-					theCx = svgOnOffKnob.getBBox().cx;
-					theCy = svgOnOffKnob.getBBox().cy;
-
-					thex = svgOnOffKnob.getBBox().x;
-					they = svgOnOffKnob.getBBox().y;
-
-					onOffKnob.state = !onOffKnob.state;
-
-					if (onOffKnob.state) {
-						visible(mainMenu);
-						$("#main-menu").show();
-					} else {
-						invisible(mainMenu);
-						$("#main-menu").hide();
-						$("#aircraft-shol-menu").hide();
-						$("#active-shol-display").hide();
-					}
+				svgOnOffKnob.click(() => {
+					doOnOffKnob(f)
 				});
 
-				// --------------------------- back button -------------------------
-				// this button is also for selecting MRH90 in the aircraft shol menu
-				btnBack.click(function () {
-					// if main menu visible then show aircraft shol menu
-					if ($("#main-menu").css("display") != "none") {
-						$("#main-menu").hide();
-						$("#aircraft-shol-menu").show();
-					} else // if aircraft shol select page then selected MRH90
-						if ($("#aircraft-shol-menu").css("display") != "none") {
-							$("#aircraft-shol-menu").hide();
-							$("#active-shol-display").show();
-							// filter data by MRH90
-							selectedAircraft = "MRH90";
-							//$("#opt-aircraft-id-indicator").val = 
-							optAircraftIndicator.attr({
-								text: selectedAircraft
-							});
-						} else if ($("#active-shol-display").css("display") != "none") {
-							$("#active-shol-display").hide();
-							$("#aircraft-shol-menu").show();
+				initEvents(f);
+
+				// #lbl-aircraft is the label displayed on the active display
+				// after the aircraft type has been
+				// chosen from the previous aircraft 
+				// #opt-aircraft-id-indicator holds the text.
+
+				// ------------------------------ filter selections ---------------
+
+
+				// filter by aircraft type
+				if (selectedAircraft === MRH90) {
+					for (let x = 0; x < tblProfile.rows.length; x++) {
+						if (tblProfile.rows[x][2] === MRH90) {
+							filteredArray.push(tblProfile.rows[x]);
 						}
-				});
-
-				btnMenu.click(function () {
-					// go back to main menu
-					$("#aircraft-shol-menu").hide();
-					$("#active-shol-display").hide();
-					$("#main-menu").show();
-				});
+					}
+					// tblProfile.rows.forEach(item => {
+					// });
+				}
 
 				// #lbl-aircraft-id the group for the aircraft conditions code
-				// #opt-aircraft-id-indicator using this for the text for the conditions code
+				// #opt-aircraft-id-indicator using this for the text for the 
+				// conditions code
 
-				// #lbl-aircraft is the label displayed on the active display after the aircraft type has been
-				// chosen from the previous aircraft menu.#opt-aircraft-id-indicator holds the text.
-
-
-
-
-				// ================== show the whole panel and display ========================
+				// show the whole panel and display ========================
 				s.append(f);
 				s.attr({
 					viewbox: viewBox,
@@ -653,20 +110,6 @@
 				});
 			});
 		};
-
-		// function library
-		// ==============================================================
-		function invisible(component) {
-			component.attr({
-				visibility: "hidden"
-			});
-		}
-
-		function visible(component) {
-			component.attr({
-				visibility: "visible"
-			});
-		}
 	</script>
 </body>
 

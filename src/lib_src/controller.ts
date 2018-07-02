@@ -1,21 +1,25 @@
-const sqlite3: any = require("sqlite3").verbose();
-
 let db: any;
+var worker: any;
+var error: any;
 
-function openDatabase():void {
-    db = new sqlite3.Database("../model/eshol-db.db", sqlite3.OPEN_READONLY, (err: Error) => {
-        if (err) {
-            return console.error(err.message);
-        }
-        console.log("Connected to the in-memory SQlite database.");
-    });
+function openDatabase(): any {
+    // db = new sql.Database("../model/eshol-db.db", sql.OPEN_READONLY, (err: Error) => {
+    //     if (err) {
+    //         return console.error(err.message);
+    //     }
+    //     console.log("Connected to the in-memory SQlite database.");
+    // });
+    worker = new Worker("../assets/js/worker.sql.js");
+    worker.onerror = error;
+    worker.postMessage({action:"open"});
+    return worker;
 }
 
-function filterData():void  {
+function filterData(filter: string): void {
     db.serialize(() => {
         db.each(
             // tslint:disable-next-line:max-line-length
-            "SELECT profileID as id, aircraftID as name FROM tblProfile;"
+            filter // "SELECT profileID as id, aircraftID as name FROM tblProfile;"
             , (err: Error, row: any) => {
                 if (err) {
                     console.error(err.message);
@@ -25,7 +29,7 @@ function filterData():void  {
     });
 }
 
-function closeDatabase(): void {
+function closeDatabase(db: any): void {
     db.close((err) => {
         if (err) {
             return console.error(err.message);
