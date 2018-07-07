@@ -16719,9 +16719,9 @@
    id="namedview104"
    showgrid="false"
    inkscape:snap-object-midpoints="false"
-   inkscape:zoom="1"
-   inkscape:cx="649.68133"
-   inkscape:cy="462.4582"
+   inkscape:zoom="1.4142136"
+   inkscape:cx="632.77298"
+   inkscape:cy="580.41029"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
@@ -17358,6 +17358,8 @@
 
 
 
+
+
 	<text
    inkscape:label="lbl-on"
    style="font-size:16.13574982px;font-family:'Arial Narrow';fill:#e6e6e6;stroke-width:0.91301697"
@@ -17366,6 +17368,8 @@
    transform="scale(0.91301697,1.0952699)"
    x="115.55097"
    y="48.008259">ON</text>
+
+
 
 
 
@@ -18723,6 +18727,8 @@
 
 
 
+
+
 </g>
 
 
@@ -18774,6 +18780,8 @@
 
 
 
+
+
 </g>
 
 
@@ -18816,6 +18824,8 @@
      y="323.38116"
      x="911.97284"
      sodipodi:role="line">HEAVY</tspan></text>
+
+
 
 
 
@@ -18877,6 +18887,8 @@
 
 
 
+
+
 </g>
 
 
@@ -18929,6 +18941,8 @@
 
 
 
+
+
 </g>
 
 
@@ -18959,7 +18973,7 @@
      sodipodi:insensitive="true"><polygon
        inkscape:label="#roll-starboard-max-indicator"
        class="cls-8"
-       points="308,434 302,428 295,434 295,440 295,446 302,446 308,446 308,440 "
+       points="295,434 295,440 295,446 302,446 308,446 308,440 308,434 302,428 "
        id="roll-starboard-max-indicator"
        style="font-family:Arial, Helvetica, sans-serif;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        transform="translate(-63.756167,259.16837)" /><path
@@ -18984,7 +18998,7 @@
        inkscape:connector-curvature="0" /><polygon
        inkscape:label="#roll-port-max-indicator"
        class="cls-8"
-       points="222,434 216,428 209,434 209,440 209,446 216,446 222,446 222,440 "
+       points="209,434 209,440 209,446 216,446 222,446 222,440 222,434 216,428 "
        id="roll-port-max-indicator"
        style="font-family:Arial, Helvetica, sans-serif;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        transform="translate(-63.756167,259.16837)" /><path
@@ -19002,7 +19016,7 @@
      sodipodi:insensitive="true"><polygon
        style="font-family:Arial, Helvetica, sans-serif;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"
        id="pitch-up-max-indicator"
-       points="35,161 35,154 29,154 23,154 17,161 23,167 29,167 35,167 "
+       points="29,154 23,154 17,161 23,167 29,167 35,167 35,161 35,154 "
        class="cls-8"
        transform="translate(73.86865,143.25)"
        inkscape:label="#pitch--up-max-indicator"><desc
@@ -19032,7 +19046,7 @@
          id="title4598">Last Pitch Down Pos Indicator</title></path><polygon
        style="font-family:Arial, Helvetica, sans-serif;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"
        id="pitch-down-max-indicator"
-       points="35,247 35,240 29,240 23,240 17,247 23,253 29,253 35,253 "
+       points="29,240 23,240 17,247 23,253 29,253 35,253 35,247 35,240 "
        class="cls-8"
        transform="translate(73.86865,143.25)"><desc
          id="desc4579">Shows the maximum pitch down boundary</desc><title
@@ -19172,11 +19186,11 @@
      sodipodi:nodetypes="cccsccccccccccc"
      sodipodi:insensitive="true" /><path
      style="font-family:Arial, Helvetica, sans-serif;display:none;opacity:1;vector-effect:none;fill:#0000ff;fill-opacity:0.96666715;stroke:#0001ff;stroke-width:1.03072929;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 664.78906,226.51172 c -22.93798,0.21011 -42.91928,5.84162 -62.57226,12.07422 l 8.11132,23.08594 -25.8789,12 12.1875,21.13085 -20.33399,14.47266 15.52149,18.34375 -14.78906,15.55859 17.875,16.00586 c -8.67921,10.64343 -13.72921,22.96164 -18.125,35.58203 l 69.50586,18.66407 c 0,0 -0.16602,0.58096 -0.16602,7.07031 0,12.84896 10.31376,23.2828 23.11328,23.49023 V 444 c 0.0648,0 0.12871,-0.005 0.19336,-0.006 0.0648,5.3e-4 0.12849,0.006 0.19336,0.006 v -0.01 c 12.79981,-0.2071 23.11328,-10.64106 23.11328,-23.49023 0,-6.48935 -0.16406,-7.07031 -0.16406,-7.07031 l 69.5039,-18.66407 c -4.3958,-12.62038 -9.44579,-24.9386 -18.125,-35.58203 l 17.875,-16.00586 -14.78906,-15.55859 15.52344,-18.34375 -20.33398,-14.47266 12.1875,-21.13085 -27.00391,-12.5 9.23437,-22.58594 c -20.96318,-6.64811 -42.29896,-12.61282 -67.19921,-12.04297 0,0 -0.0135,10.98099 -0.0156,12.74414 -0.002,-1.76315 -0.0156,-12.74414 -0.0156,-12.74414 -1.55627,-0.0356 -3.09776,-0.0453 -4.62696,-0.0312 z"
+     d="m 664.78906,226.51172 c -22.93798,0.21011 -42.91928,5.84162 -62.57226,12.07422 l 8.11132,23.08594 -25.8789,12 12.1875,21.13085 -20.33399,14.47266 15.52149,18.34375 -14.78906,15.55859 17.875,16.00586 c -8.67921,10.64343 -10.0169,16.95123 -16.00368,28.15741 l 68.18004,24.58609 c 0,0 -1.14905,3.0052 -0.96152,8.57291 0.43254,12.84168 10.31376,23.2828 23.11328,23.49023 V 444 c 0.0648,0 0.12871,-0.005 0.19336,-0.006 0.0648,5.3e-4 0.12849,0.006 0.19336,0.006 v -0.01 c 12.79981,-0.2071 23.11328,-10.64106 23.11328,-23.49023 0,-6.48935 -0.69439,-9.01485 -0.69439,-9.01485 l 67.47097,-24.58609 c -5.6051,-12.9659 -7.21376,-17.16668 -15.56174,-27.71547 l 17.875,-16.00586 -14.78906,-15.55859 15.52344,-18.34375 -20.33398,-14.47266 12.1875,-21.13085 -27.00391,-12.5 9.23437,-22.58594 c -20.96318,-6.64811 -42.29896,-12.61282 -67.19921,-12.04297 0,0 -0.0135,10.98099 -0.0156,12.74414 -0.002,-1.76315 -0.0156,-12.74414 -0.0156,-12.74414 -1.55627,-0.0356 -3.09776,-0.0453 -4.62696,-0.0312 z"
      transform="translate(-500,-200)"
      id="id902"
      inkscape:connector-curvature="0"
-     sodipodi:insensitive="true" /><path
+     sodipodi:nodetypes="cccccccccccscccccsccccccccccccccc" /><path
      style="font-family:Arial, Helvetica, sans-serif;display:none;opacity:1;vector-effect:none;fill:#0000ff;fill-opacity:0.96666715;stroke:#0001ff;stroke-width:0.97637236;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      d="m 285.00844,307.7024 c -25.19262,37.26625 -79.81746,59.1096 -115.0582,57.81742 l -0.26371,-23.96283 c -29.12802,-1.98819 -44.19271,-9.50127 -60.5795,-16.49494 L 132.77782,283.6671 C 106.70413,268.27036 100.16911,244.58449 95.754846,219.99891 l -10.980857,0.45541 -10.980858,0.4554 240.982689,-4.43112 c -1.52285,36.72968 -10.11336,62.15053 -29.76738,91.2238 z"
      id="id901-aft-facing-2-6"
@@ -19471,12 +19485,16 @@
 
 
 
+
+
 <text
    y="351.25"
    x="434.86865"
    class="cls-5"
    id="lbl20kt-west"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">20KT</text>
+
+
 
 
 
@@ -19545,12 +19563,16 @@
 
 
 
+
+
 <text
    y="351.25"
    x="353.86865"
    class="cls-5"
    id="lbl40kt-west"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">40KT</text>
+
+
 
 
 
@@ -19619,12 +19641,16 @@
 
 
 
+
+
 <text
    y="351.25"
    x="551.86865"
    class="cls-5"
    id="lbl10kt-east"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">10KT</text>
+
+
 
 
 
@@ -19693,12 +19719,16 @@
 
 
 
+
+
 <text
    y="351.25"
    x="632.86865"
    class="cls-5"
    id="lbl30kt-east"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">30KT</text>
+
+
 
 
 
@@ -19767,12 +19797,16 @@
 
 
 
+
+
 <text
    y="351.25"
    x="712.86865"
    class="cls-5"
    id="lbl50kt-east"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">50KT</text>
+
+
 
 
 
@@ -19841,12 +19875,16 @@
 
 
 
+
+
 <text
    y="312.25"
    x="513.86865"
    class="cls-5"
    id="lbl10kt-north"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">10KT</text>
+
+
 
 
 
@@ -19915,12 +19953,16 @@
 
 
 
+
+
 <text
    y="469.25"
    x="513.86865"
    class="cls-5"
    id="lbl30kt-south"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">30KT</text>
+
+
 
 
 
@@ -19989,6 +20031,8 @@
 
 
 
+
+
 <text
    y="549.25"
    x="513.86865"
@@ -20026,12 +20070,16 @@
 
 
 
+
+
 <text
    y="152.25"
    x="513.86865"
    class="cls-5"
    id="lbl50kt-north"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">50KT</text>
+
+
 
 
 
@@ -20101,6 +20149,8 @@
 
 
 
+
+
 <text
    y="232.25"
    x="513.86865"
@@ -20138,12 +20188,16 @@
 
 
 
+
+
 <text
    y="192.25"
    x="513.86865"
    class="cls-5"
    id="lbl40kt-north"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">40KT</text>
+
+
 
 
 
@@ -20220,6 +20274,8 @@
 
 
 
+
+
 <text
    id="r40"
    class="cls-1"
@@ -20227,6 +20283,8 @@
    y="-226.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#r40">R40</text>
+
+
 
 
 
@@ -20300,6 +20358,8 @@
 
 
 
+
+
 <text
    id="r80"
    class="cls-1"
@@ -20340,6 +20400,8 @@
 
 
 
+
+
 <text
    id="r100"
    class="cls-1"
@@ -20347,6 +20409,8 @@
    y="-30.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#r100">R100</text>
+
+
 
 
 
@@ -20424,6 +20488,8 @@
 
 
 
+
+
 <text
    id="r140"
    class="cls-1"
@@ -20431,6 +20497,8 @@
    y="93.969238"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#r140">R140</text>
+
+
 
 
 
@@ -20504,6 +20572,8 @@
 
 
 
+
+
 <text
    id="g20"
    class="cls-1"
@@ -20511,6 +20581,8 @@
    y="-260.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g20">G20</text>
+
+
 
 
 
@@ -20584,6 +20656,8 @@
 
 
 
+
+
 <text
    id="g60"
    class="cls-1"
@@ -20591,6 +20665,8 @@
    y="-171.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g60">G60</text>
+
+
 
 
 
@@ -20664,6 +20740,8 @@
 
 
 
+
+
 <text
    id="g100"
    class="cls-1"
@@ -20671,6 +20749,8 @@
    y="-30.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g100">G100</text>
+
+
 
 
 
@@ -20748,6 +20828,8 @@
 
 
 
+
+
 <text
    id="g140"
    class="cls-1"
@@ -20788,6 +20870,8 @@
 
 
 
+
+
 <text
    id="g160"
    class="cls-1"
@@ -20795,6 +20879,8 @@
    y="130.96924"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g160">G160</text>
+
+
 
 
 
@@ -20875,6 +20961,8 @@
 
 
 
+
+
 <g
    id="grp-day"
    style="font-family:Arial, Helvetica, sans-serif"><rect
@@ -20896,6 +20984,8 @@
      y="229.25429"
      x="6.3856583"
      sodipodi:role="line">DAY</tspan></text>
+
+
 
 
 
@@ -20957,6 +21047,8 @@
 
 
 
+
+
 </g>
 
 
@@ -20998,6 +21090,8 @@
      y="418.66571"
      x="6.3856583"
      sodipodi:role="line">FWD</tspan></text>
+
+
 
 
 
@@ -21059,6 +21153,8 @@
 
 
 
+
+
 </g>
 
 
@@ -21100,6 +21196,8 @@
      y="614.76324"
      x="6.3856583"
      sodipodi:role="line">INTO WIND</tspan></text>
+
+
 
 
 
@@ -21185,6 +21283,8 @@
 
 
 
+
+
 </g>
 
 
@@ -21202,6 +21302,8 @@
      x="132.40964"
      y="30.367226"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;fill:#009bff;fill-opacity:1">MENU</tspan></text>
+
+
 
 
 
@@ -21287,6 +21389,8 @@
 
 
 
+
+
 <text
    inkscape:label="#txt-shutdown"
    id="txt-shutdown"
@@ -21299,6 +21403,8 @@
      y="116.06002"
      x="211.33458"
      sodipodi:role="line">SHUTDOWN</tspan></text>
+
+
 
 
 
@@ -21360,6 +21466,8 @@
 
 
 
+
+
 </g>
 
 
@@ -21403,6 +21511,8 @@
      y="30.578163"
      x="416.28516"
      sodipodi:role="line">LAUNCH</tspan></text>
+
+
 
 
 
@@ -21464,6 +21574,8 @@
 
 
 
+
+
 </g>
 
 
@@ -21516,6 +21628,8 @@
 
 
 
+
+
 </g>
 
 
@@ -21559,6 +21673,8 @@
      y="30.367226"
      x="729.46014"
      sodipodi:role="line">XFER</tspan></text>
+
+
 
 
 
@@ -21634,6 +21750,8 @@
 
 
 
+
+
 </g>
 
 
@@ -21670,6 +21788,8 @@
      y="655.43268"
      x="836.07373"
      sodipodi:role="line">CDF</tspan></text>
+
+
 
 
 
@@ -21748,6 +21868,8 @@
 
 
 
+
+
 </g>
 
 
@@ -21793,6 +21915,8 @@
 
 
 
+
+
 </g>
 
 
@@ -21829,6 +21953,8 @@
      y="655.65924"
      x="546.27295"
      sodipodi:role="line">3</tspan></text>
+
+
 
 
 
@@ -21895,6 +22021,8 @@
 
 
 
+
+
 </g>
 
 
@@ -21931,6 +22059,8 @@
      y="655.65924"
      x="345.48654"
      sodipodi:role="line">5</tspan></text>
+
+
 
 
 
@@ -21985,6 +22115,8 @@
 
 
 
+
+
 </g>
 
 
@@ -22022,6 +22154,8 @@
      x="133.51025"
      id="tspan4725-75"
      sodipodi:role="line">CDA</tspan></text>
+
+
 
 
 
@@ -22226,6 +22360,8 @@
 
 
 
+
+
 <text
    inkscape:label="#opt-arh-tiger"
    xml:space="preserve"
@@ -22239,6 +22375,8 @@
      y="437.34113"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2-5-4-8-5">ARH TIGER (NOT AVAILABLE)</tspan></text>
+
+
 
 
 
@@ -22304,6 +22442,8 @@
 
 
 
+
+
 <text
    id="opt-flyco-emergency-checklists-3"
    y="240.04309"
@@ -22317,6 +22457,8 @@
      y="240.04309"
      x="-339.73917"
      sodipodi:role="line">S70A9 (NOT AVAILABLE)</tspan></text>
+
+
 
 
 
@@ -22382,6 +22524,8 @@
 
 
 
+
+
 <text
    id="opt-aircraft-shols-select"
    y="48.313694"
@@ -22421,6 +22565,8 @@
 
 
 
+
+
 <text
    inkscape:label="#lbl-main-menu-aircraft-shol-select"
    id="lbl-main-menu-aircraft-shol-select"
@@ -22434,6 +22580,8 @@
      style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
      id="tspan1390-0"
      sodipodi:role="line">AIRCRAFT SHOL SELECT PAGE</tspan></text>
+
+
 
 
 
@@ -22543,6 +22691,8 @@
 
 
 
+
+
 </g>
 </g><g
    style="font-family:Arial, Helvetica, sans-serif;display:none"
@@ -22563,6 +22713,8 @@
      y="338.08408"
      x="-339.73917"
      sodipodi:role="line">BRIDGE EMERGENCY CARDS (NOT AVAILABLE)</tspan></text>
+
+
 
 
 
@@ -22627,6 +22779,8 @@
 
 
 
+
+
 <text
    id="opt-mh60r"
    y="148.67265"
@@ -22640,6 +22794,8 @@
      y="148.67265"
      x="-339.73917"
      sodipodi:role="line">FLYCO STANDARD CHECKLISTS (NOT AVAILABLE)</tspan></text>
+
+
 
 
 
@@ -22704,6 +22860,8 @@
 
 
 
+
+
 <text
    inkscape:label="#lbl-main-menu"
    id="lbl-main-menu"
@@ -22717,6 +22875,8 @@
      style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
      id="tspan1390"
      sodipodi:role="line">MAIN MENU</tspan></text>
+
+
 
 
 

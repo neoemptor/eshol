@@ -29,7 +29,7 @@ function doOnOffKnob(f) {
         hideAllIndicators(f);
         hideAllPlots();
         resetBtnStatus();
-        resetFilter();
+        resetFilterArray();
     }
 }
 
@@ -143,7 +143,7 @@ function goBackToMainMenu(f) {
         hideAllIndicators(f);
         hideAllPlots();
         resetBtnStatus();
-        resetFilter();
+        resetFilterArray();
     }
 }
 
@@ -175,7 +175,7 @@ function doBtnBack(f) {
             hideAllIndicators(f);
             hideAllPlots();
             resetBtnStatus();
-            resetFilter();
+            resetFilterArray();
         }
 }
 
@@ -237,6 +237,7 @@ function doBtnEngageShutdown(f) {
         hideIndicator(f, "#hilight-land", "#opt-land");
         hideIndicator(f, "#hilight-vertrep", "#opt-vertrep");
         hideIndicator(f, "#hilight-xfer", "#opt-xfer");
+        hideIndicator(f, "#hilight-emergency", "#opt-emergency");
     }
 }
 
@@ -250,6 +251,7 @@ function doBtnTaxi(f) {
         hideIndicator(f, "#hilight-land", "#opt-land");
         hideIndicator(f, "#hilight-vertrep", "#opt-vertrep");
         hideIndicator(f, "#hilight-xfer", "#opt-xfer");
+        hideIndicator(f, "#hilight-emergency", "#opt-emergency");
     }
 }
 
@@ -263,6 +265,7 @@ function doBtnLaunch(f) {
         hideIndicator(f, "#hilight-land", "#opt-land");
         hideIndicator(f, "#hilight-vertrep", "#opt-vertrep");
         hideIndicator(f, "#hilight-xfer", "#opt-xfer");
+        hideIndicator(f, "#hilight-emergency", "#opt-emergency");
     }
 }
 
@@ -276,6 +279,7 @@ function doBtnLand(f) {
         hideIndicator(f, "#hilight-launch", "#opt-launch");
         hideIndicator(f, "#hilight-vertrep", "#opt-vertrep");
         hideIndicator(f, "#hilight-xfer", "#opt-xfer");
+        hideIndicator(f, "#hilight-emergency", "#opt-emergency");
     }
 }
 
@@ -289,6 +293,7 @@ function doBtnVertrep(f) {
         hideIndicator(f, "#hilight-launch", "#opt-launch");
         hideIndicator(f, "#hilight-land", "#opt-land");
         hideIndicator(f, "#hilight-xfer", "#opt-xfer");
+        hideIndicator(f, "#hilight-emergency", "#opt-emergency");
     }
 }
 
@@ -302,6 +307,7 @@ function doBtnXfer(f) {
         hideIndicator(f, "#hilight-launch", "#opt-launch");
         hideIndicator(f, "#hilight-land", "#opt-land");
         hideIndicator(f, "#hilight-vertrep", "#opt-vertrep");
+        hideIndicator(f, "#hilight-emergency", "#opt-emergency");
     }
 }
 
@@ -362,6 +368,12 @@ function doBtnEmergency(f) {
         hideIndicator(f, "#hilight-medium", "#opt-medium");
         hideIndicator(f, "#hilight-heavy", "#opt-heavy");
         hideIndicator(f, "#hilight-hot-heavy", "#opt-hot-heavy");
+        hideIndicator(f, "#hilight-xfer", "#opt-xfer");
+        hideIndicator(f, "#hilight-engage-shutdown", "#opt-engage-shutdown");
+        hideIndicator(f, "#hilight-taxi", "#opt-taxi");
+        hideIndicator(f, "#hilight-launch", "#opt-launch");
+        hideIndicator(f, "#hilight-land", "#opt-land");
+        hideIndicator(f, "#hilight-vertrep", "#opt-vertrep");
     }
 }
 
@@ -556,25 +568,91 @@ function removeObjectByIndex(theObject, idx) {
     }
 }
 
-function resetFilter(theFilter) {
+function resetFilter(theFilter, idx) {
+    let tmpStatus = btnStatus[idx];
+
+    resetFilterArray();
     switch (theFilter) {
         case ACTIONS:
+            btnStatus[17] = false;
             btnStatus[18] = false;
             btnStatus[19] = false;
             btnStatus[20] = false;
             btnStatus[21] = false;
             btnStatus[22] = false;
             btnStatus[23] = false;
+            isEngage = false;
+            isTaxi = false;
+            isLaunch = false;
+            isLand = false;
+            isVertrep = false;
+            isXfer = false;
+            isEmergency = false;
+
+            for (let x = 17; x < 24; x++) {
+                if (idx === x) {
+                    btnStatus[x] = tmpStatus;
+                }
+            }
+
+            switch (idx) {
+                case 17:
+                    isEngage = tmpStatus;
+                    break;
+                case 18:
+                    isTaxi = tmpStatus;
+                    break;
+                case 19:
+                    isLaunch = tmpStatus;
+                    break;
+                case 20:
+                    isLand = tmpStatus;
+                    break;
+                case 21:
+                    isVertrep = tmpStatus;
+                    break;
+                case 22:
+                    isXfer = tmpStatus;
+                    break;
+                case 23:
+                    isEmergency = tmpStatus;
+                    break;
+            }
             break;
         case WEIGHTS:
             btnStatus[0] = false;
             btnStatus[1] = false;
             btnStatus[2] = false;
             btnStatus[3] = false;
-            btnStatus[4] = false;
+            isLight = false;
+            isMedium = false;
+            isHeavy = false;
+            isHotHeavy = false;
+
+            for (let x = 0; x < 4; x++) {
+                if (x === idx) {
+                    btnStatus[x] = tmpStatus;
+                }
+            }
+
+            switch (idx) {
+                case 0:
+                    isLight = tmpStatus;
+                    break;
+                case 1:
+                    isMedium = tmpStatus;
+                    break;
+                case 2:
+                    isHeavy = tmpStatus;
+                    break;
+                case 3:
+                    isHotHeavy = tmpStatus;
+                    break;
+            }
 
             break;
         case POSITIONS:
+            btnStatus[9] = false;
             btnStatus[10] = false;
             btnStatus[11] = false;
             btnStatus[12] = false;
@@ -582,76 +660,212 @@ function resetFilter(theFilter) {
             btnStatus[14] = false;
             btnStatus[15] = false;
             btnStatus[16] = false;
-            btnStatus[17] = false;
+            isCda = false;
+            is6 = false;
+            is5 = false;
+            is4 = false;
+            is3 = false;
+            is2 = false;
+            is1 = false;
+            isCdf = false;
+
+            for (let x = 9; x < 17; x++) {
+                if (x === idx) {
+                    btnStatus[x] = tmpStatus;
+                }
+            }
+
+            switch (idx) {
+                case 9:
+                    isCda = tmpStatus;
+                    break;
+                case 10:
+                    is6 = tmpStatus;
+                    break;
+                case 11:
+                    is5 = tmpStatus;
+                    break;
+                case 12:
+                    is4 = tmpStatus;
+                    break;
+                case 13:
+                    is3 = tmpStatus;
+                    break;
+                case 14:
+                    is2 = tmpStatus;
+                    break;
+                case 15:
+                    is1 = tmpStatus;
+                    break;
+                case 16:
+                    isCdf = tmpStatus;
+                    break;
+            }
+
             break;
         case DIRECTIONS:
+            btnStatus[4] = false;
             btnStatus[5] = false;
             btnStatus[6] = false;
-            btnStatus[7] = false;
+            isFwd = false;
+            isAft = false;
+            isIntoWind = false;
+
+            for (let x = 4; x < 7; x++) {
+                if (x === idx) {
+                    btnStatus[x] = tmpStatus;
+                }
+            }
+
+            switch (idx) {
+                case 4:
+                    isFwd = tmpStatus;
+                    break;
+                case 5:
+                    isAft = tmpStatus;
+                    break;
+                case 6:
+                    isIntoWind = tmpStatus;
+                    break;
+            }
             break;
         case TIMES:
+            btnStatus[7] = false;
             btnStatus[8] = false;
-            btnStatus[9] = false;
+            isDay = false;
+            isNight = false;
+
+            for (let x = 7; x < 9; x++) {
+                if (x === idx) {
+                    btnStatus[x] = tmpStatus;
+                }
+            }
+
+            switch (idx) {
+                case 7:
+                    isDay = tmpStatus;
+                    break;
+                case 8:
+                    isNight = tmpStatus;
+                    break;
+            }
             break;
     }
 }
 
-// unconditionally reset filter
-function hardResetFilter() {
-
-}
-
 function filter() {
-    var temp = "";
-    // look for all the 1s and then the 2s and then the blanks
+    let temp = "";
+    let btnCount = 0;
+
+    for (let x = 0; x < btnStatus.length; x++) {
+        if (btnStatus[x]) {
+            btnCount++;
+        }
+    }
+
     // filter by looping
     for (let optIdx = 0; optIdx < btnStatus.length; optIdx++) {
         for (let x = 0; x < filteredArray.length; x++) {
-            if (filteredArray[x][optIdx + 3] !== '1' && // the option buttons start at index 4 that's why there's + 3
-                filteredArray[x][optIdx + 3] !== '2' &&
-                filteredArray[x][optIdx + 3] !== '' &&
-                btnStatus[optIdx]) {
-                var indexis = x;
-                removeObjectByIndex(filteredArray, indexis);
+            let fltr = filteredArray[x][optIdx + 3];
+            let btnStat = btnStatus[optIdx];
+            let fltrInt = parseInt(filteredArray[x][27]);
+
+            // the option buttons start at index 4 that's why there's + 3
+            if (fltr !== '1' && fltr !== '2' && btnStat) { // && fltrInt !== btnCount) {
+                // filteredArray.push(tempArray[x]);
+                removeObjectByIndex(filteredArray, x);
                 x = 0;
             }
         }
     }
+
+    for (let optIdx = 0; optIdx < btnStatus.length; optIdx++) {
+        for (let x = 0; x < filteredArray.length; x++) {
+            let fltr = filteredArray[x][optIdx + 3];
+            let btnStat = btnStatus[optIdx];
+            let fltrInt = parseInt(filteredArray[x][27]);
+
+            // the option buttons start at index 4 that's why there's + 3
+            if (fltr !== '1' && fltr !== '2' && btnStat) { // && fltrInt !== btnCount) {
+                // filteredArray.push(tempArray[x]);
+                removeObjectByIndex(filteredArray, x);
+                x = 0;
+            }
+        }
+    }
+
+    let tmpFltr = [];
+    for (let x = 0; x < filteredArray.length; x++) {
+        let fltrInt = parseInt(filteredArray[x][27]);
+        if (fltrInt === btnCount && tmpFltr.length === 0) {
+            tmpFltr.push(filteredArray[x]);
+        }
+    }
+    if (tmpFltr !== undefined) {
+        filteredArray = tmpFltr;
+    }
+
     // reset all plots to hidden
     hideAllPlots();
+
     // show the matching plot
     if (filteredArray.length === 1) {
         optAircraftIdIndicator.attr({
             text: filteredArray[0][1]
         });
         $("#lbl-aircraft-id").show();
-        $("#" + filteredArray[0][29]).show();
+        $("#" + filteredArray[0][30]).show();
         console.log(filteredArray);
-        for(let x = 0; x < btnStatus.length; x++) temp += btnStatus[x].toString() + ", ";
-        console.log(temp);        
+        for (let x = 0; x < btnStatus.length; x++) temp += btnStatus[x].toString() + ", ";
+        console.log(temp);
     } else {
         $("#lbl-aircraft-id").hide();
         console.log(filteredArray);
-        for(let x = 0; x < btnStatus.length; x++) temp += btnStatus[x].toString() + ", ";
+        for (let x = 0; x < btnStatus.length; x++) temp += btnStatus[x].toString() + ", ";
         console.log(temp);
     }
+    console.log("filter function exectuted");
 }
 
-function resetFilter() {
-    var resetNo = false;
-    for (let x = 0; x < btnStatus.length; x++) {
-        if (btnStatus[x]) resetNo = true;
+function resetFilterArray() {
+    // var resetNo = false;
+    // for (let x = 0; x < btnStatus.length; x++) {
+    //     if (btnStatus[x]) resetNo = true;
+    // }
+    // if (!resetNo) {
+    filteredArray = [];
+    for (let y = 0; y < tblProfile.rows.length; y++) {
+        filteredArray.push(tblProfile.rows[y]);
     }
-    if (!resetNo) {
-        filteredArray = [];
-        for (let y = 0; y < tblProfile.rows.length; y++) {
-            filteredArray.push(tblProfile.rows[y]);
-        }
-    }
+    // }
 }
 
 function resetBtnStatus() {
-    for(let x = 0; x < btnStatus.length; x++) {
+    for (let x = 0; x < btnStatus.length; x++) {
         btnStatus[x] = false;
     }
+    isDay = false;
+    isNight = false;
+    isFwd = false;
+    isAft = false;
+    isIntoWind = false;
+    isCda = false;
+    is6 = false;
+    is5 = false;
+    is4 = false;
+    is3 = false;
+    is2 = false;
+    is1 = false;
+    isCdf = false;
+    isEngage = false;
+    isTaxi = false;
+    isLaunch = false;
+    isLand = false;
+    isVertrep = false;
+    isXfer = false;
+    isLight = false;
+    isMedium = false;
+    isHeavy = false;
+    isHotHeavy = false;
+    isEmergency = false;
 }
