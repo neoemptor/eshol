@@ -100,20 +100,40 @@ var screenWidth = screen.availWidth,
     knotsLabels, // group
     polarGridLines, // group
     redGreenCircle, // group
+
+    // pitch and roll indicators
     pitchIndicators, // group
     pitchGraph, // group
-    pitchDownMaxIndicator,
+    pitchDownMax1,
+    pitchDownMax15,
+    pitchDownMax2,
+    pitchDownMax3,
+    pitchDownMax4,
+    pitchDownMax5,
     lastPitchDownPosIndicator,
     pitchBarIndicator,
     lastPitchUpPosIndicator,
-    pitchUpMaxIndicator,
+    pitchUpMax1,
+    pitchUpMax15,
+    pitchUpMax2,
+    pitchUpMax3,
+    pitchUpMax4,
     rollIndicators,
     rollGraph,
-    rollPortMaxIndicator,
+    rollPortMax1,
+    rollPortMax15,
+    rollPortMax2,
+    rollPortMax3,
+    rollPortMax4,
     lastRollPortIndicator,
-    rollBar,
+    rollBarIndicator,
     lastRollStarboardIndicator,
-    rollStarboardMaxIndicator,
+    rollStarboardMax1,
+    rollStarboardMax15,
+    rollStarboardMax2,
+    rollStarboardMax3,
+    rollStarboardMax4,
+    // -----------------------
     optionsRight, // group
     display,
     onOffKnob, // group

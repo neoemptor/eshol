@@ -91,20 +91,39 @@ function initialise(f) {
     knotsLabels = f.select("#knots-labels"); // group
     polarGridLines = f.select("#polar-grid-lines"); // group
     redGreenCircle = f.select("#red-green-circle"); // group
+
+    // roll and pitch bars
     pitchIndicators = f.select("#pitch-indicators"); // group
     pitchGraph = f.select("#pitch-graph"); // group
-    pitchDownMaxIndicator = f.select("#pitch-down-max-indicator");
+    pitchDownMax1 = f.select("#pitch-down-max-1");
+    pitchDownMax15 = f.select("#pitch-down-max-15");
+    pitchDownMax2 = f.select("#pitch-down-max-2");
+    pitchDownMax3 = f.select("#pitch-down-max-3");
+    pitchDownMax4 = f.select("#pitch-down-max-4");
     lastPitchDownPosIndicator = f.select("#last-pitch-down-pos-indicator");
     pitchBarIndicator = f.select("#pitch-bar-indicator");
     lastPitchUpPosIndicator = f.select("#last-pitch-up-pos-indicator");
-    pitchUpMaxIndicator = f.select("#pitch-up-max-indicator");
+    pitchUpMax1 = f.select("#pitch-up-max-1");
+    pitchUpMax15 = f.select("#pitch-up-max-15");
+    pitchUpMax2 = f.select("#pitch-up-max-2");
+    pitchUpMax3 = f.select("#pitch-up-max-3");
+    pitchUpMax4 = f.select("#pitch-up-max-4");
     rollIndicators = f.select("#roll-indicators");
     rollGraph = f.select("#roll-graph");
-    rollPortMaxIndicator = f.select("#roll-port-max-indicator");
+    rollPortMax1 = f.select("#roll-port-max-1");
+    rollPortMax15 = f.select("#roll-port-max-15");
+    rollPortMax2 = f.select("#roll-port-max-2");
+    rollPortMax3 = f.select("#roll-port-max-3");
+    rollPortMax4 = f.select("#roll-port-max-4");
     lastRollPortIndicator = f.select("#last-roll-port-indicator");
-    rollBar = f.select("#roll-bar");
+    rollBarIndicator = f.select("#roll-bar-indicator");
     lastRollStarboardIndicator = f.select("#last-roll-starboard-indicator");
-    rollStarboardMaxIndicator = f.select("#roll-starboard-max-indicator");
+    rollStarboardMax1 = f.select("#roll-starboard-max-1");
+    rollStarboardMax15 = f.select("#roll-starboard-max-15");
+    rollStarboardMax2 = f.select("#roll-starboard-max-2");
+    rollStarboardMax3 = f.select("#roll-starboard-max-3");
+    rollStarboardMax4 = f.select("#roll-starboard-max-4");
+    // ---------------------------------------------------
     optionsRight = f.select("#options-right"); // group
     display = f.select("#display");
     onOffKnob = f.select("#on-off-knob"); // group

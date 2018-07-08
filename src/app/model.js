@@ -256,13 +256,14 @@ var tblProfile =
             "type": ""
         },
         {
-            "name": "pitch",
-            "type": ""
-        },
-        {
             "name": "minPicks",
             "type": ""
         },
+        {
+            "name": "pitch",
+            "type": ""
+        },
+
         {
             "name": "roll",
             "type": ""
@@ -434,7 +435,7 @@ var tblProfile =
             "0",
             "0",
             "5",
-            "2",
+            "1.5",
             "3",
             "id901-aft-facing-2-6"
         ],
@@ -1094,7 +1095,7 @@ var tblProfile =
             "0",
             "0",
             "5",
-            "2",
+            "1.5",
             "3",
             "id923-light-medium-heavy"
         ],
@@ -1424,7 +1425,7 @@ var tblProfile =
             "0",
             "0",
             "5",
-            "2",
+            "1.5",
             "4",
             "id951-light-medium-heavy"
         ],
@@ -1622,7 +1623,7 @@ var tblProfile =
             "2",
             "0",
             "5",
-            "2",
+            "1.5",
             "4",
             "id951-light-medium-heavy"
         ],
@@ -1820,7 +1821,7 @@ var tblProfile =
             "0",
             "0",
             "5",
-            "2",
+            "1.5",
             "3",
             "id991-light-medium-heavy"
         ],
