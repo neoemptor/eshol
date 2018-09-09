@@ -1,5 +1,6 @@
 function initialise(f) {
     svgOnOffKnob = f.select("#on-off-knob");
+    svgOffKnob = f.select("#off-knob");
     svgOnOffKnobCx = svgOnOffKnob.attr("cx");
     svgOnOffKnobCy = svgOnOffKnob.attr("cy");
     mainMenu = f.select("#main-menu");

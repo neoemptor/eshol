@@ -29,6 +29,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-day");
         doBtnDay(f);
         resetFilter(TIMES, 7);
+        resetPitchRoll();
         isDay = !isDay;
         btnStatus[7] = isDay;
     });
@@ -43,6 +44,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-night");
         doBtnNight(f);
         resetFilter(TIMES, 8);
+        resetPitchRoll();
         isNight = !isNight;
         btnStatus[8] = isNight;
         console.log("night btn down");
@@ -58,6 +60,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-fwd");
         doBtnFwd(f);
         resetFilter(DIRECTIONS, 4);
+        resetPitchRoll();
         isFwd = !isFwd;
         btnStatus[4] = isFwd;
         console.log("fwd btn down");
@@ -73,6 +76,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-aft");
         doBtnAft(f);
         resetFilter(DIRECTIONS, 5);
+        resetPitchRoll();
         isAft = !isAft;
         btnStatus[5] = isAft;
         console.log("aft btn down");
@@ -88,6 +92,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-into-wind");
         doBtnIntoWind(f);
         resetFilter(DIRECTIONS, 6);
+        resetPitchRoll();
         isIntoWind = !isIntoWind;
         btnStatus[6] = isIntoWind;
         console.log("into wind btn down");
@@ -103,6 +108,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-engage-shutdown");
         doBtnEngageShutdown(f);
         resetFilter(ACTIONS, 17);
+        resetPitchRoll();
         isEngage = !isEngage;
         btnStatus[17] = isEngage;
         console.log("engage btn down");
@@ -118,6 +124,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-taxi");
         doBtnTaxi(f);
         resetFilter(ACTIONS, 18);
+        resetPitchRoll();
         isTaxi = !isTaxi;
         btnStatus[18] = isTaxi;
         console.log("taxi btn down");
@@ -133,6 +140,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-launch");
         doBtnLaunch(f);
         resetFilter(ACTIONS, 19);
+        resetPitchRoll();
         isLaunch = !isLaunch;
         btnStatus[19] = isLaunch;
         console.log("launch btn down");
@@ -148,6 +156,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-land");
         doBtnLand(f);
         resetFilter(ACTIONS, 20);
+        resetPitchRoll();
         isLand = !isLand;
         btnStatus[20] = isLand;
         console.log("land btn up");
@@ -163,6 +172,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-vertrep");
         doBtnVertrep(f);
         resetFilter(ACTIONS, 21);
+        resetPitchRoll();
         isVertrep = !isVertrep;
         btnStatus[21] = isVertrep;
         console.log("vertrep btn down");
@@ -178,6 +188,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-xfer");
         doBtnXfer(f);
         resetFilter(ACTIONS, 22);
+        resetPitchRoll();
         isXfer = !isXfer;
         btnStatus[22] = isXfer;
         console.log("xfer btn down");
@@ -193,6 +204,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-light");
         doBtnLight(f);
         resetFilter(WEIGHTS, 0);
+        resetPitchRoll();
         isLight = !isLight;
         btnStatus[0] = isLight;
         console.log("light btn down");
@@ -209,6 +221,7 @@ function initEvents(f) {
         doBtnMedium(f);
         // reset filter
         resetFilter(WEIGHTS, 1);
+        resetPitchRoll();
         isMedium = !isMedium;
         btnStatus[1] = isMedium;
         console.log("medium btn down");
@@ -224,6 +237,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-heavy");
         doBtnHeavy(f);
         resetFilter(WEIGHTS, 2);
+        resetPitchRoll();
         isHeavy = !isHeavy;
         btnStatus[2] = isHeavy;
         console.log("heavy btn down");
@@ -240,6 +254,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-hot-heavy");
         doBtnHotHeavy(f);
         resetFilter(WEIGHTS, 3);
+        resetPitchRoll();
         isHotHeavy = !isHotHeavy;
         btnStatus[3] = isHotHeavy;
         console.log("Hot Heavy btn down");
@@ -256,6 +271,7 @@ function initEvents(f) {
         doBtnEmergency(f);
         resetFilter(WEIGHTS, -1);
         resetFilter(ACTIONS, 23);
+        resetPitchRoll();
         isEmergency = !isEmergency;
         btnStatus[23] = isEmergency;
         console.log("emergency/degraded btn down");
@@ -271,6 +287,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-cda");
         doBtnCda(f);
         resetFilter(POSITIONS, 9);
+        resetPitchRoll();
         isCda = !isCda;
         btnStatus[9] = isCda;
         console.log("cda btn down");
@@ -286,6 +303,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-6");
         doBtn6(f);
         resetFilter(POSITIONS, 10);
+        resetPitchRoll();
         is6 = !is6;
         btnStatus[10] = is6;
         console.log("6 btn down");
@@ -301,6 +319,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-5");
         doBtn5(f);
         resetFilter(POSITIONS, 11);
+        resetPitchRoll();
         is5 = !is5;
         btnStatus[11] = is5;
         console.log("5 btn down");
@@ -316,6 +335,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-4");
         doBtn4(f);
         resetFilter(POSITIONS, 12);
+        resetPitchRoll();
         is4 = !is4;
         btnStatus[12] = is4;
         console.log("4 btn down");
@@ -331,6 +351,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-3");
         doBtn3(f);
         resetFilter(POSITIONS, 13);
+        resetPitchRoll();
         is3 = !is3;
         btnStatus[13] = is3;
         console.log("3 btn down");
@@ -346,6 +367,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-2");
         doBtn2(f);
         resetFilter(POSITIONS, 14);
+        resetPitchRoll();
         is2 = !is2;
         btnStatus[14] = is2;
         console.log("2 btn down");
@@ -361,6 +383,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-1");
         doBtn1(f);
         resetFilter(POSITIONS, 15);
+        resetPitchRoll();
         is1 = !is1;
         btnStatus[15] = is1;
         console.log("1 btn down");
@@ -377,6 +400,7 @@ function initEvents(f) {
         doBtnDown(f, "#btn-cdf");
         doBtnCdf(f);
         resetFilter(POSITIONS, 16);
+        resetPitchRoll();
         isCdf = !isCdf;
         btnStatus[16] = isCdf;
         console.log("cdf btn down");
@@ -389,3 +413,4 @@ function initEvents(f) {
     });
 
 }
+

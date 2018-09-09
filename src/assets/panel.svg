@@ -16705,7 +16705,25 @@
 	
 
 		
-	</defs><sodipodi:namedview
+	<linearGradient
+   inkscape:collect="always"
+   xlink:href="#linear-gradient-57"
+   id="linearGradient5379"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="translate(388.77526,-94.958654)"
+   x1="29.5"
+   y1="23.5"
+   x2="29.5"
+   y2="15.5" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#linear-gradient-57"
+   id="linearGradient5397"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="translate(389.98146,-95.742856)"
+   x1="29.5"
+   y1="23.5"
+   x2="29.5"
+   y2="15.5" /></defs><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -16720,12 +16738,12 @@
    showgrid="false"
    inkscape:snap-object-midpoints="false"
    inkscape:zoom="1"
-   inkscape:cx="632.27085"
-   inkscape:cy="515.06303"
+   inkscape:cx="360.21121"
+   inkscape:cy="430.58407"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
-   inkscape:current-layer="pitch-indicators"
+   inkscape:current-layer="panel"
    inkscape:snap-text-baseline="false"
    inkscape:snap-bbox="false"
    inkscape:showpageshadow="false"
@@ -17364,6 +17382,8 @@
 
 
 
+
+
 	<text
    inkscape:label="lbl-on"
    style="font-size:16.13574982px;font-family:'Arial Narrow';fill:#e6e6e6;stroke-width:0.91301697"
@@ -17372,6 +17392,8 @@
    transform="scale(0.91301697,1.0952699)"
    x="115.55097"
    y="48.008259">ON</text>
+
+
 
 
 
@@ -18649,45 +18671,91 @@
        class="cls-3"
        id="light-spare"
        inkscape:label="#light-spare" /></g></g><g
-   id="on-off-knob"
+   id="off-knob"
    transform="matrix(1.3137923,0,0,1.3137923,-871.75023,-71.15176)"
-   inkscape:label="#on-off-knob"
+   inkscape:label="#off-knob"
    style="font-family:Arial, Helvetica, sans-serif;display:inline"
    sodipodi:insensitive="true"><desc
-     id="desc10049">On Off Knob</desc><title
-     id="title10047">On-Off-Knob</title><circle
+     id="desc10049">Off Knob</desc><title
+     id="title10047">Off-Knob</title><circle
      transform="matrix(1.2512157,0,0,1.2512157,383.80704,-101.20979)"
-     id="on-off-knob-shadow"
+     id="off-knob-shadow"
      r="18"
      cy="26"
      cx="24"
      class="cls-2"
      style="font-family:Arial, Helvetica, sans-serif;opacity:1;vector-effect:none;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter3779-4)"
-     inkscape:label="#on-off-knob-shadow"><title
-       id="title10053">On Off Knob Shadow</title></circle><circle
-     id="on-off-knob-face"
+     inkscape:label="#off-knob-shadow"><title
+       id="title10053">Off Knob Shadow</title></circle><circle
+     id="off-knob-face"
      r="20.782698"
-     cy="-70.457832"
-     cx="413.03961"
+     cy="-69.742836"
+     cx="413.98148"
      class="cls-2"
      style="font-family:Arial, Helvetica, sans-serif;opacity:1;vector-effect:none;fill:#1a1a1a;fill-opacity:1;stroke:#6c6c6c;stroke-width:1.1545943;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     inkscape:label="#on-off-knob-face"><title
-       id="title10051">On Off Knob Face</title></circle><circle
-     id="on-off-knob-highlight"
+     inkscape:label="#off-knob-face"
+     sodipodi:insensitive="true"><title
+       id="title10051">Off Knob Face</title></circle><circle
+     id="off-knob-highlight"
      r="4"
-     cy="-76.45784"
-     cx="419.03961"
+     cy="-75.742844"
+     cx="419.98148"
      class="cls-33"
-     style="font-family:Arial, Helvetica, sans-serif;display:inline;fill:url(#linear-gradient-57)"
-     inkscape:label="#on-off-knob-highlight" /><circle
-     id="on-off-knob-indicator"
+     style="font-family:Arial, Helvetica, sans-serif;display:inline;fill:url(#linearGradient5397)"
+     inkscape:label="#off-knob-highlight"
+     sodipodi:insensitive="true" /><circle
+     id="off-knob-indicator"
      r="4"
-     cy="-76.45784"
-     cx="419.03961"
+     cy="-75.742844"
+     cx="419.98148"
      class="cls-34"
      style="font-family:Arial, Helvetica, sans-serif;fill:none;stroke:#000000;stroke-miterlimit:10"
-     inkscape:label="#on-off-knob-indicator"><title
-       id="title10055">On Off Knob Indicator</title></circle></g><rect
+     inkscape:label="#off-knob-indicator"
+     sodipodi:insensitive="true"><title
+       id="title10055">Off Knob Indicator</title></circle></g><g
+   style="font-family:Arial, Helvetica, sans-serif;display:none"
+   inkscape:label="#on-off-knob"
+   transform="matrix(0.22813764,1.2938328,-1.2938328,0.22813764,-511.3251,-681.14744)"
+   id="on-off-knob"
+   sodipodi:insensitive="true"><desc
+     id="desc5343">On Off Knob</desc><title
+     id="title5345">On-Off-Knob</title><circle
+     inkscape:label="#on-off-knob-shadow"
+     style="font-family:Arial, Helvetica, sans-serif;opacity:1;vector-effect:none;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter3779-4)"
+     class="cls-2"
+     cx="24"
+     cy="26"
+     r="18"
+     id="on-off-knob-shadow"
+     transform="matrix(1.2512157,0,0,1.2512157,383.80704,-101.20979)"><title
+       id="title5347">On Off Knob Shadow</title></circle><circle
+     inkscape:label="#on-off-knob-face"
+     style="font-family:Arial, Helvetica, sans-serif;opacity:1;vector-effect:none;fill:#1a1a1a;fill-opacity:1;stroke:#6c6c6c;stroke-width:1.1545943;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     class="cls-2"
+     cx="412.77527"
+     cy="-68.958649"
+     r="20.782698"
+     id="on-off-knob-face"
+     sodipodi:insensitive="true"><title
+       id="title5351">On Off Knob Face</title></circle><circle
+     inkscape:label="#on-off-knob-highlight"
+     style="font-family:Arial, Helvetica, sans-serif;display:inline;fill:url(#linearGradient5379)"
+     class="cls-33"
+     cx="418.77527"
+     cy="-74.958656"
+     r="4"
+     id="on-off-knob-highlight"
+     sodipodi:insensitive="true" /><circle
+     inkscape:label="#on-off-knob-indicator"
+     style="font-family:Arial, Helvetica, sans-serif;fill:none;stroke:#000000;stroke-miterlimit:10"
+     class="cls-34"
+     cx="418.77527"
+     cy="-74.958656"
+     r="4"
+     id="on-off-knob-indicator"
+     sodipodi:insensitive="true"><title
+       id="title5357"
+       style="font-family:Arial, Helvetica, sans-serif">On Off Knob Indicator</title></circle></g><rect
    style="font-family:Arial, Helvetica, sans-serif;display:inline;opacity:1;fill:#000000;stroke-width:1.28989995"
    id="display"
    height="647.52814"
@@ -18725,6 +18793,8 @@
      x="918.16034"
      id="tspan4725-7-3"
      sodipodi:role="line">LIGHT</tspan></text>
+
+
 
 
 
@@ -18798,6 +18868,8 @@
 
 
 
+
+
 </g>
 
 
@@ -18840,6 +18912,8 @@
      y="323.38116"
      x="911.97284"
      sodipodi:role="line">HEAVY</tspan></text>
+
+
 
 
 
@@ -18913,6 +18987,8 @@
 
 
 
+
+
 </g>
 
 
@@ -18971,6 +19047,8 @@
 
 
 
+
+
 </g>
 
 
@@ -19008,31 +19086,31 @@
          id="title4629">Roll Graph</title></path><polygon
        inkscape:label="#roll-starboard-max-4"
        class="cls-8"
-       points="302,446 308,446 308,440 308,434 302,428 295,434 295,440 295,446 "
+       points="308,434 302,428 295,434 295,440 295,446 302,446 308,446 308,440 "
        id="roll-starboard-max-4"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        transform="translate(65.275083,259.16837)" /><polygon
        transform="translate(22.275083,259.16837)"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        id="roll-starboard-max-3"
-       points="295,434 295,440 295,446 302,446 308,446 308,440 308,434 302,428 "
+       points="302,446 308,446 308,440 308,434 302,428 295,434 295,440 295,446 "
        class="cls-8"
        inkscape:label="#roll-starboard-max-3" /><polygon
        inkscape:label="#roll-starboard-max-2"
        class="cls-8"
-       points="308,440 308,434 302,428 295,434 295,440 295,446 302,446 308,446 "
+       points="295,434 295,440 295,446 302,446 308,446 308,440 308,434 302,428 "
        id="roll-starboard-max-2"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        transform="translate(-20.602137,259.16837)" /><polygon
        transform="translate(-40.256167,259.16837)"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        id="roll-starboard-max-15"
-       points="302,446 308,446 308,440 308,434 302,428 295,434 295,440 295,446 "
+       points="308,434 302,428 295,434 295,440 295,446 302,446 308,446 308,440 "
        class="cls-8"
        inkscape:label="#roll-starboard-max-15" /><polygon
        inkscape:label="#roll-starboard-max-1"
        class="cls-8"
-       points="302,428 295,434 295,440 295,446 302,446 308,446 308,440 308,434 "
+       points="295,446 302,446 308,446 308,440 308,434 302,428 295,434 295,440 "
        id="roll-starboard-max-1"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        transform="translate(-63.756167,259.16837)" /><path
@@ -19057,38 +19135,39 @@
        inkscape:connector-curvature="0" /><polygon
        inkscape:label="#roll-port-max-4"
        class="cls-8"
-       points="209,434 209,440 209,446 216,446 222,446 222,440 222,434 216,428 "
+       points="216,446 222,446 222,440 222,434 216,428 209,434 209,440 209,446 "
        id="roll-port-max-4"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        transform="translate(-193.75617,259.16837)" /><polygon
        transform="translate(-150.68416,259.16837)"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        id="roll-port-max-3"
-       points="216,446 222,446 222,440 222,434 216,428 209,434 209,440 209,446 "
+       points="222,434 216,428 209,434 209,440 209,446 216,446 222,446 222,440 "
        class="cls-8"
        inkscape:label="#roll-port-max-3" /><polygon
        inkscape:label="#roll-port-max-2"
        class="cls-8"
-       points="216,428 209,434 209,440 209,446 216,446 222,446 222,440 222,434 "
+       points="209,446 216,446 222,446 222,440 222,434 216,428 209,434 209,440 "
        id="roll-port-max-2"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        transform="translate(-106.68416,259.16837)" /><polygon
        transform="translate(-84.756167,259.16837)"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        id="roll-port-max-15"
-       points="222,440 222,434 216,428 209,434 209,440 209,446 216,446 222,446 "
+       points="209,434 209,440 209,446 216,446 222,446 222,440 222,434 216,428 "
        class="cls-8"
        inkscape:label="#roll-port-max-15" /><polygon
        inkscape:label="#roll-port-max-1"
        class="cls-8"
-       points="216,446 222,446 222,440 222,434 216,428 209,434 209,440 209,446 "
+       points="222,434 216,428 209,434 209,440 209,446 216,446 222,446 222,440 "
        id="roll-port-max-1"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        transform="translate(-63.756167,259.16837)" /></g><g
-     transform="translate(-293.62482,-82.081637)"
+     transform="translate(-293.62482,-126.08164)"
      style="font-family:Arial, Helvetica, sans-serif;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"
      inkscape:label="pitch-indicators"
-     id="pitch-indicators"><path
+     id="pitch-indicators"
+     sodipodi:insensitive="true"><path
        inkscape:connector-curvature="0"
        d="m 81.86865,476.25 h 7 m -7,-43 h 7 m -7,-43 h 7 m -7,-86 h 7 m -7,-44 h 7 m -7,-43 h 7 m -15,302 h 15 m -15,-172 h 15 m -15,-173 h 15 m 0,0 v 345"
        style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff;stroke:#ffffff;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"
@@ -19123,9 +19202,9 @@
        inkscape:label="#pitch-up-max-15"
        transform="translate(73.86865,121.25)"
        class="cls-8"
-       points="17,161 23,167 29,167 35,167 35,161 35,154 29,154 23,154 "
+       points="29,167 35,167 35,161 35,154 29,154 23,154 17,161 23,167 "
        id="pitch-up-max-15"
-       style="font-family:Arial, Helvetica, sans-serif;display:inline;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"><desc
+       style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"><desc
          id="desc5335">Shows the maximum pitch up boundary</desc><title
          id="title5337">Pitch Up Maximum Indicator</title></polygon><polygon
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"
@@ -19181,9 +19260,9 @@
          id="title5319">Pitch Down Maximum Indicator</title></polygon><polygon
        transform="translate(73.86865,164.28034)"
        class="cls-8"
-       points="23,240 17,247 23,253 29,253 35,253 35,247 35,240 29,240 "
+       points="23,253 29,253 35,253 35,247 35,240 29,240 23,240 17,247 "
        id="pitch-down-max-15"
-       style="font-family:Arial, Helvetica, sans-serif;display:inline;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"><desc
+       style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"><desc
          id="desc5311">Shows the maximum pitch down boundary</desc><title
          id="title5313">Pitch Down Maximum Indicator</title></polygon><polygon
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"
@@ -19627,12 +19706,16 @@
 
 
 
+
+
 <text
    y="351.25"
    x="434.86865"
    class="cls-5"
    id="lbl20kt-west"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">20KT</text>
+
+
 
 
 
@@ -19713,12 +19796,16 @@
 
 
 
+
+
 <text
    y="351.25"
    x="353.86865"
    class="cls-5"
    id="lbl40kt-west"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">40KT</text>
+
+
 
 
 
@@ -19799,12 +19886,16 @@
 
 
 
+
+
 <text
    y="351.25"
    x="551.86865"
    class="cls-5"
    id="lbl10kt-east"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">10KT</text>
+
+
 
 
 
@@ -19885,12 +19976,16 @@
 
 
 
+
+
 <text
    y="351.25"
    x="632.86865"
    class="cls-5"
    id="lbl30kt-east"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">30KT</text>
+
+
 
 
 
@@ -19971,12 +20066,16 @@
 
 
 
+
+
 <text
    y="351.25"
    x="712.86865"
    class="cls-5"
    id="lbl50kt-east"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">50KT</text>
+
+
 
 
 
@@ -20057,12 +20156,16 @@
 
 
 
+
+
 <text
    y="312.25"
    x="513.86865"
    class="cls-5"
    id="lbl10kt-north"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">10KT</text>
+
+
 
 
 
@@ -20143,12 +20246,16 @@
 
 
 
+
+
 <text
    y="469.25"
    x="513.86865"
    class="cls-5"
    id="lbl30kt-south"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">30KT</text>
+
+
 
 
 
@@ -20229,6 +20336,8 @@
 
 
 
+
+
 <text
    y="549.25"
    x="513.86865"
@@ -20272,12 +20381,16 @@
 
 
 
+
+
 <text
    y="152.25"
    x="513.86865"
    class="cls-5"
    id="lbl50kt-north"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">50KT</text>
+
+
 
 
 
@@ -20359,6 +20472,8 @@
 
 
 
+
+
 <text
    y="232.25"
    x="513.86865"
@@ -20402,12 +20517,16 @@
 
 
 
+
+
 <text
    y="192.25"
    x="513.86865"
    class="cls-5"
    id="lbl40kt-north"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">40KT</text>
+
+
 
 
 
@@ -20496,6 +20615,8 @@
 
 
 
+
+
 <text
    id="r40"
    class="cls-1"
@@ -20503,6 +20624,8 @@
    y="-226.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#r40">R40</text>
+
+
 
 
 
@@ -20588,6 +20711,8 @@
 
 
 
+
+
 <text
    id="r80"
    class="cls-1"
@@ -20634,6 +20759,8 @@
 
 
 
+
+
 <text
    id="r100"
    class="cls-1"
@@ -20641,6 +20768,8 @@
    y="-30.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#r100">R100</text>
+
+
 
 
 
@@ -20730,6 +20859,8 @@
 
 
 
+
+
 <text
    id="r140"
    class="cls-1"
@@ -20737,6 +20868,8 @@
    y="93.969238"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#r140">R140</text>
+
+
 
 
 
@@ -20822,6 +20955,8 @@
 
 
 
+
+
 <text
    id="g20"
    class="cls-1"
@@ -20829,6 +20964,8 @@
    y="-260.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g20">G20</text>
+
+
 
 
 
@@ -20914,6 +21051,8 @@
 
 
 
+
+
 <text
    id="g60"
    class="cls-1"
@@ -20921,6 +21060,8 @@
    y="-171.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g60">G60</text>
+
+
 
 
 
@@ -21006,6 +21147,8 @@
 
 
 
+
+
 <text
    id="g100"
    class="cls-1"
@@ -21013,6 +21156,8 @@
    y="-30.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g100">G100</text>
+
+
 
 
 
@@ -21102,6 +21247,8 @@
 
 
 
+
+
 <text
    id="g140"
    class="cls-1"
@@ -21148,6 +21295,8 @@
 
 
 
+
+
 <text
    id="g160"
    class="cls-1"
@@ -21155,6 +21304,8 @@
    y="130.96924"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g160">G160</text>
+
+
 
 
 
@@ -21247,6 +21398,8 @@
 
 
 
+
+
 <g
    id="grp-day"
    style="font-family:Arial, Helvetica, sans-serif"><rect
@@ -21268,6 +21421,8 @@
      y="229.25429"
      x="6.3856583"
      sodipodi:role="line">DAY</tspan></text>
+
+
 
 
 
@@ -21341,6 +21496,8 @@
 
 
 
+
+
 </g>
 
 
@@ -21382,6 +21539,8 @@
      y="418.66571"
      x="6.3856583"
      sodipodi:role="line">FWD</tspan></text>
+
+
 
 
 
@@ -21455,6 +21614,8 @@
 
 
 
+
+
 </g>
 
 
@@ -21496,6 +21657,8 @@
      y="614.76324"
      x="6.3856583"
      sodipodi:role="line">INTO WIND</tspan></text>
+
+
 
 
 
@@ -21593,6 +21756,8 @@
 
 
 
+
+
 </g>
 
 
@@ -21610,6 +21775,8 @@
      x="132.40964"
      y="30.367226"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;fill:#009bff;fill-opacity:1">MENU</tspan></text>
+
+
 
 
 
@@ -21707,6 +21874,8 @@
 
 
 
+
+
 <text
    inkscape:label="#txt-shutdown"
    id="txt-shutdown"
@@ -21719,6 +21888,8 @@
      y="116.06002"
      x="211.33458"
      sodipodi:role="line">SHUTDOWN</tspan></text>
+
+
 
 
 
@@ -21792,6 +21963,8 @@
 
 
 
+
+
 </g>
 
 
@@ -21835,6 +22008,8 @@
      y="30.578163"
      x="416.28516"
      sodipodi:role="line">LAUNCH</tspan></text>
+
+
 
 
 
@@ -21908,6 +22083,8 @@
 
 
 
+
+
 </g>
 
 
@@ -21966,6 +22143,8 @@
 
 
 
+
+
 </g>
 
 
@@ -22009,6 +22188,8 @@
      y="30.367226"
      x="729.46014"
      sodipodi:role="line">XFER</tspan></text>
+
+
 
 
 
@@ -22096,6 +22277,8 @@
 
 
 
+
+
 </g>
 
 
@@ -22132,6 +22315,8 @@
      y="655.43268"
      x="836.07373"
      sodipodi:role="line">CDF</tspan></text>
+
+
 
 
 
@@ -22222,6 +22407,8 @@
 
 
 
+
+
 </g>
 
 
@@ -22273,6 +22460,8 @@
 
 
 
+
+
 </g>
 
 
@@ -22309,6 +22498,8 @@
      y="655.65924"
      x="546.27295"
      sodipodi:role="line">3</tspan></text>
+
+
 
 
 
@@ -22387,6 +22578,8 @@
 
 
 
+
+
 </g>
 
 
@@ -22423,6 +22616,8 @@
      y="655.65924"
      x="345.48654"
      sodipodi:role="line">5</tspan></text>
+
+
 
 
 
@@ -22489,6 +22684,8 @@
 
 
 
+
+
 </g>
 
 
@@ -22526,6 +22723,8 @@
      x="133.51025"
      id="tspan4725-75"
      sodipodi:role="line">CDA</tspan></text>
+
+
 
 
 
@@ -22742,6 +22941,8 @@
 
 
 
+
+
 <text
    inkscape:label="#opt-arh-tiger"
    xml:space="preserve"
@@ -22755,6 +22956,8 @@
      y="437.34113"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2-5-4-8-5">ARH TIGER (NOT AVAILABLE)</tspan></text>
+
+
 
 
 
@@ -22832,6 +23035,8 @@
 
 
 
+
+
 <text
    id="opt-flyco-emergency-checklists-3"
    y="240.04309"
@@ -22845,6 +23050,8 @@
      y="240.04309"
      x="-339.73917"
      sodipodi:role="line">S70A9 (NOT AVAILABLE)</tspan></text>
+
+
 
 
 
@@ -22922,6 +23129,8 @@
 
 
 
+
+
 <text
    id="opt-aircraft-shols-select"
    y="48.313694"
@@ -22967,6 +23176,8 @@
 
 
 
+
+
 <text
    inkscape:label="#lbl-main-menu-aircraft-shol-select"
    id="lbl-main-menu-aircraft-shol-select"
@@ -22980,6 +23191,8 @@
      style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
      id="tspan1390-0"
      sodipodi:role="line">AIRCRAFT SHOL SELECT PAGE</tspan></text>
+
+
 
 
 
@@ -23101,6 +23314,8 @@
 
 
 
+
+
 </g>
 </g><g
    style="font-family:Arial, Helvetica, sans-serif;display:none"
@@ -23121,6 +23336,8 @@
      y="338.08408"
      x="-339.73917"
      sodipodi:role="line">BRIDGE EMERGENCY CARDS (NOT AVAILABLE)</tspan></text>
+
+
 
 
 
@@ -23197,6 +23414,8 @@
 
 
 
+
+
 <text
    id="opt-mh60r"
    y="148.67265"
@@ -23210,6 +23429,8 @@
      y="148.67265"
      x="-339.73917"
      sodipodi:role="line">FLYCO STANDARD CHECKLISTS (NOT AVAILABLE)</tspan></text>
+
+
 
 
 
@@ -23286,6 +23507,8 @@
 
 
 
+
+
 <text
    inkscape:label="#lbl-main-menu"
    id="lbl-main-menu"
@@ -23299,6 +23522,8 @@
      style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
      id="tspan1390"
      sodipodi:role="line">MAIN MENU</tspan></text>
+
+
 
 
 

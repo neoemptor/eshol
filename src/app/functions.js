@@ -19,8 +19,12 @@ function doOnOffKnob(f) {
     onOffKnob.state = !onOffKnob.state;
 
     if (onOffKnob.state) {
+        $("#on-off-knob").show();
+        $("#off-knob").hide();
         mainMenu.attr("display", "");
     } else {
+        $("#on-off-knob").hide();
+        $("#off-knob").show();
         mainMenu.attr("display", "");
         $("#main-menu").hide();
         $("#aircraft-shol-menu").hide();
@@ -28,9 +32,27 @@ function doOnOffKnob(f) {
         $("#lbl-aircraft-id").hide();
         hideAllIndicators(f);
         hideAllPlots();
+        resetPitchRoll();
         resetBtnStatus();
         resetFilterArray();
+        // wait 5 secs then shutdown
+        doExit();
+
     }
+}
+
+async function doExit() {
+    console.log('do exit function executing');
+    await sleep(5000);
+    
+    process.exit(0);
+}
+
+// this is the wait function can be used to wait anywhere in application
+function sleep(ms) {
+    return new Promise(resolve => {
+        setTimeout(resolve,ms);
+    });
 }
 
 function hideAllIndicators(f) {
@@ -141,6 +163,7 @@ function goBackToMainMenu(f) {
         $("#main-menu").show();
         $("#lbl-aircraft-id").hide();
         hideAllIndicators(f);
+        resetPitchRoll();
         hideAllPlots();
         resetBtnStatus();
         resetFilterArray();
@@ -174,6 +197,7 @@ function doBtnBack(f) {
             $("#lbl-aircraft-id").hide();
             hideAllIndicators(f);
             hideAllPlots();
+            resetPitchRoll();
             resetBtnStatus();
             resetFilterArray();
         }
@@ -873,136 +897,103 @@ function showPitchAndRoll(pitch, roll) {
     let rollPortTag = "#roll-port-max-";
     let rollStarboardTag = "#roll-starboard-max-";
 
+    resetPitchRoll();    
     switch (pitch) {
+        case "0":
+            pitchDownTag += "0";
+            pitchUpTag += "0";
+            break;
         case "1":
-            $(pitchDownTag + "15").hide();
-            $(pitchDownTag + "2").hide();
-            $(pitchDownTag + "3").hide();
-            $(pitchDownTag + "4").hide();
-            $(pitchUpTag + "15").hide();
-            $(pitchUpTag + "2").hide();
-            $(pitchUpTag + "3").hide();
-            $(pitchUpTag + "4").hide();            
             pitchDownTag += "1";
             pitchUpTag += "1";
             break;
         case "1.5":
-            $(pitchDownTag + "1").hide();
-            $(pitchDownTag + "2").hide();
-            $(pitchDownTag + "3").hide();
-            $(pitchDownTag + "4").hide();
-            $(pitchUpTag + "1").hide();
-            $(pitchUpTag + "2").hide();
-            $(pitchUpTag + "3").hide();
-            $(pitchUpTag + "4").hide();
             pitchDownTag += "15";
             pitchUpTag += "15";
             break;
         case "2":
-            $(pitchDownTag + "15").hide();
-            $(pitchDownTag + "1").hide();
-            $(pitchDownTag + "3").hide();
-            $(pitchDownTag + "4").hide();
-            $(pitchUpTag + "15").hide();
-            $(pitchUpTag + "1").hide();
-            $(pitchUpTag + "3").hide();
-            $(pitchUpTag + "4").hide();
             pitchDownTag += "2";
             pitchUpTag += "2";
             break;
         case "3":
-            $(pitchDownTag + "15").hide();
-            $(pitchDownTag + "2").hide();
-            $(pitchDownTag + "1").hide();
-            $(pitchDownTag + "4").hide();
-            $(pitchUpTag + "15").hide();
-            $(pitchUpTag + "2").hide();
-            $(pitchUpTag + "1").hide();
-            $(pitchUpTag + "4").hide();
             pitchDownTag += "3";
             pitchUpTag += "3";
             break;
         case "4":
-            $(pitchDownTag + "15").hide();
-            $(pitchDownTag + "2").hide();
-            $(pitchDownTag + "3").hide();
-            $(pitchDownTag + "1").hide();
-            $(pitchUpTag + "15").hide();
-            $(pitchUpTag + "2").hide();
-            $(pitchUpTag + "3").hide();
-            $(pitchUpTag + "1").hide();
             pitchDownTag += "4";
             pitchUpTag += "4";
             break;
     }
 
     switch (roll) {
+        case "0":
+            rollPortTag += "1";
+            rollStarboardTag += "1";
+            break;
         case "1":
-            $(rollPortTag + "15").hide();
-            $(rollPortTag + "2").hide();
-            $(rollPortTag + "3").hide();
-            $(rollPortTag + "4").hide();
-            $(rollStarboardTag + "15").hide();
-            $(rollStarboardTag + "2").hide();
-            $(rollStarboardTag + "3").hide();
-            $(rollStarboardTag + "4").hide();
             rollPortTag += "1";
             rollStarboardTag += "1";
             break;
         case "1.5":
-            $(rollPortTag + "1").hide();
-            $(rollPortTag + "2").hide();
-            $(rollPortTag + "3").hide();
-            $(rollPortTag + "4").hide();
-            $(rollStarboardTag + "1").hide();
-            $(rollStarboardTag + "2").hide();
-            $(rollStarboardTag + "3").hide();
-            $(rollStarboardTag + "4").hide();
             rollPortTag += "15";
             rollStarboardTag += "15";
             break;
         case "2":
-            $(rollPortTag + "15").hide();
-            $(rollPortTag + "1").hide();
-            $(rollPortTag + "3").hide();
-            $(rollPortTag + "4").hide();
-            $(rollStarboardTag + "15").hide();
-            $(rollStarboardTag + "1").hide();
-            $(rollStarboardTag + "3").hide();
-            $(rollStarboardTag + "4").hide();
             rollPortTag += "2";
             rollStarboardTag += "2";
             break;
         case "3":
-            $(rollPortTag + "15").hide();
-            $(rollPortTag + "2").hide();
-            $(rollPortTag + "1").hide();
-            $(rollPortTag + "4").hide();
-            $(rollStarboardTag + "15").hide();
-            $(rollStarboardTag + "2").hide();
-            $(rollStarboardTag + "1").hide();
-            $(rollStarboardTag + "4").hide();
             rollPortTag += "3";
             rollStarboardTag += "3";
             break;
         case "4":
-            $(rollPortTag + "15").hide();
-            $(rollPortTag + "2").hide();
-            $(rollPortTag + "3").hide();
-            $(rollPortTag + "1").hide();
-            $(rollStarboardTag + "15").hide();
-            $(rollStarboardTag + "2").hide();
-            $(rollStarboardTag + "3").hide();
-            $(rollStarboardTag + "1").hide();
             rollPortTag += "4";
             rollStarboardTag += "4";
             break;
     }
 
-    $(pitchDownTag).show();
-    $(pitchUpTag).show();
+    if (pitch !== "0") {
+        $(pitchDownTag).show();
+        $(pitchUpTag).show();
+    }
+    if (roll !== "0") {
+        $(rollPortTag).show();
+        $(rollStarboardTag).show();
+    }
+}
 
-    $(rollPortTag).show();
-    $(rollStarboardTag).show();
+function resetPitchRoll() {
+    resetPitch();
+    resetRoll();
+}
+function resetPitch() {
+    let pitchDownTag = "#pitch-down-max-";
+    let pitchUpTag = "#pitch-up-max-";
 
+    $(pitchDownTag + "1").hide();
+    $(pitchDownTag + "15").hide();
+    $(pitchDownTag + "2").hide();
+    $(pitchDownTag + "3").hide();
+    $(pitchDownTag + "4").hide();
+    $(pitchUpTag + "1").hide();
+    $(pitchUpTag + "15").hide();
+    $(pitchUpTag + "2").hide();
+    $(pitchUpTag + "3").hide();
+    $(pitchUpTag + "4").hide();
+}
+
+function resetRoll() {
+    let rollPortTag = "#roll-port-max-";
+    let rollStarboardTag = "#roll-starboard-max-";
+
+    $(rollPortTag + "1").hide();
+    $(rollPortTag + "15").hide();
+    $(rollPortTag + "2").hide();
+    $(rollPortTag + "3").hide();
+    $(rollPortTag + "4").hide();
+    $(rollStarboardTag + "1").hide();
+    $(rollStarboardTag + "15").hide();
+    $(rollStarboardTag + "2").hide();
+    $(rollStarboardTag + "3").hide();
+    $(rollStarboardTag + "4").hide();
 }
