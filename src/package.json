@@ -35,16 +35,16 @@
     "title": "eshol",
     "type": "simple",
     "dependencies": {
-        "d3": "^5.4.0",
         "greensock": "^1.20.2",
-        "layersnap": "^1.1.0",
         "path": "^0.12.7",
         "path-__dirname": "^2.1.0",
         "snapsvg": "^0.5.1",
-        "svg.js": "^2.6.5",
         "url": "^0.11.0"
     },
     "devDependencies": {
         "jquery": "^3.3.1"
+    },
+    "build": {
+        "nwVersion": "0.32.4"
     }
 }

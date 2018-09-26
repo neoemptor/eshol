@@ -21,48 +21,112 @@ function initEvents(f) {
 
     btnMenu.mouseup(() => {
         doBtnUp(f, "#btn-menu");
+        $("#btn-menu").hide();
         console.log("back btn up");
     });
 
+    btnAircraftShols.mousedown(() => {
+        doBtnDown(f, "#btn-aircraft-shols");
+        doBtnAircraftShols(f);
+        console.log("aircraft shols btn down");
+    });
+
+    btnAircraftShols.mouseup(() => {
+        doBtnUp(f, "#btn-aircraft-shols");
+        console.log("aircraft shols btn up");
+    });
+
+    // ====================== MH60R Events ===============================
+    btnMH60R.mousedown(() => {
+        doBtnDown(f, "#btn-mh60r");
+        doBtnMH60R(f);
+        console.log("MH60R button down");
+    });
+
+    btnMH60R.mouseup(() => {
+        doBtnUp(f, "#btn-mh60r");
+        console.log("MH60R btn up");
+    });
+
+
+    // ====================== MRH90 Events ===============================
+    btnMRH90.mousedown(() => {
+        doBtnDown(f, "#btn-mrh90");
+        doBtnMRH90(f);
+        console.log("MRH90 button down");
+    });
+
+    btnMRH90.mouseup(() => {
+        doBtnUp(f, "#btn-mrh90");
+        console.log("MRH90 btn up");
+    });
+
+    // ====================== S70A9 Events ===============================
+    btnS70A9.mousedown(() => {
+        doBtnDown(f, "#btn-s70a9");
+        doBtnS70A9(f);
+        console.log("S70A9 button down");
+    });
+
+    btnS70A9.mouseup(() => {
+        doBtnUp(f, "#btn-s70a9");
+        console.log("S70A9 btn up");
+    });
+
+    // ====================== Time Events ===============================
+
     btnDay.mousedown(() => {
+        if (!clickFromBtnMH60R) { // this is to avoid bug which triggers mouse down from other menu.
+
+            doBtnDay(f);
+            resetFilter(TIMES, DAY);
+            resetPitchRoll();
+            btnStatus[DAY] = !btnStatus[DAY]; // isDay;
+        }
         console.log("day btn down");
         doBtnDown(f, "#btn-day");
-        doBtnDay(f);
-        resetFilter(TIMES, 7);
-        resetPitchRoll();
-        isDay = !isDay;
-        btnStatus[7] = isDay;
     });
 
     btnDay.mouseup(() => {
-        doBtnUp(f, "#btn-day");
-        filter();
-        console.log("day btn up");
+        if (!clickFromBtnMH60R) { // this is to avoid bug which triggers mouse down from other menu.
+            doBtnUp(f, "#btn-day");
+            filter();
+            console.log("day btn up");
+        } else {
+            clickFromBtnMH60R = false;
+        }
     });
 
     btnNight.mousedown(() => {
-        doBtnDown(f, "#btn-night");
-        doBtnNight(f);
-        resetFilter(TIMES, 8);
-        resetPitchRoll();
-        isNight = !isNight;
-        btnStatus[8] = isNight;
-        console.log("night btn down");
+        if (!clickFromBtnS70A9) {
+            doBtnDown(f, "#btn-night");
+            doBtnNight(f);
+            resetFilter(TIMES, NIGHT);
+            resetPitchRoll();
+            // isNight = !isNight;
+            btnStatus[NIGHT] = !btnStatus[NIGHT]; //isNight;
+            console.log("night btn down");
+        }
     });
 
     btnNight.mouseup(() => {
-        doBtnUp(f, "#btn-night");
-        filter();
-        console.log("night btn up");
+        if (!clickFromBtnS70A9) {
+            doBtnUp(f, "#btn-night");
+            filter();
+            console.log("night btn up");
+        } else {
+            clickFromBtnS70A9 = false;
+        }
     });
 
+    // ====================== Direction Events ===============================
     btnFwd.mousedown(() => {
         doBtnDown(f, "#btn-fwd");
         doBtnFwd(f);
-        resetFilter(DIRECTIONS, 4);
+        resetFilter(DIRECTIONS, FWD);
         resetPitchRoll();
-        isFwd = !isFwd;
-        btnStatus[4] = isFwd;
+        // isFwd = !isFwd;
+        btnStatus[FWD] = !btnStatus[FWD]; //isFwd;
         console.log("fwd btn down");
     });
 
@@ -75,10 +139,10 @@ function initEvents(f) {
     btnAft.mousedown(() => {
         doBtnDown(f, "#btn-aft");
         doBtnAft(f);
-        resetFilter(DIRECTIONS, 5);
+        resetFilter(DIRECTIONS, AFT);
         resetPitchRoll();
-        isAft = !isAft;
-        btnStatus[5] = isAft;
+        // isAft = !isAft;
+        btnStatus[AFT] = !btnStatus[AFT]; //isAft;
         console.log("aft btn down");
     });
 
@@ -91,10 +155,10 @@ function initEvents(f) {
     btnIntoWind.mousedown(() => {
         doBtnDown(f, "#btn-into-wind");
         doBtnIntoWind(f);
-        resetFilter(DIRECTIONS, 6);
+        resetFilter(DIRECTIONS, INTOWIND);
         resetPitchRoll();
-        isIntoWind = !isIntoWind;
-        btnStatus[6] = isIntoWind;
+        // isIntoWind = !isIntoWind;
+        btnStatus[INTOWIND] = !btnStatus[INTOWIND]; //isIntoWind;
         console.log("into wind btn down");
     });
 
@@ -104,13 +168,14 @@ function initEvents(f) {
         console.log("into wind btn up");
     });
 
+    // ======================= Action Events =================================
     btnEngageShutdown.mousedown(() => {
         doBtnDown(f, "#btn-engage-shutdown");
         doBtnEngageShutdown(f);
-        resetFilter(ACTIONS, 17);
+        resetFilter(ACTIONS, ENGAGE);
         resetPitchRoll();
-        isEngage = !isEngage;
-        btnStatus[17] = isEngage;
+        // isEngage = !isEngage;
+        btnStatus[ENGAGE] = !btnStatus[ENGAGE]; //isEngage;
         console.log("engage btn down");
     });
 
@@ -120,13 +185,45 @@ function initEvents(f) {
         console.log("engage btn up");
     });
 
+    btnSpreadFold.mousedown(() => {
+        doBtnDown(f, "#btn-spread-fold");
+        doBtnSpreadFold(f);
+        resetFilter(ACTIONS, SPREADFOLD);
+        resetPitchRoll();
+        // isSpreadFold = !isSpreadFold;
+        btnStatus[SPREADFOLD] = !btnStatus[SPREADFOLD]; //isSpreadFold;
+        console.log("spread fold btn down");
+    });
+
+    btnSpreadFold.mouseup(() => {
+        doBtnUp(f, "#btn-spread-fold");
+        filter();
+        console.log("spread fold btn up");
+    });
+
+    btnRecovery.mousedown(() => {
+        doBtnDown(f, "#btn-recovery");
+        doBtnRecovery(f);
+        resetFilter(ACTIONS, RECOVERY);
+        resetPitchRoll();
+        // isRecovery = !isRecovery;
+        btnStatus[RECOVERY] = !btnStatus[RECOVERY]; //isRecovery;
+        console.log("recovery btn down");
+    });
+
+    btnRecovery.mouseup(() => {
+        doBtnUp(f, "#btn-recovery");
+        filter();
+        console.log("recovery btn up");
+    });
+
     btnTaxi.mousedown(() => {
         doBtnDown(f, "#btn-taxi");
         doBtnTaxi(f);
-        resetFilter(ACTIONS, 18);
+        resetFilter(ACTIONS, TAXI);
         resetPitchRoll();
-        isTaxi = !isTaxi;
-        btnStatus[18] = isTaxi;
+        // isTaxi = !isTaxi;
+        btnStatus[TAXI] = !btnStatus[TAXI]; //isTaxi;
         console.log("taxi btn down");
     });
 
@@ -139,10 +236,10 @@ function initEvents(f) {
     btnLaunch.mousedown(() => {
         doBtnDown(f, "#btn-launch");
         doBtnLaunch(f);
-        resetFilter(ACTIONS, 19);
+        resetFilter(ACTIONS, LAUNCH);
         resetPitchRoll();
-        isLaunch = !isLaunch;
-        btnStatus[19] = isLaunch;
+        // isLaunch = !isLaunch;
+        btnStatus[LAUNCH] = !btnStatus[LAUNCH]; //isLaunch;
         console.log("launch btn down");
     });
 
@@ -155,10 +252,10 @@ function initEvents(f) {
     btnLand.mousedown(() => {
         doBtnDown(f, "#btn-land");
         doBtnLand(f);
-        resetFilter(ACTIONS, 20);
+        resetFilter(ACTIONS, LAND);
         resetPitchRoll();
-        isLand = !isLand;
-        btnStatus[20] = isLand;
+        // isLand = !isLand;
+        btnStatus[LAND] = !btnStatus[LAND]; //isLand;
         console.log("land btn up");
     });
 
@@ -171,10 +268,10 @@ function initEvents(f) {
     btnVertrep.mousedown(() => {
         doBtnDown(f, "#btn-vertrep");
         doBtnVertrep(f);
-        resetFilter(ACTIONS, 21);
+        resetFilter(ACTIONS, VERTREP);
         resetPitchRoll();
-        isVertrep = !isVertrep;
-        btnStatus[21] = isVertrep;
+        // isVertrep = !isVertrep;
+        btnStatus[VERTREP] = !btnStatus[VERTREP]; //isVertrep;
         console.log("vertrep btn down");
     });
 
@@ -187,10 +284,10 @@ function initEvents(f) {
     btnXfer.mousedown(() => {
         doBtnDown(f, "#btn-xfer");
         doBtnXfer(f);
-        resetFilter(ACTIONS, 22);
+        resetFilter(ACTIONS, XFER);
         resetPitchRoll();
-        isXfer = !isXfer;
-        btnStatus[22] = isXfer;
+        // isXfer = !isXfer;
+        btnStatus[XFER] = !btnStatus[XFER]; //isXfer;
         console.log("xfer btn down");
     });
 
@@ -200,13 +297,14 @@ function initEvents(f) {
         console.log("xfer btn up");
     });
 
+    // ====================== Weight Events ===============================
     btnLight.mousedown(() => {
         doBtnDown(f, "#btn-light");
         doBtnLight(f);
-        resetFilter(WEIGHTS, 0);
+        resetFilter(WEIGHTS, LIGHT);
         resetPitchRoll();
-        isLight = !isLight;
-        btnStatus[0] = isLight;
+        // isLight = !isLight;
+        btnStatus[LIGHT] = !btnStatus[LIGHT]; //isLight;
         console.log("light btn down");
     });
 
@@ -220,10 +318,10 @@ function initEvents(f) {
         doBtnDown(f, "#btn-medium");
         doBtnMedium(f);
         // reset filter
-        resetFilter(WEIGHTS, 1);
+        resetFilter(WEIGHTS, MEDIUM);
         resetPitchRoll();
-        isMedium = !isMedium;
-        btnStatus[1] = isMedium;
+        // isMedium = !isMedium;
+        btnStatus[MEDIUM] = !btnStatus[MEDIUM]; //isMedium;
         console.log("medium btn down");
     });
 
@@ -236,10 +334,10 @@ function initEvents(f) {
     btnHeavy.mousedown(() => {
         doBtnDown(f, "#btn-heavy");
         doBtnHeavy(f);
-        resetFilter(WEIGHTS, 2);
+        resetFilter(WEIGHTS, HEAVY);
         resetPitchRoll();
-        isHeavy = !isHeavy;
-        btnStatus[2] = isHeavy;
+        // isHeavy = !isHeavy;
+        btnStatus[HEAVY] = !btnStatus[HEAVY]; //isHeavy;
         console.log("heavy btn down");
     });
 
@@ -253,10 +351,10 @@ function initEvents(f) {
     btnHotHeavy.mousedown(() => {
         doBtnDown(f, "#btn-hot-heavy");
         doBtnHotHeavy(f);
-        resetFilter(WEIGHTS, 3);
+        resetFilter(WEIGHTS, HOTHEAVY);
         resetPitchRoll();
-        isHotHeavy = !isHotHeavy;
-        btnStatus[3] = isHotHeavy;
+        // isHotHeavy = !isHotHeavy;
+        btnStatus[HOTHEAVY] = !btnStatus[HOTHEAVY]; //isHotHeavy;
         console.log("Hot Heavy btn down");
     });
 
@@ -270,10 +368,10 @@ function initEvents(f) {
         doBtnDown(f, "#btn-emergency");
         doBtnEmergency(f);
         resetFilter(WEIGHTS, -1);
-        resetFilter(ACTIONS, 23);
+        resetFilter(ACTIONS, EMERGENCY);
         resetPitchRoll();
-        isEmergency = !isEmergency;
-        btnStatus[23] = isEmergency;
+        // isEmergency = !isEmergency;
+        btnStatus[EMERGENCY] = !btnStatus[EMERGENCY]; //isEmergency;
         console.log("emergency/degraded btn down");
     });
 
@@ -283,13 +381,14 @@ function initEvents(f) {
         console.log("emergency/degraded btn up");
     });
 
+    // ====================== Postion Events ===============================
     btnCda.mousedown(() => {
         doBtnDown(f, "#btn-cda");
         doBtnCda(f);
-        resetFilter(POSITIONS, 9);
+        resetFilter(POSITIONS, CDA);
         resetPitchRoll();
-        isCda = !isCda;
-        btnStatus[9] = isCda;
+        // isCda = !isCda;
+        btnStatus[CDA] = !btnStatus[CDA]; //isCda;
         console.log("cda btn down");
     });
 
@@ -302,10 +401,10 @@ function initEvents(f) {
     btn6.mousedown(() => {
         doBtnDown(f, "#btn-6");
         doBtn6(f);
-        resetFilter(POSITIONS, 10);
+        resetFilter(POSITIONS, POS6);
         resetPitchRoll();
-        is6 = !is6;
-        btnStatus[10] = is6;
+        // is6 = !is6;
+        btnStatus[POS6] = !btnStatus[POS6]; //is6;
         console.log("6 btn down");
     });
 
@@ -318,10 +417,10 @@ function initEvents(f) {
     btn5.mousedown(() => {
         doBtnDown(f, "#btn-5");
         doBtn5(f);
-        resetFilter(POSITIONS, 11);
+        resetFilter(POSITIONS, POS5);
         resetPitchRoll();
-        is5 = !is5;
-        btnStatus[11] = is5;
+        // is5 = !is5;
+        btnStatus[POS5] = !btnStatus[POS5]; //is5;
         console.log("5 btn down");
     });
 
@@ -334,10 +433,10 @@ function initEvents(f) {
     btn4.mousedown(() => {
         doBtnDown(f, "#btn-4");
         doBtn4(f);
-        resetFilter(POSITIONS, 12);
+        resetFilter(POSITIONS, POS4);
         resetPitchRoll();
-        is4 = !is4;
-        btnStatus[12] = is4;
+        // is4 = !is4;
+        btnStatus[POS4] = !btnStatus[POS4]; //is4;
         console.log("4 btn down");
     });
 
@@ -350,10 +449,10 @@ function initEvents(f) {
     btn3.mousedown(() => {
         doBtnDown(f, "#btn-3");
         doBtn3(f);
-        resetFilter(POSITIONS, 13);
+        resetFilter(POSITIONS, POS3);
         resetPitchRoll();
-        is3 = !is3;
-        btnStatus[13] = is3;
+        // is3 = !is3;
+        btnStatus[POS3] = !btnStatus[POS3]; //is3;
         console.log("3 btn down");
     });
 
@@ -366,10 +465,10 @@ function initEvents(f) {
     btn2.mousedown(() => {
         doBtnDown(f, "#btn-2");
         doBtn2(f);
-        resetFilter(POSITIONS, 14);
+        resetFilter(POSITIONS, POS2);
         resetPitchRoll();
-        is2 = !is2;
-        btnStatus[14] = is2;
+        // is2 = !is2;
+        btnStatus[POS2] = !btnStatus[POS2]; //is2;
         console.log("2 btn down");
     });
 
@@ -382,10 +481,10 @@ function initEvents(f) {
     btn1.mousedown(() => {
         doBtnDown(f, "#btn-1");
         doBtn1(f);
-        resetFilter(POSITIONS, 15);
+        resetFilter(POSITIONS, POS1);
         resetPitchRoll();
-        is1 = !is1;
-        btnStatus[15] = is1;
+        // is1 = !is1;
+        btnStatus[POS1] = !btnStatus[POS1]; //is1;
         console.log("1 btn down");
     });
 
@@ -395,14 +494,13 @@ function initEvents(f) {
         console.log("1 btn up");
     });
 
-
     btnCdf.mousedown(() => {
         doBtnDown(f, "#btn-cdf");
         doBtnCdf(f);
-        resetFilter(POSITIONS, 16);
+        resetFilter(POSITIONS, CDF);
         resetPitchRoll();
-        isCdf = !isCdf;
-        btnStatus[16] = isCdf;
+        // isCdf = !isCdf;
+        btnStatus[CDF] = !btnStatus[CDF]; //isCdf;
         console.log("cdf btn down");
     });
 
@@ -411,6 +509,4 @@ function initEvents(f) {
         filter();
         console.log("cdf btn up");
     });
-
 }
-

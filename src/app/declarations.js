@@ -148,6 +148,26 @@ var screenWidth = screen.availWidth,
     lightOutlineSpareTop,
     gradientSpareTop,
     faceSpareTop,
+    btnMH60R,
+    lightMH60R,
+    lightOutlineMH60R,
+    gradientMH60R,
+    faceMH60R,
+    btnS70A9,
+    lightS70A9,
+    lightOutlineS70A9,
+    gradientS70A9,
+    faceS70A9,
+    btnRecovery, // group
+    lightRecovery,
+    lightOutlineRecovery,
+    gradientRecovery,
+    faceRecovery,
+    btnSpreadFold, // group
+    lightSpreadFold,
+    lightOutlineSpreadFold,
+    gradientSpreadFold,
+    faceSpreadFold,
     btnXfer, // group
     lightXfer,
     lightOutlineXfer,
@@ -183,6 +203,11 @@ var screenWidth = screen.availWidth,
     lightOutlineMenuActiveDisplay,
     gradientMenuActiveDisplay,
     faceMenuActiveDisplay,
+    btnAircraftShols,
+    lightAircraftShols,
+    lightOutlineAircraftShols,
+    gradientAircraftShols,
+    faceAircraftShols,
     buttonsBottom,
     btnCdf, // group
     lightCdf,
@@ -298,76 +323,92 @@ var screenWidth = screen.availWidth,
     rightInset,
     leftInset,
     outerPanel,
-    isDay,
-    isNight,
-    isFwd,
-    isAft,
-    isIntoWind,
-    isCda,
-    is6,
-    is5,
-    is4,
-    is3,
-    is2,
-    is1,
-    isCdf,
-    isEngage,
-    isTaxi,
-    isLaunch,
-    isLand,
-    isVertrep,
-    isXfer,
-    isLight,
-    isMedium,
-    isHeavy,
-    isHotHeavy,
-    isEmergency,
+    // isDay,
+    // isNight,
+    // isFwd,
+    // isAft,
+    // isIntoWind,
+    // isCda,
+    // is6,
+    // is5,
+    // is4,
+    // is3,
+    // is2,
+    // is1,
+    // isCdf,
+    // isEngage,
+    // isTaxi,
+    // isLaunch,
+    // isLand,
+    // isVertrep,
+    // isXfer,
+    // isRecovery,
+    // isSpreadFold,
+    // isLight,
+    // isMedium,
+    // isHeavy,
+    // isHotHeavy,
+    // isEmergency,
     selectedAircraft;    // group
 var filteredArray = [];
 var btnStatus = [
     false, false, false, false, false, false,
     false, false, false, false, false, false,
     false, false, false, false, false, false,
-    false, false, false, false, false, false
+    false, false, false, false, false, false,
+    false, false
 ];
 
-var plot = [
-    "id900-spots-1-6",
-    "id900cda-day-only",
-    "id901-fwd-facing-cda",
-    "id901-fwd-facing-1-6",
-    "id901-aft-facing-2-6",
-    "id902",
-    "id911-spot-1-light-medium",
-    "id911-spot-1-heavy",
-    "id911-spot-1-hot-heavy",
-    "id921-light-medium",
-    "id921-heavy",
-    "id921-hot-heavy",
-    "id922-light-medium",
-    "id922-heavy",
-    "id923-light-medium-heavy",
-    "id923-hot-heavy",
-    "id951-light-medium-heavy",
-    "id951-hot-heavy",
-    "id952-light-medium",
-    "id952-heavy",
-    "id991-light-medium-heavy",
-    "id991-hot-heavy",
-    "id992",
-    "id993",
-    "id994"
-]
+var plot; // array of plotted wind
 // Aircraft types supposed to be constants
-var MRH90 = 'MRH90';
-var MH60R = 'MH60R';
-var S70A9 = 'S70A9';
-var CH47F = 'CH47F';
-var ARH_TIGER = 'ARH TIGER';
-var FOREIGN = 'FOREIGN';
+var MRH90;
+var MH60R;
+var S70A9;
+var CH47F;
+var ARH_TIGER;
+var FOREIGN;
 
-var ACTIONS = 1;
-var WEIGHTS = 2;
-var POSITIONS = 3;
-var DIRECTIONS = 4;
-var TIMES = 5;
+var ACTIONS;
+var WEIGHTS;
+var POSITIONS;
+var DIRECTIONS;
+var TIMES;
+
+// TIMES
+var DAY;
+var NIGHT;
+
+// WIND DIRECTIONS
+var FWD;
+var AFT;
+var INTOWIND;
+
+// POSITIONS
+var CDA;
+var POS6;
+var POS5;
+var POS4;
+var POS3;
+var POS2;
+var POS1;
+var CDF;
+
+// ACTIONS
+var ENGAGE;
+var TAXI;
+var LAUNCH;
+var LAND;
+var VERTREP;
+var XFER;
+var EMERGENCY; // DEGRADED
+var RECOVERY;
+var SPREADFOLD;
+
+// WEIGHTS
+var LIGHT;
+var MEDIUM;
+var HEAVY;
+var HOTHEAVY;
+
+var clickFromBtnMH60R;
+var clickFromBtnS70A9;

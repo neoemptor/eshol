@@ -19,39 +19,32 @@ function doOnOffKnob(f) {
     onOffKnob.state = !onOffKnob.state;
 
     if (onOffKnob.state) {
-        $("#on-off-knob").show();
+        $("#on-off-knob").show(); // on knob
         $("#off-knob").hide();
-        mainMenu.attr("display", "");
+        $("#main-menu").show();
+        $("#btn-grp-startup").hide();
     } else {
         $("#on-off-knob").hide();
         $("#off-knob").show();
-        mainMenu.attr("display", "");
         $("#main-menu").hide();
+        $("#btn-grp-startup").show();
         $("#aircraft-shol-menu").hide();
         $("#active-shol-display").hide();
-        $("#lbl-aircraft-id").hide();
-        hideAllIndicators(f);
-        hideAllPlots();
-        resetPitchRoll();
-        resetBtnStatus();
-        resetFilterArray();
-        // wait 5 secs then shutdown
         doExit();
-
     }
 }
 
+// exit application
 async function doExit() {
     console.log('do exit function executing');
     await sleep(5000);
-    
     process.exit(0);
 }
 
-// this is the wait function can be used to wait anywhere in application
+// this is the wait function and waits before exiting application
 function sleep(ms) {
     return new Promise(resolve => {
-        setTimeout(resolve,ms);
+        setTimeout(resolve, ms);
     });
 }
 
@@ -71,6 +64,9 @@ function hideAllIndicators(f) {
     hideIndicator(f, "#hilight-land", "#opt-land");
     hideIndicator(f, "#hilight-vertrep", "#opt-vertrep");
     hideIndicator(f, "#hilight-xfer", "#opt-xfer");
+    hideIndicator(f, "#hilight-recovery", "#opt-recovery");
+    hideIndicator(f, "#hilight-spread-fold", "#txt-spread");
+    hideIndicator(f, "", "#txt-fold");
 
     // reset right  indicators ---------------------------------------------
     hideIndicator(f, "#hilight-light", "#opt-light");
@@ -156,51 +152,129 @@ function hideIndicator(f, hilightId, textId) {
 
 function goBackToMainMenu(f) {
     // go back to main menu
-    if ($("#aircraft-shol-menu").css("display") != "none" ||
-        $("#active-shol-display").css("display") != "none") {
-        $("#aircraft-shol-menu").hide();
-        $("#active-shol-display").hide();
-        $("#main-menu").show();
-        $("#lbl-aircraft-id").hide();
-        hideAllIndicators(f);
-        resetPitchRoll();
-        hideAllPlots();
-        resetBtnStatus();
-        resetFilterArray();
-    }
+    $("#aircraft-shol-menu").hide();
+    $("#active-shol-display").hide();
+    $("#main-menu").show();
+    $("#btn-taxi-dummy").hide();
+    $("#btn-xfer-dummy").hide();
+    doBtnUp(f, "#btn-aircraft-shols");
+    doBtnUp(f, "#btn-mh60r");
+
+    hideAllIndicators(f);
+    resetPitchRoll();
+    hideAllPlots();
+    resetBtnStatus();
+    $("#opt-aircraft-id").hide();
+    $("#lbl-aircraft-id").hide();
+    clickFromBtnMH60R = false;
+    clickFromBtnS70A9 = false;
 }
 
 function doBtnBack(f) {
-    // if main menu visible then show aircraft shol menu
+
+    $("#active-shol-display").hide();
+    $("#aircraft-shol-menu").show();
+    $("#btn-spare-top").show();
+    $("#btn-xfer").show();
+    $("#grp-xfer").show();
+    $("#btn-taxi-dummy").hide();
+    $("#btn-xfer-dummy").hide();
+    $("#btn-recovery").hide();
+    $("#btn-spread-fold").hide();
+    $("#grp-recovery").hide();
+    $("#opt-spread-fold").hide();
+
+    doBtnUp(f, "#btn-aircraft-shols");
+    doBtnUp(f, "#btn-mh60r");
+    hideAllIndicators(f);
+    hideAllPlots();
+    resetPitchRoll();
+    resetBtnStatus();
+    filterByAircraft();
+    $("#opt-aircraft-id").hide();
+    $("#lbl-aircraft-id").hide();
+    clickFromBtnMH60R = false;
+    clickFromBtnS70A9 = false;
+
+}
+
+function doBtnAircraftShols(f) {
     if ($("#main-menu").css("display") != "none") {
         $("#main-menu").hide();
         $("#aircraft-shol-menu").show();
-    } else // if aircraft shol select page then selected MRH90
-        if (
-            $("#aircraft-shol-menu")
-                .css("display") != "none") {
-            $("#aircraft-shol-menu").hide();
-            $("#active-shol-display").show();
+        $("#btn-menu").show();
+    }
+}
 
-            // filter data by MRH90 todo: add multiple aircraft
-            selectedAircraft = MRH90;
+function doBtnMRH90(f) {
+    $("#aircraft-shol-menu").hide();
+    $("#active-shol-display").show();
 
-            optAircraftIndicator.attr({
-                text: selectedAircraft
-            });
-            $("opt-aircraft-indicator").show();
-        } else if (
-            $("#active-shol-display")
-                .css("display") != "none") {
-            $("#active-shol-display").hide();
-            $("#aircraft-shol-menu").show();
-            $("#lbl-aircraft-id").hide();
-            hideAllIndicators(f);
-            hideAllPlots();
-            resetPitchRoll();
-            resetBtnStatus();
-            resetFilterArray();
-        }
+    selectedAircraft = MRH90;
+    optAircraftIndicator.attr({
+        text: selectedAircraft
+    });
+
+    doBtnUp(f, "#btn-back");
+    $("#btn-spare-top").hide();
+    $("#btn-xfer").show();
+    $("#grp-xfer").show();
+    $("#btn-taxi").show();
+    $("#grp-taxi").show();
+
+    $("#btn-recovery").show();
+    $("#grp-recovery").show();
+    $("#btn-spread-fold").hide();
+    $("#opt-spread-fold").hide();
+    $("#opt-aircraft-id").hide();
+}
+
+function doBtnMH60R(f) {
+
+    $("#aircraft-shol-menu").hide();
+    $("#active-shol-display").show();
+
+    selectedAircraft = MH60R;
+    optAircraftIndicator.attr({
+        text: selectedAircraft
+    });
+    doBtnUp(f, "#btn-back");
+    $("#btn-spare-top").hide();
+    $("#btn-xfer").hide();
+    $("#grp-xfer").hide();
+    $("#grp-taxi").hide();
+    $("#btn-taxi").hide();
+    $("#btn-taxi-dummy").show();
+    $("#btn-recovery").show();
+    $("#btn-spread-fold").show();
+    $("#grp-recovery").show();
+    $("#opt-spread-fold").show();
+    $("#opt-aircraft-id").hide();
+
+    clickFromBtnMH60R = true;
+}
+
+function doBtnS70A9(f) {
+    $("#aircraft-shol-menu").hide();
+    $("#active-shol-display").show();
+
+    selectedAircraft = S70A9;
+    optAircraftIndicator.attr({
+        text: selectedAircraft
+    });
+    doBtnUp(f, "#btn-back");
+    $("#btn-spare-top").hide();
+    $("#btn-xfer").hide();
+    $("#grp-xfer").hide();
+    $("#btn-taxi").hide();
+    $("#grp-taxi").hide();
+    $("#btn-xfer-dummy").show();
+    $("#btn-taxi-dummy").show();
+    $("#btn-recovery").show();
+    $("#grp-recovery").show();
+
+    $("#opt-aircraft-id").hide();
+    clickFromBtnS70A9 = true;
 }
 
 function doBtnDay(f) {
@@ -256,6 +330,40 @@ function doBtnEngageShutdown(f) {
         hideIndicator(f, "#hilight-engage-shutdown", "#opt-engage-shutdown");
     } else {
         showIndicator(f, "#hilight-engage-shutdown", "#opt-engage-shutdown");
+        hideIndicator(f, "#hilight-spread-fold", "#opt-spread-fold");
+        hideIndicator(f, "#hilight-recovery", "#opt-recovery");
+        hideIndicator(f, "#hilight-taxi", "#opt-taxi");
+        hideIndicator(f, "#hilight-launch", "#opt-launch");
+        hideIndicator(f, "#hilight-land", "#opt-land");
+        hideIndicator(f, "#hilight-vertrep", "#opt-vertrep");
+        hideIndicator(f, "#hilight-xfer", "#opt-xfer");
+        hideIndicator(f, "#hilight-emergency", "#opt-emergency");
+    }
+}
+
+function doBtnSpreadFold(f) {
+    if ($("#hilight-spread-fold").css("display") != "none") {
+        hideIndicator(f, "#hilight-spread-fold", "#opt-spread-fold");
+    } else {
+        showIndicator(f, "#hilight-spread-fold", "#opt-spread-fold");
+        hideIndicator(f, "#hilight-recovery", "#opt-recovery");
+        hideIndicator(f, "#hilight-engage-shutdown", "#opt-engage-shutdown");
+        hideIndicator(f, "#hilight-taxi", "#opt-taxi");
+        hideIndicator(f, "#hilight-launch", "#opt-launch");
+        hideIndicator(f, "#hilight-land", "#opt-land");
+        hideIndicator(f, "#hilight-vertrep", "#opt-vertrep");
+        hideIndicator(f, "#hilight-xfer", "#opt-xfer");
+        hideIndicator(f, "#hilight-emergency", "#opt-emergency");
+    }
+}
+
+function doBtnRecovery(f) {
+    if ($("#hilight-recovery").css("display") != "none") {
+        hideIndicator(f, "#hilight-recovery", "#opt-recovery");
+    } else {
+        showIndicator(f, "#hilight-recovery", "#opt-recovery");
+        hideIndicator(f, "#hilight-spread-fold", "#opt-spread-fold");
+        hideIndicator(f, "#hilight-engage-shutdown", "#opt-engage-shutdown");
         hideIndicator(f, "#hilight-taxi", "#opt-taxi");
         hideIndicator(f, "#hilight-launch", "#opt-launch");
         hideIndicator(f, "#hilight-land", "#opt-land");
@@ -270,6 +378,8 @@ function doBtnTaxi(f) {
         hideIndicator(f, "#hilight-taxi", "#opt-taxi");
     } else {
         showIndicator(f, "#hilight-taxi", "#opt-taxi");
+        hideIndicator(f, "#hilight-spread-fold", "#opt-spread-fold");
+        hideIndicator(f, "#hilight-recovery", "#opt-recovery");
         hideIndicator(f, "#hilight-engage-shutdown", "#opt-engage-shutdown");
         hideIndicator(f, "#hilight-launch", "#opt-launch");
         hideIndicator(f, "#hilight-land", "#opt-land");
@@ -284,6 +394,8 @@ function doBtnLaunch(f) {
         hideIndicator(f, "#hilight-launch", "#opt-launch");
     } else {
         showIndicator(f, "#hilight-launch", "#opt-launch");
+        hideIndicator(f, "#hilight-spread-fold", "#opt-spread-fold");
+        hideIndicator(f, "#hilight-recovery", "#opt-recovery");
         hideIndicator(f, "#hilight-engage-shutdown", "#opt-engage-shutdown");
         hideIndicator(f, "#hilight-taxi", "#opt-taxi");
         hideIndicator(f, "#hilight-land", "#opt-land");
@@ -298,6 +410,8 @@ function doBtnLand(f) {
         hideIndicator(f, "#hilight-land", "#opt-land");
     } else {
         showIndicator(f, "#hilight-land", "#opt-land");
+        hideIndicator(f, "#hilight-spread-fold", "#opt-spread-fold");
+        hideIndicator(f, "#hilight-recovery", "#opt-recovery");
         hideIndicator(f, "#hilight-engage-shutdown", "#opt-engage-shutdown");
         hideIndicator(f, "#hilight-taxi", "#opt-taxi");
         hideIndicator(f, "#hilight-launch", "#opt-launch");
@@ -312,6 +426,8 @@ function doBtnVertrep(f) {
         hideIndicator(f, "#hilight-vertrep", "#opt-vertrep");
     } else {
         showIndicator(f, "#hilight-vertrep", "#opt-vertrep");
+        hideIndicator(f, "#hilight-spread-fold", "#opt-spread-fold");
+        hideIndicator(f, "#hilight-recovery", "#opt-recovery");
         hideIndicator(f, "#hilight-engage-shutdown", "#opt-engage-shutdown");
         hideIndicator(f, "#hilight-taxi", "#opt-taxi");
         hideIndicator(f, "#hilight-launch", "#opt-launch");
@@ -326,6 +442,8 @@ function doBtnXfer(f) {
         hideIndicator(f, "#hilight-xfer", "#opt-xfer");
     } else {
         showIndicator(f, "#hilight-xfer", "#opt-xfer");
+        hideIndicator(f, "#hilight-spread-fold", "#opt-spread-fold");
+        hideIndicator(f, "#hilight-recovery", "#opt-recovery");
         hideIndicator(f, "#hilight-engage-shutdown", "#opt-engage-shutdown");
         hideIndicator(f, "#hilight-taxi", "#opt-taxi");
         hideIndicator(f, "#hilight-launch", "#opt-launch");
@@ -343,7 +461,7 @@ function doBtnLight(f) {
         hideIndicator(f, "#hilight-medium", "#opt-medium");
         hideIndicator(f, "#hilight-heavy", "#opt-heavy");
         hideIndicator(f, "#hilight-hot-heavy", "#opt-hot-heavy");
-        hideIndicator(f, "#hilight-emergency", "#opt-emergency");
+        // hideIndicator(f, "#hilight-emergency", "#opt-emergency");
     }
 }
 
@@ -355,7 +473,7 @@ function doBtnMedium(f) {
         hideIndicator(f, "#hilight-light", "#opt-light");
         hideIndicator(f, "#hilight-heavy", "#opt-heavy");
         hideIndicator(f, "#hilight-hot-heavy", "#opt-hot-heavy");
-        hideIndicator(f, "#hilight-emergency", "#opt-emergency");
+        // hideIndicator(f, "#hilight-emergency", "#opt-emergency");
     }
 }
 
@@ -367,7 +485,7 @@ function doBtnHeavy(f) {
         hideIndicator(f, "#hilight-light", "#opt-light");
         hideIndicator(f, "#hilight-medium", "#opt-medium");
         hideIndicator(f, "#hilight-hot-heavy", "#opt-hot-heavy");
-        hideIndicator(f, "#hilight-emergency", "#opt-emergency");
+        // hideIndicator(f, "#hilight-emergency", "#opt-emergency");
     }
 }
 
@@ -379,7 +497,7 @@ function doBtnHotHeavy(f) {
         hideIndicator(f, "#hilight-light", "#opt-light");
         hideIndicator(f, "#hilight-medium", "#opt-medium");
         hideIndicator(f, "#hilight-heavy", "#opt-heavy");
-        hideIndicator(f, "#hilight-emergency", "#opt-emergency");
+        // hideIndicator(f, "#hilight-emergency", "#opt-emergency");
     }
 }
 
@@ -388,10 +506,7 @@ function doBtnEmergency(f) {
         hideIndicator(f, "#hilight-emergency", "#opt-emergency");
     } else {
         showIndicator(f, "#hilight-emergency", "#opt-emergency");
-        hideIndicator(f, "#hilight-light", "#opt-light");
-        hideIndicator(f, "#hilight-medium", "#opt-medium");
-        hideIndicator(f, "#hilight-heavy", "#opt-heavy");
-        hideIndicator(f, "#hilight-hot-heavy", "#opt-hot-heavy");
+        hideIndicator(f, "#hilight-recovery", "#opt-recovery");
         hideIndicator(f, "#hilight-xfer", "#opt-xfer");
         hideIndicator(f, "#hilight-engage-shutdown", "#opt-engage-shutdown");
         hideIndicator(f, "#hilight-taxi", "#opt-taxi");
@@ -521,27 +636,36 @@ function doBtnCdf(f) {
     }
 }
 
-
+// binary animation of button down
 function doBtnDown(f, btn) {
-    var theBtn = f.paper.select(btn);
-    var children = theBtn.children();
+    let theBtn = f.paper.select(btn);
+    let children = theBtn.children();
+    let foundGradient;
+    let foundFace;
+
     children.forEach((item) => {
-        if (item.node.id.substr(0, 8) === "gradient") {
+        foundGradient = item.node.id.substr(0, 8);
+        foundFace = item.node.id.substr(0, 4);
+
+        if (foundGradient === "gradient") {
             item.attr({
                 opacity: 0
             });
-        } else if (item.node.id.substr(0, 4) === "face") {
+        } else if (foundFace === "face") {
             item.attr({
                 stroke: "#9a9a9a"
             });
         }
         var grandchildren = item.children();
         grandchildren.forEach((item) => {
-            if (item.node.id.substr(0, 8) === "gradient") {
+            foundGradient = item.node.id.substr(0, 8);
+            foundFace = item.node.id.substr(0, 4);
+
+            if (foundGradient === "gradient") {
                 item.attr({
                     opacity: 0
                 });
-            } else if (item.node.id.substr(0, 4) === "face") {
+            } else if (foundFace === "face") {
                 item.attr({
                     stroke: "#9a9a9a"
                 });
@@ -550,26 +674,35 @@ function doBtnDown(f, btn) {
     });
 }
 
+// binary animation of button up
 function doBtnUp(f, btn) {
-    var theBtn = f.paper.select(btn);
-    var children = theBtn.children();
+    let theBtn = f.paper.select(btn);
+    let children = theBtn.children();
+    let foundGradient;
+    let foundFace;
+
     children.forEach((item) => {
-        if (item.node.id.substr(0, 8) === "gradient") {
+        foundGradient = item.node.id.substr(0, 8);
+        foundFace = item.node.id.substr(0, 4);
+        if (foundGradient === "gradient") {
             item.attr({
                 opacity: 0.33
             });
-        } else if (item.node.id.substr(0, 4) === "face") {
+        } else if (foundFace === "face") {
             item.attr({
                 stroke: "none"
             });
         }
         var grandchildren = item.children();
         grandchildren.forEach((item) => {
-            if (item.node.id.substr(0, 8) === "gradient") {
+            foundGradient = item.node.id.substr(0, 8);
+            foundFace = item.node.id.substr(0, 4);
+
+            if (foundGradient === "gradient") {
                 item.attr({
                     opacity: 0.33
                 });
-            } else if (item.node.id.substr(0, 4) === "face") {
+            } else if (foundFace === "face") {
                 item.attr({
                     stroke: "none"
                 });
@@ -595,185 +728,94 @@ function removeObjectByIndex(theObject, idx) {
 function resetFilter(theFilter, idx) {
     let tmpStatus = btnStatus[idx];
 
-    resetFilterArray();
+    // resetFilterArray();
+    filterByAircraft(selectedAircraft);
     switch (theFilter) {
         case ACTIONS:
-            btnStatus[17] = false;
-            btnStatus[18] = false;
-            btnStatus[19] = false;
-            btnStatus[20] = false;
-            btnStatus[21] = false;
-            btnStatus[22] = false;
-            btnStatus[23] = false;
-            isEngage = false;
-            isTaxi = false;
-            isLaunch = false;
-            isLand = false;
-            isVertrep = false;
-            isXfer = false;
-            isEmergency = false;
+            btnStatus[ENGAGE] = false; // Engage
+            btnStatus[TAXI] = false; // Taxi
+            btnStatus[LAUNCH] = false; // Launch
+            btnStatus[LAND] = false; // Land
+            btnStatus[VERTREP] = false; // Vertrep
+            btnStatus[XFER] = false; // Xfer
+            btnStatus[EMERGENCY] = false; // Emergency
+            btnStatus[RECOVERY] = false; // Recovery
+            btnStatus[SPREADFOLD] = false; // Spread Fold
 
-            for (let x = 17; x < 24; x++) {
+            for (let x = ENGAGE; x <= SPREADFOLD; x++) { // Engage - SpreadFold
                 if (idx === x) {
                     btnStatus[x] = tmpStatus;
                 }
             }
-
-            switch (idx) {
-                case 17:
-                    isEngage = tmpStatus;
-                    break;
-                case 18:
-                    isTaxi = tmpStatus;
-                    break;
-                case 19:
-                    isLaunch = tmpStatus;
-                    break;
-                case 20:
-                    isLand = tmpStatus;
-                    break;
-                case 21:
-                    isVertrep = tmpStatus;
-                    break;
-                case 22:
-                    isXfer = tmpStatus;
-                    break;
-                case 23:
-                    isEmergency = tmpStatus;
-                    break;
-            }
             break;
         case WEIGHTS:
-            btnStatus[0] = false;
-            btnStatus[1] = false;
-            btnStatus[2] = false;
-            btnStatus[3] = false;
-            isLight = false;
-            isMedium = false;
-            isHeavy = false;
-            isHotHeavy = false;
+            btnStatus[LIGHT] = false;
+            btnStatus[MEDIUM] = false;
+            btnStatus[HEAVY] = false;
+            btnStatus[HOTHEAVY] = false;
+            // isLight = false;
+            // isMedium = false;
+            // isHeavy = false;
+            // isHotHeavy = false;
 
-            for (let x = 0; x < 4; x++) {
+            for (let x = LIGHT; x <= HOTHEAVY; x++) {
                 if (x === idx) {
                     btnStatus[x] = tmpStatus;
                 }
-            }
-
-            switch (idx) {
-                case 0:
-                    isLight = tmpStatus;
-                    break;
-                case 1:
-                    isMedium = tmpStatus;
-                    break;
-                case 2:
-                    isHeavy = tmpStatus;
-                    break;
-                case 3:
-                    isHotHeavy = tmpStatus;
-                    break;
             }
 
             break;
         case POSITIONS:
-            btnStatus[9] = false;
-            btnStatus[10] = false;
-            btnStatus[11] = false;
-            btnStatus[12] = false;
-            btnStatus[13] = false;
-            btnStatus[14] = false;
-            btnStatus[15] = false;
-            btnStatus[16] = false;
-            isCda = false;
-            is6 = false;
-            is5 = false;
-            is4 = false;
-            is3 = false;
-            is2 = false;
-            is1 = false;
-            isCdf = false;
+            btnStatus[CDA] = false; // CDA
+            btnStatus[POS6] = false; // Pos 6
+            btnStatus[POS5] = false; // Pos 5
+            btnStatus[POS4] = false; // Pos 4
+            btnStatus[POS3] = false; // Pos 3
+            btnStatus[POS2] = false; // Pos 2
+            btnStatus[POS1] = false; // Pos 1
+            btnStatus[CDF] = false; // CDF
 
-            for (let x = 9; x < 17; x++) {
+            for (let x = CDA; x <= CDF; x++) { // CDA - CDF
                 if (x === idx) {
                     btnStatus[x] = tmpStatus;
                 }
-            }
-
-            switch (idx) {
-                case 9:
-                    isCda = tmpStatus;
-                    break;
-                case 10:
-                    is6 = tmpStatus;
-                    break;
-                case 11:
-                    is5 = tmpStatus;
-                    break;
-                case 12:
-                    is4 = tmpStatus;
-                    break;
-                case 13:
-                    is3 = tmpStatus;
-                    break;
-                case 14:
-                    is2 = tmpStatus;
-                    break;
-                case 15:
-                    is1 = tmpStatus;
-                    break;
-                case 16:
-                    isCdf = tmpStatus;
-                    break;
             }
 
             break;
         case DIRECTIONS:
-            btnStatus[4] = false;
-            btnStatus[5] = false;
-            btnStatus[6] = false;
-            isFwd = false;
-            isAft = false;
-            isIntoWind = false;
+            btnStatus[FWD] = false; // Forward
+            btnStatus[AFT] = false; // Aft
+            btnStatus[INTOWIND] = false; // Into Wind
+            // isFwd = false;
+            // isAft = false;
+            // isIntoWind = false;
 
-            for (let x = 4; x < 7; x++) {
+            for (let x = FWD; x <= INTOWIND; x++) { // FWD - INTOWIND
                 if (x === idx) {
                     btnStatus[x] = tmpStatus;
                 }
             }
 
-            switch (idx) {
-                case 4:
-                    isFwd = tmpStatus;
-                    break;
-                case 5:
-                    isAft = tmpStatus;
-                    break;
-                case 6:
-                    isIntoWind = tmpStatus;
-                    break;
-            }
             break;
         case TIMES:
-            btnStatus[7] = false;
-            btnStatus[8] = false;
-            isDay = false;
-            isNight = false;
+            btnStatus[DAY] = false; // Day
+            btnStatus[NIGHT] = false; // Night
 
-            for (let x = 7; x < 9; x++) {
+            for (let x = DAY; x <= NIGHT; x++) { // DAY - NIGHT
                 if (x === idx) {
                     btnStatus[x] = tmpStatus;
                 }
             }
-
-            switch (idx) {
-                case 7:
-                    isDay = tmpStatus;
-                    break;
-                case 8:
-                    isNight = tmpStatus;
-                    break;
-            }
             break;
+    }
+}
+
+function filterByAircraft(chosenAircraft) {
+    filteredArray = [];
+    for (let x = 0; x < tblProfile.rows.length; x++) {
+        if (tblProfile.rows[x][2] === chosenAircraft) {
+            filteredArray.push(tblProfile.rows[x]);
+        }
     }
 }
 
@@ -781,23 +823,28 @@ function filter() {
     let temp = "";
     let btnCount = 0;
 
+    // scan and store all of the panel indicators which are on
     for (let x = 0; x < btnStatus.length; x++) {
         if (btnStatus[x]) {
             btnCount++;
         }
     }
 
+    // because it resets the filter before each button press, a search has to be done through the whole list of buttons.
     // filter by looping
+    let MINOPTIONSIDX = 26;
+    let OFFSET = 3;
+
     for (let optIdx = 0; optIdx < btnStatus.length; optIdx++) {
         for (let x = 0; x < filteredArray.length; x++) {
-            let fltr = filteredArray[x][optIdx + 3];
+            let fltr = filteredArray[x][optIdx + OFFSET];
             let btnStat = btnStatus[optIdx];
-            let fltrInt = parseInt(filteredArray[x][27]);
+            let minOptionsChosen = filteredArray[x][MINOPTIONSIDX + OFFSET];
 
-            // the option buttons start at index 4 that's why there's + 3
-            if (fltr !== '1' && fltr !== '2' && btnStat) { // && fltrInt !== btnCount) {
-                // filteredArray.push(tempArray[x]);
+            if (fltr !== '1' && fltr !== '2' && btnStat && btnCount < minOptionsChosen) {
+                console.log(filteredArray[x][1]);
                 removeObjectByIndex(filteredArray, x);
+
                 x = 0;
             }
         }
@@ -805,13 +852,13 @@ function filter() {
 
     for (let optIdx = 0; optIdx < btnStatus.length; optIdx++) {
         for (let x = 0; x < filteredArray.length; x++) {
-            let fltr = filteredArray[x][optIdx + 3];
+            let fltr = filteredArray[x][optIdx + OFFSET];
             let btnStat = btnStatus[optIdx];
-            let fltrInt = parseInt(filteredArray[x][27]);
+            let minOptionsChosen = filteredArray[x][MINOPTIONSIDX + OFFSET];
 
-            // the option buttons start at index 4 that's why there's + 3
-            if (fltr !== '1' && fltr !== '2' && btnStat) { // && fltrInt !== btnCount) {
-                // filteredArray.push(tempArray[x]);
+            // the option buttons start at index 3 that's why there's + 3
+            if (fltr !== '1' && fltr !== '2' && btnStat && btnCount < minOptionsChosen) {
+                console.log(filteredArray[x][1]);
                 removeObjectByIndex(filteredArray, x);
                 x = 0;
             }
@@ -819,28 +866,62 @@ function filter() {
     }
 
     let tmpFltr = [];
+    let scoredPoints = [];
+    let score;
+    score = 0;
+
+
     for (let x = 0; x < filteredArray.length; x++) {
-        let fltrInt = parseInt(filteredArray[x][27]);
-        if (fltrInt === btnCount && tmpFltr.length === 0) {
-            tmpFltr.push(filteredArray[x]);
+        for (let y = 0; y < filteredArray[x].length; y++) {
+            if (btnStatus[y]) {
+                if (filteredArray[x][y + OFFSET] === '0') {
+                    score -= 999;
+
+                } else if (filteredArray[x][y + OFFSET] === '1') {
+                    score += 1;
+                }
+            }
         }
+        scoredPoints.push({
+            'score': score,
+            'id': x
+        });
+        score = 0;
     }
+
+    scoredPoints.sort((a, b) => {
+        return b.score - a.score;
+    });
+
+    let finalScore = scoredPoints[0].score;
+    let finalChoice = filteredArray[scoredPoints[0].id];
+    let fltrInt = parseInt(filteredArray[scoredPoints[0].id][MINOPTIONSIDX + OFFSET]);
+    if (fltrInt === btnCount && tmpFltr.length === 0 && finalScore >= 0) {
+        tmpFltr.push(finalChoice);
+    }
+
+
     if (tmpFltr !== undefined) {
         filteredArray = tmpFltr;
     }
 
     // reset all plots to hidden
     hideAllPlots();
-
+    let AIRCRAFTIDIDX = 1;
+    let PLOTIDX = 32;
+    let PITCHIDX = 30;
+    let ROLLIDX = 31;
     // show the matching plot
     if (filteredArray.length === 1) {
         optAircraftIdIndicator.attr({
-            text: filteredArray[0][1]
+            text: filteredArray[0][AIRCRAFTIDIDX]
         });
-        $("#lbl-aircraft-id").show();
-        $("#" + filteredArray[0][30]).show();
-        let pitch = filteredArray[0][28];
-        let roll = filteredArray[0][29];
+        $("#lbl-aircraft-id").show(); // show aircraft id
+        $("#" + filteredArray[0][PLOTIDX]).show(); // show plotted wind data
+        let pitch = filteredArray[0][PITCHIDX];
+        let roll = filteredArray[0][ROLLIDX];
+
+        // === Show the pitch and roll data ===
         showPitchAndRoll(pitch, roll);
     } else {
         $("#lbl-aircraft-id").hide();
@@ -849,16 +930,10 @@ function filter() {
 }
 
 function resetFilterArray() {
-    // var resetNo = false;
-    // for (let x = 0; x < btnStatus.length; x++) {
-    //     if (btnStatus[x]) resetNo = true;
-    // }
-    // if (!resetNo) {
     filteredArray = [];
     for (let y = 0; y < tblProfile.rows.length; y++) {
         filteredArray.push(tblProfile.rows[y]);
     }
-    // }
 }
 
 function resetBtnStatus() {
@@ -889,6 +964,8 @@ function resetBtnStatus() {
     isHeavy = false;
     isHotHeavy = false;
     isEmergency = false;
+    isRecovery = false;
+    isSpreadFold = false;
 }
 
 function showPitchAndRoll(pitch, roll) {
@@ -897,7 +974,7 @@ function showPitchAndRoll(pitch, roll) {
     let rollPortTag = "#roll-port-max-";
     let rollStarboardTag = "#roll-starboard-max-";
 
-    resetPitchRoll();    
+    resetPitchRoll();
     switch (pitch) {
         case "0":
             pitchDownTag += "0";
@@ -950,6 +1027,10 @@ function showPitchAndRoll(pitch, roll) {
             rollPortTag += "4";
             rollStarboardTag += "4";
             break;
+        case "5":
+            rollPortTag += "5";
+            rollStarboardTag += "5";
+            break;
     }
 
     if (pitch !== "0") {
@@ -966,6 +1047,7 @@ function resetPitchRoll() {
     resetPitch();
     resetRoll();
 }
+
 function resetPitch() {
     let pitchDownTag = "#pitch-down-max-";
     let pitchUpTag = "#pitch-up-max-";
@@ -991,9 +1073,15 @@ function resetRoll() {
     $(rollPortTag + "2").hide();
     $(rollPortTag + "3").hide();
     $(rollPortTag + "4").hide();
+    $(rollPortTag + "5").hide();
     $(rollStarboardTag + "1").hide();
     $(rollStarboardTag + "15").hide();
     $(rollStarboardTag + "2").hide();
     $(rollStarboardTag + "3").hide();
     $(rollStarboardTag + "4").hide();
+    $(rollStarboardTag + "5").hide();
+}
+
+function resetButtonUps() {
+    doBtnUp(f, "#btn-day");
 }

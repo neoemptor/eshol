@@ -25,6 +25,66 @@
 			-ms-user-select: none;
 			user-select: none;
 		}
+
+		/* #roll-bar-indicator { */
+			/* position: absolute;
+			top: 500px;
+			left: 500px; */
+			/* width: 1px;
+			height: 6px;
+			background: rgba(0, 255, 0, 1);
+			animation: flipAround 5s infinite;
+			transform-origin: right;
+		} */
+
+		/* @keyframes flipAround {
+			50% {
+				transform-origin: right;
+				animation-mode: forwards;
+				transform: rotateY(-180deg);
+			}
+		} */
+
+		/* #pitch-bar-indicator { */
+		/* position: relative;
+			top: 0;
+			left: 0; */
+		/* width: 6px;
+			height: 1px;
+			background: rgba(0, 255, 0, 1);
+			animation: flipVert 5s infinite;
+			transform-origin: top;
+			animation-delay: 2s;
+		} */
+
+		/* @keyframes flipVert {
+			50% {
+				transform-origin: top;
+				animation-mode: forwards;
+				transform: rotateX(-180deg);
+			}
+		} */
+		/* #pitch-bar-indicator { */
+			/* position: absolute;
+			y: 346.73608;
+			x: 74.868652; */
+			/* width: 6px;
+			height: 30px;
+			fill: #00ff00;
+			background: rgba(0, 255, 0, .5);
+			animation: flipVert 30s infinite;
+			transform-origin: 50% 50%;
+			animation-delay: 1s;
+			animation-timing-function: ease-in-out;
+		} */
+
+		/* @keyframes flipVert {
+			50% {
+				animation-fill-mode: forwards;
+				transform: rotateX(180deg);
+				animation-timing-function: ease-in-out;
+			}
+		} */
 	</style>
 </head>
 
@@ -38,10 +98,9 @@
 	</svg>
 
 	<script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
-	<script src="../node_modules//d3/dist/d3.min.js"></script>
 	<script src="../node_modules/snapsvg/dist/snap.svg.js"></script>
-	<script src="../node_modules/greensock/dist/TweenMax.js"></script>
-	<script src="../node_modules/greensock/dist/jquery.gsap.js"></script>
+	<!-- <script src="../node_modules/greensock/dist/TweenMax.js"></script>
+	<script src="../node_modules/greensock/dist/jquery.gsap.js"></script> -->
 	<!-- <script src="../app/controller.js"></script> -->
 	<script src="../app/buttons.js"></script>
 	<script src="../app/model.js"></script>
@@ -80,30 +139,19 @@
 					doOnOffKnob(f)
 				});
 
-
+				// ------------------- Pitch and Roll Animations ---------------------
+				console.log(pitchBarIndicator.getBBox().x + " : " + pitchBarIndicator.getBBox().y + " : " +
+					pitchBarIndicator.getBBox().x2 + " : " + pitchBarIndicator.getBBox().y2);
 				initEvents(f);
-
 				// #lbl-aircraft is the label displayed on the active display
 				// after the aircraft type has been
-				// chosen from the previous aircraft 
+				// chosen from the previous aircraft
 				// #opt-aircraft-id-indicator holds the text.
 
-				// ------------------------------ filter selections ---------------
 
-
-				// filter by aircraft type
-				if (selectedAircraft === MRH90) {
-					for (let x = 0; x < tblProfile.rows.length; x++) {
-						if (tblProfile.rows[x][2] === MRH90) {
-							filteredArray.push(tblProfile.rows[x]);
-						}
-					}
-					// tblProfile.rows.forEach(item => {
-					// });
-				}
 
 				// #lbl-aircraft-id the group for the aircraft conditions code
-				// #opt-aircraft-id-indicator using this for the text for the 
+				// #opt-aircraft-id-indicator using this for the text for the
 				// conditions code
 
 				// show the whole panel and display ========================

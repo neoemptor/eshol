@@ -28,15 +28,17 @@
     "homepage": "https://dsbaileyfreelancer.com.au",
     "scripts": {
         "tsc-build": "gulp",
-        "start": "nw",
         "dev": "nw",
-        "prod": "nwbuild --platforms win32,win64 --buildDir dist/ ./"
+        "prod": "nwbuild --platforms win32,win64 --buildDir dist/ ./",
+        "dist": "build --tasks win-x64 --mirror https://dl.nwjs.io/ .",
+        "start": "run --x64 --mirror https://dl.nwjs.io/ ."
     },
     "devDependencies": {
         "@types/node": "^10.3.2",
         "gulp": "^3.9.1",
         "gulp-typescript": "^4.0.2",
         "jquery": "2.2.4",
+        "nwjs-builder-phoenix": "^1.14.8",
         "snapsvg": "^0.5.1",
         "typescript": "^2.9.1"
     },
@@ -45,6 +47,10 @@
     "type": "simple",
     "dependencies": {
         "fs": "0.0.1-security",
-        "glob": "^7.1.2"
+        "glob": "^7.1.2",
+        "jquery-mobile": "^1.5.0-alpha.1"
+    },
+    "build": {
+        "nwVersion": "0.32.4"
     }
 }
