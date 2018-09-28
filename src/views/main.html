@@ -26,65 +26,23 @@
 			user-select: none;
 		}
 
-		/* #roll-bar-indicator { */
-			/* position: absolute;
-			top: 500px;
-			left: 500px; */
-			/* width: 1px;
-			height: 6px;
-			background: rgba(0, 255, 0, 1);
-			animation: flipAround 5s infinite;
-			transform-origin: right;
-		} */
+		#svg-pitch-bar-indicator {
+			position: absolute;
+			top: 434px;
+			left: 565px;
+		}
 
-		/* @keyframes flipAround {
-			50% {
-				transform-origin: right;
-				animation-mode: forwards;
-				transform: rotateY(-180deg);
-			}
-		} */
+		#svg {
+			position: absolute;
+			top: 0px;
+			left: 100px;
+		}
 
-		/* #pitch-bar-indicator { */
-		/* position: relative;
-			top: 0;
-			left: 0; */
-		/* width: 6px;
-			height: 1px;
-			background: rgba(0, 255, 0, 1);
-			animation: flipVert 5s infinite;
-			transform-origin: top;
-			animation-delay: 2s;
-		} */
-
-		/* @keyframes flipVert {
-			50% {
-				transform-origin: top;
-				animation-mode: forwards;
-				transform: rotateX(-180deg);
-			}
-		} */
-		/* #pitch-bar-indicator { */
-			/* position: absolute;
-			y: 346.73608;
-			x: 74.868652; */
-			/* width: 6px;
-			height: 30px;
-			fill: #00ff00;
-			background: rgba(0, 255, 0, .5);
-			animation: flipVert 30s infinite;
-			transform-origin: 50% 50%;
-			animation-delay: 1s;
-			animation-timing-function: ease-in-out;
-		} */
-
-		/* @keyframes flipVert {
-			50% {
-				animation-fill-mode: forwards;
-				transform: rotateX(180deg);
-				animation-timing-function: ease-in-out;
-			}
-		} */
+		#svg-roll-bar-indicator {
+			position: absolute;
+			top: 838px;
+			left: 922px;
+		}
 	</style>
 </head>
 
@@ -96,8 +54,19 @@
 			}
 		</style>
 	</svg>
+	<svg id="svg-pitch-bar-indicator" viewBox="0 0 15 170" width="15" height="170" xmlns="http://www.w3.org/2000/svg">
+		<rect style="font-family:Arial, Helvetica, sans-serif;fill:#00f41a;stroke-width:1.39121664;stroke-miterlimit:10;stroke-dasharray:none"
+		 id="pitch-bar-indicator" height="85" width="6" y="0" x="0">
+		</rect>
+	</svg>
 
+	<svg id="svg-roll-bar-indicator" viewBox="0 0 170 15" width="170" height="15" xmlns="http://www.w3.org/2000/svg">
+		<rect style="font-family:Arial, Helvetica, sans-serif;fill:#00f41a;stroke-width:1.39121664;stroke-miterlimit:10;stroke-dasharray:none"
+		 id="roll-bar-indicator" height="6" width="85" y="0" x="0">
+		</rect>
+	</svg>
 	<script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+	<script src="../assets/js/TweenMax.min.js"></script>
 	<script src="../node_modules/snapsvg/dist/snap.svg.js"></script>
 	<!-- <script src="../node_modules/greensock/dist/TweenMax.js"></script>
 	<script src="../node_modules/greensock/dist/jquery.gsap.js"></script> -->
@@ -112,6 +81,8 @@
 
 	<script>
 		window.onload = function () {
+			$("#pitch-bar-indicator").hide();
+			$("#roll-bar-indicator").hide();
 			selectedAircraft = "";
 			vpX = 0;
 			vpY = 0;
@@ -140,15 +111,35 @@
 				});
 
 				// ------------------- Pitch and Roll Animations ---------------------
-				console.log(pitchBarIndicator.getBBox().x + " : " + pitchBarIndicator.getBBox().y + " : " +
-					pitchBarIndicator.getBBox().x2 + " : " + pitchBarIndicator.getBBox().y2);
+				// console.log(pitchBarIndicator.getBBox().x + " : " + pitchBarIndicator.getBBox().y + " : " +
+				// 	pitchBarIndicator.getBBox().x2 + " : " + pitchBarIndicator.getBBox().y2);
 				initEvents(f);
 				// #lbl-aircraft is the label displayed on the active display
 				// after the aircraft type has been
 				// chosen from the previous aircraft
 				// #opt-aircraft-id-indicator holds the text.
 
+				CSSPlugin.defaultSmoothOrigin = true;
+				var pitch = TweenMax.to("#svg-pitch-bar-indicator", 1, {
+					ease: Sine.easeInOut,
+					rotationX: 180,
+					scaleX: 1,
+					repeat: -1,
+					yoyo: true,
+					transformOrigin: "50% 50%"
+				});
+				pitch.timeScale(0.18);
 
+				var roll = TweenMax.to("#svg-roll-bar-indicator", 1, {
+					ease: Sine.easeInOut,
+					rotationY: 180,
+					scaleX: 1,
+					repeat: -1,
+					yoyo: true,
+					transformOrigin: "50% 50%"
+				});
+
+				roll.timeScale(0.1);
 
 				// #lbl-aircraft-id the group for the aircraft conditions code
 				// #opt-aircraft-id-indicator using this for the text for the

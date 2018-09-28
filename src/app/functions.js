@@ -30,6 +30,8 @@ function doOnOffKnob(f) {
         $("#btn-grp-startup").show();
         $("#aircraft-shol-menu").hide();
         $("#active-shol-display").hide();
+        $("#pitch-bar-indicator").hide();
+        $("#roll-bar-indicator").hide();
         doExit();
     }
 }
@@ -166,6 +168,9 @@ function goBackToMainMenu(f) {
     resetBtnStatus();
     $("#opt-aircraft-id").hide();
     $("#lbl-aircraft-id").hide();
+    $("#pitch-bar-indicator").hide();
+    $("#roll-bar-indicator").hide();
+
     clickFromBtnMH60R = false;
     clickFromBtnS70A9 = false;
 }
@@ -183,9 +188,12 @@ function doBtnBack(f) {
     $("#btn-spread-fold").hide();
     $("#grp-recovery").hide();
     $("#opt-spread-fold").hide();
+    $("#pitch-bar-indicator").hide();
+    $("#roll-bar-indicator").hide();
 
     doBtnUp(f, "#btn-aircraft-shols");
     doBtnUp(f, "#btn-mh60r");
+    doBtnUp(f, "#btn-s70a9");
     hideAllIndicators(f);
     hideAllPlots();
     resetPitchRoll();
@@ -221,9 +229,11 @@ function doBtnMRH90(f) {
     $("#grp-xfer").show();
     $("#btn-taxi").show();
     $("#grp-taxi").show();
-
+    $("#pitch-bar-indicator").show();
+    $("#roll-bar-indicator").show();
     $("#btn-recovery").show();
     $("#grp-recovery").show();
+
     $("#btn-spread-fold").hide();
     $("#opt-spread-fold").hide();
     $("#opt-aircraft-id").hide();
@@ -250,6 +260,8 @@ function doBtnMH60R(f) {
     $("#grp-recovery").show();
     $("#opt-spread-fold").show();
     $("#opt-aircraft-id").hide();
+    $("#pitch-bar-indicator").show();
+    $("#roll-bar-indicator").show();
 
     clickFromBtnMH60R = true;
 }
@@ -272,6 +284,8 @@ function doBtnS70A9(f) {
     $("#btn-taxi-dummy").show();
     $("#btn-recovery").show();
     $("#grp-recovery").show();
+    $("#pitch-bar-indicator").show();
+    $("#roll-bar-indicator").show();
 
     $("#opt-aircraft-id").hide();
     clickFromBtnS70A9 = true;

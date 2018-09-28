@@ -1,6 +1,6 @@
 {
     "name": "eshol",
-    "version": "0.0.3",
+    "version": "0.1.3",
     "description": "Electronic Ship Helicopter Operating Limits System",
     "main": "src/views/main.html",
     "window": {
