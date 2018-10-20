@@ -18912,12 +18912,12 @@
    showgrid="false"
    inkscape:snap-object-midpoints="false"
    inkscape:zoom="1"
-   inkscape:cx="607.76743"
-   inkscape:cy="461.71431"
+   inkscape:cx="616.32295"
+   inkscape:cy="371.83077"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
-   inkscape:current-layer="grp-spare"
+   inkscape:current-layer="grp-emergency"
    inkscape:snap-text-baseline="false"
    inkscape:snap-bbox="false"
    inkscape:showpageshadow="false"
@@ -19588,8 +19588,6 @@
 
 
 
-
-
 	<text
    inkscape:label="lbl-on"
    style="font-size:16.13574982px;font-family:'Arial Narrow';fill:#e6e6e6;stroke-width:0.91301697"
@@ -19598,8 +19596,6 @@
    transform="scale(0.91301697,1.0952699)"
    x="115.55097"
    y="48.008259">ON</text>
-
-
 
 
 
@@ -19917,7 +19913,8 @@
    sodipodi:insensitive="true" /><g
    id="active-shol-display"
    style="font-family:Arial, Helvetica, sans-serif;display:none"
-   inkscape:label="#active-shol-display"><g
+   inkscape:label="#active-shol-display"
+   sodipodi:insensitive="true"><g
      style="font-family:Arial, Helvetica, sans-serif"
      transform="translate(-26,-174)"
      inkscape:label="#roll-indicators"
@@ -19944,36 +19941,36 @@
        transform="translate(109.27508,259.16837)"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        id="roll-starboard-max-5"
-       points="308,434 302,428 295,434 295,440 295,446 302,446 308,446 308,440 "
+       points="302,446 308,446 308,440 308,434 302,428 295,434 295,440 295,446 "
        class="cls-8"
        inkscape:label="#roll-starboard-max-5" /><polygon
        inkscape:label="#roll-starboard-max-4"
        class="cls-8"
-       points="308,446 308,440 308,434 302,428 295,434 295,440 295,446 302,446 "
+       points="295,440 295,446 302,446 308,446 308,440 308,434 302,428 295,434 "
        id="roll-starboard-max-4"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        transform="translate(65.275083,259.16837)" /><polygon
        transform="translate(22.275083,259.16837)"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        id="roll-starboard-max-3"
-       points="295,440 295,446 302,446 308,446 308,440 308,434 302,428 295,434 "
+       points="308,434 302,428 295,434 295,440 295,446 302,446 308,446 308,440 "
        class="cls-8"
        inkscape:label="#roll-starboard-max-3" /><polygon
        inkscape:label="#roll-starboard-max-2"
        class="cls-8"
-       points="308,434 302,428 295,434 295,440 295,446 302,446 308,446 308,440 "
+       points="302,446 308,446 308,440 308,434 302,428 295,434 295,440 295,446 "
        id="roll-starboard-max-2"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        transform="translate(-20.602137,259.16837)" /><polygon
        transform="translate(-40.256167,259.16837)"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        id="roll-starboard-max-15"
-       points="308,446 308,440 308,434 302,428 295,434 295,440 295,446 302,446 "
+       points="295,440 295,446 302,446 308,446 308,440 308,434 302,428 295,434 "
        class="cls-8"
        inkscape:label="#roll-starboard-max-15" /><polygon
        inkscape:label="#roll-starboard-max-1"
        class="cls-8"
-       points="295,434 295,440 295,446 302,446 308,446 308,440 308,434 302,428 "
+       points="308,440 308,434 302,428 295,434 295,440 295,446 302,446 308,446 "
        id="roll-starboard-max-1"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        transform="translate(-63.756167,259.16837)" /><path
@@ -19990,36 +19987,36 @@
        transform="translate(-242.25617,259.16837)"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        id="roll-port-max-5"
-       points="209,440 209,446 216,446 222,446 222,440 222,434 216,428 209,434 "
+       points="222,434 216,428 209,434 209,440 209,446 216,446 222,446 222,440 "
        class="cls-8"
        inkscape:label="#roll-port-max-5" /><polygon
        inkscape:label="#roll-port-max-4"
        class="cls-8"
-       points="222,440 222,434 216,428 209,434 209,440 209,446 216,446 222,446 "
+       points="209,446 216,446 222,446 222,440 222,434 216,428 209,434 209,440 "
        id="roll-port-max-4"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        transform="translate(-193.75617,259.16837)" /><polygon
        transform="translate(-150.68416,259.16837)"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        id="roll-port-max-3"
-       points="222,446 222,440 222,434 216,428 209,434 209,440 209,446 216,446 "
+       points="209,440 209,446 216,446 222,446 222,440 222,434 216,428 209,434 "
        class="cls-8"
        inkscape:label="#roll-port-max-3" /><polygon
        inkscape:label="#roll-port-max-2"
        class="cls-8"
-       points="209,434 209,440 209,446 216,446 222,446 222,440 222,434 216,428 "
+       points="222,440 222,434 216,428 209,434 209,440 209,446 216,446 222,446 "
        id="roll-port-max-2"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        transform="translate(-106.68416,259.16837)" /><polygon
        transform="translate(-84.756167,259.16837)"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        id="roll-port-max-15"
-       points="222,434 216,428 209,434 209,440 209,446 216,446 222,446 222,440 "
+       points="216,446 222,446 222,440 222,434 216,428 209,434 209,440 209,446 "
        class="cls-8"
        inkscape:label="#roll-port-max-15" /><polygon
        inkscape:label="#roll-port-max-1"
        class="cls-8"
-       points="222,446 222,440 222,434 216,428 209,434 209,440 209,446 216,446 "
+       points="209,440 209,446 216,446 222,446 222,440 222,434 216,428 209,434 "
        id="roll-port-max-1"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
        transform="translate(-63.756167,259.16837)" /></g><g
@@ -20036,7 +20033,7 @@
          id="title4614">Pitch Graph</title></path><polygon
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"
        id="pitch-up-max-4"
-       points="35,154 29,154 23,154 17,161 23,167 29,167 35,167 35,161 "
+       points="29,167 35,167 35,161 35,154 29,154 23,154 17,161 23,167 "
        class="cls-8"
        transform="translate(73.86865,13.25)"
        inkscape:label="#pitch-up-max-4"><desc
@@ -20045,14 +20042,14 @@
        inkscape:label="#pitch-up-max-3"
        transform="translate(73.86865,56.498702)"
        class="cls-8"
-       points="23,154 17,161 23,167 29,167 35,167 35,161 35,154 29,154 "
+       points="35,161 35,154 29,154 23,154 17,161 23,167 29,167 35,167 "
        id="pitch-up-max-3"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"><desc
          id="desc5347">Shows the maximum pitch up boundary</desc><title
          id="title5349">Pitch Up Maximum Indicator</title></polygon><polygon
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"
        id="pitch-up-max-2"
-       points="35,167 35,161 35,154 29,154 23,154 17,161 23,167 29,167 "
+       points="17,161 23,167 29,167 35,167 35,161 35,154 29,154 23,154 "
        class="cls-8"
        transform="translate(73.86865,99.294194)"
        inkscape:label="#pitch-up-max-2"><desc
@@ -20061,14 +20058,14 @@
        inkscape:label="#pitch-up-max-15"
        transform="translate(73.86865,121.25)"
        class="cls-8"
-       points="23,167 29,167 35,167 35,161 35,154 29,154 23,154 17,161 "
+       points="29,154 23,154 17,161 23,167 29,167 35,167 35,161 35,154 "
        id="pitch-up-max-15"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"><desc
          id="desc5335">Shows the maximum pitch up boundary</desc><title
          id="title5337">Pitch Up Maximum Indicator</title></polygon><polygon
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"
        id="pitch-up-max-1"
-       points="23,167 29,167 35,167 35,161 35,154 29,154 23,154 17,161 "
+       points="29,154 23,154 17,161 23,167 29,167 35,167 35,161 35,154 "
        class="cls-8"
        transform="translate(73.86865,143.25)"
        inkscape:label="#pitch-up-max-1"><desc
@@ -20089,35 +20086,35 @@
          id="title4598">Last Pitch Down Pos Indicator</title></path><polygon
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"
        id="pitch-down-max-4"
-       points="29,253 35,253 35,247 35,240 29,240 23,240 17,247 23,253 "
+       points="23,240 17,247 23,253 29,253 35,253 35,247 35,240 29,240 "
        class="cls-8"
        transform="translate(73.86865,272.8081)"><desc
          id="desc5329">Shows the maximum pitch down boundary</desc><title
          id="title5331">Pitch Down Maximum Indicator</title></polygon><polygon
        transform="translate(73.86865,229.34375)"
        class="cls-8"
-       points="23,253 29,253 35,253 35,247 35,240 29,240 23,240 17,247 "
+       points="29,240 23,240 17,247 23,253 29,253 35,253 35,247 35,240 "
        id="pitch-down-max-3"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"><desc
          id="desc5323">Shows the maximum pitch down boundary</desc><title
          id="title5325">Pitch Down Maximum Indicator</title></polygon><polygon
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"
        id="pitch-down-max-2"
-       points="35,240 29,240 23,240 17,247 23,253 29,253 35,253 35,247 "
+       points="29,253 35,253 35,247 35,240 29,240 23,240 17,247 23,253 "
        class="cls-8"
        transform="translate(73.86865,186.45458)"><desc
          id="desc5317">Shows the maximum pitch down boundary</desc><title
          id="title5319">Pitch Down Maximum Indicator</title></polygon><polygon
        transform="translate(73.86865,164.28034)"
        class="cls-8"
-       points="35,247 35,240 29,240 23,240 17,247 23,253 29,253 35,253 "
+       points="23,253 29,253 35,253 35,247 35,240 29,240 23,240 17,247 "
        id="pitch-down-max-15"
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"><desc
          id="desc5311">Shows the maximum pitch down boundary</desc><title
          id="title5313">Pitch Down Maximum Indicator</title></polygon><polygon
        style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:none"
        id="pitch-down-max-1"
-       points="23,253 29,253 35,253 35,247 35,240 29,240 23,240 17,247 "
+       points="29,240 23,240 17,247 23,253 29,253 35,253 35,247 35,240 "
        class="cls-8"
        transform="translate(73.86865,143.25)"><desc
          id="desc4579">Shows the maximum pitch down boundary</desc><title
@@ -20664,16 +20661,12 @@
 
 
 
-
-
 <text
    y="351.25"
    x="434.86865"
    class="cls-5"
    id="lbl20kt-west"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">20KT</text>
-
-
 
 
 
@@ -20810,16 +20803,12 @@
 
 
 
-
-
 <text
    y="351.25"
    x="353.86865"
    class="cls-5"
    id="lbl40kt-west"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">40KT</text>
-
-
 
 
 
@@ -20956,16 +20945,12 @@
 
 
 
-
-
 <text
    y="351.25"
    x="551.86865"
    class="cls-5"
    id="lbl10kt-east"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">10KT</text>
-
-
 
 
 
@@ -21102,16 +21087,12 @@
 
 
 
-
-
 <text
    y="351.25"
    x="632.86865"
    class="cls-5"
    id="lbl30kt-east"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">30KT</text>
-
-
 
 
 
@@ -21248,16 +21229,12 @@
 
 
 
-
-
 <text
    y="351.25"
    x="712.86865"
    class="cls-5"
    id="lbl50kt-east"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">50KT</text>
-
-
 
 
 
@@ -21394,16 +21371,12 @@
 
 
 
-
-
 <text
    y="312.25"
    x="513.86865"
    class="cls-5"
    id="lbl10kt-north"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">10KT</text>
-
-
 
 
 
@@ -21540,16 +21513,12 @@
 
 
 
-
-
 <text
    y="469.25"
    x="513.86865"
    class="cls-5"
    id="lbl30kt-south"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">30KT</text>
-
-
 
 
 
@@ -21686,8 +21655,6 @@
 
 
 
-
-
 <text
    y="549.25"
    x="513.86865"
@@ -21759,16 +21726,12 @@
 
 
 
-
-
 <text
    y="152.25"
    x="513.86865"
    class="cls-5"
    id="lbl50kt-north"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">50KT</text>
-
-
 
 
 
@@ -21906,8 +21869,6 @@
 
 
 
-
-
 <text
    y="232.25"
    x="513.86865"
@@ -21979,16 +21940,12 @@
 
 
 
-
-
 <text
    y="192.25"
    x="513.86865"
    class="cls-5"
    id="lbl40kt-north"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">40KT</text>
-
-
 
 
 
@@ -22133,8 +22090,6 @@
 
 
 
-
-
 <text
    id="r40"
    class="cls-1"
@@ -22142,8 +22097,6 @@
    y="-226.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#r40">R40</text>
-
-
 
 
 
@@ -22285,8 +22238,6 @@
 
 
 
-
-
 <text
    id="r80"
    class="cls-1"
@@ -22361,8 +22312,6 @@
 
 
 
-
-
 <text
    id="r100"
    class="cls-1"
@@ -22370,8 +22319,6 @@
    y="-30.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#r100">R100</text>
-
-
 
 
 
@@ -22517,8 +22464,6 @@
 
 
 
-
-
 <text
    id="r140"
    class="cls-1"
@@ -22526,8 +22471,6 @@
    y="93.969238"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#r140">R140</text>
-
-
 
 
 
@@ -22669,8 +22612,6 @@
 
 
 
-
-
 <text
    id="g20"
    class="cls-1"
@@ -22678,8 +22619,6 @@
    y="-260.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g20">G20</text>
-
-
 
 
 
@@ -22821,8 +22760,6 @@
 
 
 
-
-
 <text
    id="g60"
    class="cls-1"
@@ -22830,8 +22767,6 @@
    y="-171.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g60">G60</text>
-
-
 
 
 
@@ -22973,8 +22908,6 @@
 
 
 
-
-
 <text
    id="g100"
    class="cls-1"
@@ -22982,8 +22915,6 @@
    y="-30.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g100">G100</text>
-
-
 
 
 
@@ -23129,8 +23060,6 @@
 
 
 
-
-
 <text
    id="g140"
    class="cls-1"
@@ -23138,8 +23067,6 @@
    y="93.969238"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g140">G140</text>
-
-
 
 
 
@@ -23281,8 +23208,6 @@
 
 
 
-
-
 </g></g><g
      id="grp-opt-active-shol-display"
      style="font-family:Arial, Helvetica, sans-serif;display:inline"><g
@@ -23311,8 +23236,6 @@
      x="918.16034"
      y="131.7664"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;fill:#ffffff;fill-opacity:1">LIGHT</tspan></text>
-
-
 
 
 
@@ -23442,8 +23365,6 @@
 
 
 
-
-
 </g>
 
 
@@ -23486,8 +23407,6 @@
      y="323.38116"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2-5-9">HEAVY</tspan></text>
-
-
 
 
 
@@ -23617,8 +23536,6 @@
 
 
 
-
-
 </g>
 
 
@@ -23643,8 +23560,7 @@
 
 <g
    style="font-family:Arial, Helvetica, sans-serif;display:inline"
-   id="grp-emergency"
-   transform="translate(0,-98)"><rect
+   id="grp-emergency"><rect
    style="font-family:Arial, Helvetica, sans-serif;display:none;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.95553064;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
    id="hilight-emergency"
    width="115.31486"
@@ -23662,75 +23578,6 @@
      y="617.51965"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2-5-4-8-4-8">DEGRADED</tspan></text>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</g><g
-   id="grp-spare"
-   style="font-family:Arial, Helvetica, sans-serif;display:inline"
-   inkscape:label="#grp-spare"
-   transform="translate(-20,-2)"><rect
-   y="601.64856"
-   x="862.97168"
-   height="20.285376"
-   width="115.31486"
-   id="rect6091"
-   style="font-family:Arial, Helvetica, sans-serif;display:none;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.95553064;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" /><text
-   id="text6095"
-   y="617.51965"
-   x="881.87909"
-   style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:Arial, sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-   xml:space="preserve"
-   inkscape:label="opt-spare"><tspan
-     id="tspan6093"
-     style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     y="617.51965"
-     x="881.87909"
-     sodipodi:role="line">EMERGENCY</tspan></text>
-
-
 
 
 
@@ -23877,8 +23724,6 @@
 
 
 
-
-
 <g
    style="font-family:Arial, Helvetica, sans-serif;display:inline"
    id="grp-day"><rect
@@ -23900,8 +23745,6 @@
      y="229.25429"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2">DAY</tspan></text>
-
-
 
 
 
@@ -24031,8 +23874,6 @@
 
 
 
-
-
 </g>
 
 
@@ -24074,8 +23915,6 @@
      y="418.66571"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2-5-4">FWD</tspan></text>
-
-
 
 
 
@@ -24205,8 +24044,6 @@
 
 
 
-
-
 </g>
 
 
@@ -24248,8 +24085,6 @@
      y="614.76324"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2-5-4-8-4">INTO WIND</tspan></text>
-
-
 
 
 
@@ -24403,8 +24238,6 @@
 
 
 
-
-
 </g>
 
 
@@ -24422,8 +24255,6 @@
      x="132.40964"
      id="tspan4725"
      sodipodi:role="line">MENU</tspan></text>
-
-
 
 
 
@@ -24577,8 +24408,6 @@
 
 
 
-
-
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:Arial, sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -24591,8 +24420,6 @@
      y="116.06002"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-8">SHUTDOWN</tspan></text>
-
-
 
 
 
@@ -24722,8 +24549,6 @@
 
 
 
-
-
 </g>
 
 
@@ -24767,8 +24592,6 @@
      y="30.578163"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-8-6">LAUNCH</tspan></text>
-
-
 
 
 
@@ -24898,8 +24721,6 @@
 
 
 
-
-
 </g>
 
 
@@ -24943,8 +24764,6 @@
      y="30.367226"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-8-6-5-0">VERTREP</tspan></text>
-
-
 
 
 
@@ -25074,8 +24893,6 @@
 
 
 
-
-
 </g>
 
 
@@ -25114,8 +24931,6 @@
      y="50.778336"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5389">FOLD</tspan></text>
-
-
 
 
 
@@ -25187,8 +25002,6 @@
 
 
 
-
-
 </g><g
    inkscape:label="#grp-recovery"
    id="grp-recovery"
@@ -25212,8 +25025,6 @@
      y="28.930151"
      x="851.47437"
      sodipodi:role="line">RECOVERY</tspan></text>
-
-
 
 
 
@@ -25341,8 +25152,6 @@
 
 
 
-
-
 </g>
 
 
@@ -25379,8 +25188,6 @@
      y="655.43268"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-8-6-5-0-8-3-4">CDF</tspan></text>
-
-
 
 
 
@@ -25527,8 +25334,6 @@
 
 
 
-
-
 </g>
 
 
@@ -25608,8 +25413,6 @@
 
 
 
-
-
 </g>
 
 
@@ -25646,8 +25449,6 @@
      y="655.65924"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-8-6-5-3">3</tspan></text>
-
-
 
 
 
@@ -25782,8 +25583,6 @@
 
 
 
-
-
 </g>
 
 
@@ -25820,8 +25619,6 @@
      y="655.65924"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-0">5</tspan></text>
-
-
 
 
 
@@ -25944,8 +25741,6 @@
 
 
 
-
-
 </g>
 
 
@@ -25983,8 +25778,6 @@
      x="133.51025"
      y="655.65924"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1">CDA</tspan></text>
-
-
 
 
 
@@ -26858,7 +26651,7 @@
            r="4.5985885"
            style="font-family:Arial, Helvetica, sans-serif;fill:url(#radial-gradient-3-7-1-8-2);stroke:url(#radial-gradient-2-5-0-7-9-06);stroke-width:0.95420706px;stroke-miterlimit:10" /></g><g
          inkscape:label="btn-spare-right"
-         transform="translate(1045.6097,590.59182)"
+         transform="translate(1045.6097,494.06149)"
          id="btn-spare-right"
          style="font-family:Arial, Helvetica, sans-serif;enable-background:new"><rect
            class="cls-1"
@@ -26896,7 +26689,7 @@
            r="4.5985885"
            style="font-family:Arial, Helvetica, sans-serif;fill:url(#radial-gradient-3-7-1-8-4-1);stroke:url(#radial-gradient-2-5-0-7-9-0-6);stroke-width:0.95420706px;stroke-miterlimit:10" /></g><g
          inkscape:label="#btn-emergency"
-         transform="translate(1045.6097,494.06149)"
+         transform="translate(1045.6097,590.59182)"
          id="btn-emergency"
          style="font-family:Arial, Helvetica, sans-serif;enable-background:new"><rect
            class="cls-1"
@@ -27672,8 +27465,6 @@
 
 
 
-
-
 <text
    id="opt-arh-tiger"
    y="437.34113"
@@ -27687,8 +27478,6 @@
      y="437.34113"
      x="-339.55945"
      sodipodi:role="line">ARH TIGER (NOT AVAILABLE)</tspan></text>
-
-
 
 
 
@@ -27713,8 +27502,6 @@
 
 
 
-
-
 <text
    inkscape:label="#opt-s70a9"
    xml:space="preserve"
@@ -27727,8 +27514,6 @@
      y="240.04309"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2-5-1-8">S70A9</tspan></text>
-
-
 
 
 
@@ -27753,8 +27538,6 @@
 
 
 
-
-
 <text
    inkscape:label="#opt-mrh90"
    xml:space="preserve"
@@ -27767,8 +27550,6 @@
      y="48.313694"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2-5-4-8-4-6-6">MRH90</tspan></text>
-
-
 
 
 
@@ -27902,8 +27683,6 @@
 
 
 
-
-
 <g
    id="options-top-aircraft-shol-select"
    inkscape:label="#options-top-aircraft-shol-select"
@@ -27925,8 +27704,6 @@
      x="132.40964"
      id="tspan4725-9"
      sodipodi:role="line">MENU</tspan></text>
-
-
 
 
 
@@ -29140,8 +28917,6 @@
 
 
 
-
-
 <text
    id="opt-flyco-emergency-checklists"
    y="240.04309"
@@ -29165,8 +28940,6 @@
 
 
 
-
-
 <text
    id="opt-mh60r"
    y="148.67265"
@@ -29179,8 +28952,6 @@
      y="148.67265"
      x="-339.73917"
      sodipodi:role="line">FLYCO STANDARD CHECKLISTS (NOT AVAILABLE)</tspan></text>
-
-
 
 
 
@@ -29361,8 +29132,6 @@
 
 
 
-
-
 <text
    inkscape:label="#lbl-main-menu"
    id="lbl-main-menu"
@@ -29376,8 +29145,6 @@
      style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
      id="tspan1390"
      sodipodi:role="line">MAIN MENU</tspan></text>
-
-
 
 
 
