@@ -1,6 +1,6 @@
 {
     "name": "eshol",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "Electronic Ship Helicopter Operating Limits System",
     "main": "src/views/main.html",
     "window": {
@@ -29,7 +29,7 @@
     "scripts": {
         "tsc-build": "gulp",
         "dev": "nw",
-        "prod": "nwbuild --platforms win32,win64 --buildDir dist/ ./",
+        "prod": "nwbuild --platforms win64 --buildDir dist/ ./",
         "dist": "build --tasks win-x64 --mirror https://dl.nwjs.io/ .",
         "start": "run --x64 --mirror https://dl.nwjs.io/ ."
     },

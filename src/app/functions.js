@@ -527,6 +527,7 @@ function doBtnEmergency(f) {
         hideIndicator(f, "#hilight-launch", "#opt-launch");
         hideIndicator(f, "#hilight-land", "#opt-land");
         hideIndicator(f, "#hilight-vertrep", "#opt-vertrep");
+        hideIndicator(f, "#hilight-spread-fold", "#opt-spread-fold");
     }
 }
 
