@@ -1,30 +1,3 @@
-var tblAircraft = {
-    "columns": [{
-        "name": "aircraftID",
-        "type": ""
-    }],
-    "rows": [
-        [
-            "ARH TIGER"
-        ],
-        [
-            "CH47F"
-        ],
-        [
-            "FOREIGN"
-        ],
-        [
-            "MH60R"
-        ],
-        [
-            "MRH90"
-        ],
-        [
-            "S70A9"
-        ]
-    ]
-};
-
 var tblProfile = {
     "columns": [{
             "name": "PROFILEID",
@@ -2261,7 +2234,7 @@ var tblProfile = {
             "id621-heavy"
         ],
         [
-            "59",
+            "61",
             "621",
             "MH60R",
             "2",
@@ -2296,7 +2269,7 @@ var tblProfile = {
             "id621-light-medium"
         ],
         [
-            "60",
+            "62",
             "621",
             "MH60R",
             "0",

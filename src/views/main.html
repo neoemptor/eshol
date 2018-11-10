@@ -25,47 +25,41 @@
 			user-select: none;
 		}
 
-		#svg-pitch-bar-indicator {
+		/* #svg-pitch-bar-indicator {
 			position: absolute;
 			top: 434px;
 			left: 565px;
-		}
+		} */
 
 		#svg {
 			position: absolute;
-			top: 0px;
-			left: 100px;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
 		}
 
-		#svg-roll-bar-indicator {
+		/* #svg-roll-bar-indicator {
 			position: absolute;
 			top: 838px;
 			left: 922px;
-		}
+		} */
 	</style>
 </head>
 
 <body>
-	<svg id="svg" xml:space="preserve" viewBox="-120 -20 1670 920" width="1920" height="1080" enable-background="new -120 -20 1670 920">
+	<svg id="svg" version="1.1" xml:space="preserve" viewBox="-120 -20 1670 920" width="1920" height="1080"
+	 enable-background="new -120 -20 1670 920">
 		<style>
 			* {
 				font-family: Arial, Helvetica, sans-serif;
 			}
 		</style>
 	</svg>
-	<svg id="svg-pitch-bar-indicator" viewBox="0 0 15 170" width="15" height="170" xmlns="http://www.w3.org/2000/svg">
-		<rect style="font-family:Arial, Helvetica, sans-serif;fill:#00f41a;stroke-width:1.39121664;stroke-miterlimit:10;stroke-dasharray:none"
-		 id="pitch-bar-indicator" height="85" width="6" y="0" x="0">
-		</rect>
-	</svg>
 
-	<svg id="svg-roll-bar-indicator" viewBox="0 0 170 15" width="170" height="15" xmlns="http://www.w3.org/2000/svg">
-		<rect style="font-family:Arial, Helvetica, sans-serif;fill:#00f41a;stroke-width:1.39121664;stroke-miterlimit:10;stroke-dasharray:none"
-		 id="roll-bar-indicator" height="6" width="85" y="0" x="0">
-		</rect>
-	</svg>
 	<script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
-	<script src="../assets/js/TweenMax.min.js"></script>
+	<!-- <script src="../assets/js/TweenMax.js"></script> -->
 	<script src="../node_modules/snapsvg/dist/snap.svg.js"></script>
 	<!-- <script src="../node_modules/greensock/dist/TweenMax.js"></script>
 	<script src="../node_modules/greensock/dist/jquery.gsap.js"></script> -->
@@ -79,13 +73,14 @@
 
 	<script>
 		window.onload = function () {
+			// weather indicator initialisation
 			$("#pitch-bar-indicator").hide();
 			$("#roll-bar-indicator").hide();
 			selectedAircraft = "";
 			vpX = 0;
 			vpY = 0;
 			var s = Snap("#svg");
-
+			gSnap = s;
 			var viewBox = (-vpWidth * .12).toString() +
 				" " + (-vpHeight * .05).toString() + " " +
 				(vpWidth * .95).toString() + " " + (vpHeight * .95).toString()
@@ -98,7 +93,7 @@
 
 			Snap.load("../assets/panel.svg", function (f) {
 
-				initialise(f);
+				initialise(f, s);
 				// ------------------- On Off Knob ---------------------
 				svgOnOffKnob.click(() => {
 					doOnOffKnob(f)
@@ -112,32 +107,14 @@
 				// console.log(pitchBarIndicator.getBBox().x + " : " + pitchBarIndicator.getBBox().y + " : " +
 				// 	pitchBarIndicator.getBBox().x2 + " : " + pitchBarIndicator.getBBox().y2);
 				initEvents(f);
+				initWeatherIndicator(f, Snap);
 				// #lbl-aircraft is the label displayed on the active display
 				// after the aircraft type has been
 				// chosen from the previous aircraft
 				// #opt-aircraft-id-indicator holds the text.
 
-				CSSPlugin.defaultSmoothOrigin = true;
-				var pitch = TweenMax.to("#svg-pitch-bar-indicator", 1, {
-					ease: Sine.easeInOut,
-					rotationX: 180,
-					scaleX: 1,
-					repeat: -1,
-					yoyo: true,
-					transformOrigin: "50% 50%"
-				});
-				pitch.timeScale(0.18);
+				// CSSPlugin.defaultSmoothOrigin = true;
 
-				var roll = TweenMax.to("#svg-roll-bar-indicator", 1, {
-					ease: Sine.easeInOut,
-					rotationY: 180,
-					scaleX: 1,
-					repeat: -1,
-					yoyo: true,
-					transformOrigin: "50% 50%"
-				});
-
-				roll.timeScale(0.1);
 
 				// #lbl-aircraft-id the group for the aircraft conditions code
 				// #opt-aircraft-id-indicator using this for the text for the
@@ -145,11 +122,40 @@
 
 				// show the whole panel and display ========================
 				s.append(f);
+
 				s.attr({
 					viewbox: viewBox,
 					width: screenWidth,
 					height: screenHeight
 				});
+
+
+				// let test = $("#svg-pitch-bar-indicator");
+				// var pitch = TweenLite.to(test, 1, {
+				// 	attr: {
+				// 		ease: Sine.easeInOut,
+				// 		rotationX: 180,
+				// 		height: 150,
+				// 		repeat: -1,
+				// 		yoyo: true,
+				// 		transformOrigin: "50% 50%"
+				// 	}
+				// });
+
+				// pitch.timeScale(0.18);
+
+				// var roll = TweenLite.to("#svg-roll-bar-indicator", 1, {
+				// 	attr: {
+				// 		ease: Sine.easeInOut,
+				// 		rotationY: 180,
+				// 		scaleX: 1,
+				// 		repeat: -1,
+				// 		yoyo: true,
+				// 		transformOrigin: "50% 50%"
+				// 	}
+				// });
+
+				// roll.timeScale(0.1);				
 			});
 		};
 	</script>

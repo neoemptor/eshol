@@ -441,3 +441,7 @@ TIMES = 5;
  HEAVY = 2;
  HOTHEAVY = 3;
  clickFromBtnMH60R = false;
+
+ // for weather indicator
+ let isInsidePolarGraph = true;
+ let isInsidePolygon = false;

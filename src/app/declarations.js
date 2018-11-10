@@ -412,3 +412,10 @@ var HOTHEAVY;
 
 var clickFromBtnMH60R;
 var clickFromBtnS70A9;
+
+// for the random weather indicator point
+var wiPosX;
+var wiPosY;
+
+// the Snap global SVG reference
+var gSnap;

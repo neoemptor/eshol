@@ -367,7 +367,7 @@ function initEvents(f) {
     btnEmergency.mousedown(() => {
         doBtnDown(f, "#btn-emergency");
         doBtnEmergency(f);
-        resetFilter(WEIGHTS, -1);
+        // resetFilter(WEIGHTS, -1);
         resetFilter(ACTIONS, EMERGENCY);
         resetPitchRoll();
         // isEmergency = !isEmergency;

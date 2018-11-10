@@ -1,6 +1,6 @@
 {
     "name": "eshol",
-    "version": "0.1.5",
+    "version": "0.2.0",
     "description": "Electronic Ship Helicopter Operating Limits System",
     "main": "views/main.html",
     "chromium-args": "--touch-events",
@@ -29,8 +29,7 @@
     "homepage": "https://dsbaileyfreelancer.com.au",
     "scripts": {
         "tsc-build": "gulp",
-        "dev": "nw",
-        "prod": "nwbuild --platforms win32,win64,osx64,linux32,linux64 --buildDir dist/ ./"
+        "dev": "nw"
     },
     "title": "eshol",
     "type": "simple",
