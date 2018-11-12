@@ -1,164 +1,168 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ESHOL</title>
 
-<head>
-	<meta charset="utf-8">
-	<title>ESHOL</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-	<style>
-		* {
-			font-family: Arial, Helvetica, sans-serif;
-		}
+      body,
+      html {
+        background-color: #222122;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
 
-		body,
-		html {
-			background-color: #222122;
-			margin: 0px;
-			padding: 0px;
-			overflow: hidden;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-			-webkit-touch-callout: none;
-			-webkit-user-select: none;
-			-khtml-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-			user-select: none;
-		}
-
-		/* #svg-pitch-bar-indicator {
+      /* #svg-pitch-bar-indicator {
 			position: absolute;
 			top: 434px;
 			left: 565px;
 		} */
 
-		#svg {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			margin: auto;
-		}
+      #svg {
+        position: absolute;
+        top: 0;
+        left: 70px;
+        right: 0;
+        bottom: 20px;
+        margin: auto;
+      }
 
-		/* #svg-roll-bar-indicator {
+      /* #svg-roll-bar-indicator {
 			position: absolute;
 			top: 838px;
 			left: 922px;
 		} */
-	</style>
-</head>
+    </style>
+  </head>
 
-<body>
-	<svg id="svg" version="1.1" xml:space="preserve" viewBox="-120 -20 1670 920" width="1920" height="1080"
-	 enable-background="new -120 -20 1670 920">
-		<style>
-			* {
-				font-family: Arial, Helvetica, sans-serif;
-			}
-		</style>
-	</svg>
+  <body>
+    <svg
+      id="svg"
+      version="1.1"
+      xml:space="preserve"
+      viewBox="-120 -20 1670 920"
+      width="1920"
+      height="1080"
+      enable-background="new -120 -20 1670 920"
+    >
+      <style>
+        * {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      </style>
+    </svg>
 
-	<script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
-	<!-- <script src="../assets/js/TweenMax.js"></script> -->
-	<script src="../node_modules/snapsvg/dist/snap.svg.js"></script>
-	<!-- <script src="../node_modules/greensock/dist/TweenMax.js"></script>
-	<script src="../node_modules/greensock/dist/jquery.gsap.js"></script> -->
-	<!-- <script src="../app/controller.js"></script> -->
-	<script src="../app/buttons.js"></script>
-	<script src="../app/model.js"></script>
-	<script src="../app/declarations.js"></script>
-	<script src="../app/initialise.js"></script>
-	<script src="../app/functions.js"></script>
-	<script src="../app/events.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <!-- <script src="../assets/js/TweenMax.js"></script> -->
+    <script src="../node_modules/snapsvg/dist/snap.svg.js"></script>
+    <!--
+      <script src="../node_modules/greensock/dist/TweenMax.js"></script>
+      <script src="../node_modules/greensock/dist/jquery.gsap.js"></script>
+    -->
+    <!-- <script src="../app/controller.js"></script> -->
+    <script src="../app/buttons.js"></script>
+    <script src="../app/model.js"></script>
+    <script src="../app/declarations.js"></script>
+    <script src="../app/initialise.js"></script>
+    <script src="../app/functions.js"></script>
+    <script src="../app/events.js"></script>
 
-	<script>
-		window.onload = function () {
-			// weather indicator initialisation
-			$("#pitch-bar-indicator").hide();
-			$("#roll-bar-indicator").hide();
-			selectedAircraft = "";
-			vpX = 0;
-			vpY = 0;
-			var s = Snap("#svg");
-			gSnap = s;
-			var viewBox = (-vpWidth * .12).toString() +
-				" " + (-vpHeight * .05).toString() + " " +
-				(vpWidth * .95).toString() + " " + (vpHeight * .95).toString()
+    <script>
+      window.onload = function() {
+        var viewBox;
+        var s;
+        var screenWidth;
+        var screenHeight;
+        var vpWidth = screenWidth;
+        var vpHeight = screenHeight;
+        var screenPosX;
+        var screenPosY;
+        var vpX;
+        var vpY;
 
-			s.attr({
-				viewbox: viewBox,
-				width: screenWidth,
-				height: screenWidth,
-			});
+        selectedAircraft = "";
 
-			Snap.load("../assets/panel.svg", function (f) {
+        s = Snap("#svg");
 
-				initialise(f, s);
-				// ------------------- On Off Knob ---------------------
-				svgOnOffKnob.click(() => {
-					doOnOffKnob(f)
-				});
+        Snap.load("../assets/panel.svg", function(f) {
+          initialise(f, s);
 
-				svgOffKnob.click(() => {
-					doOnOffKnob(f)
-				});
+          // weather indicator initialisation
+          $("#pitch-bar-indicator").hide();
+          $("#roll-bar-indicator").hide();
 
-				// ------------------- Pitch and Roll Animations ---------------------
-				// console.log(pitchBarIndicator.getBBox().x + " : " + pitchBarIndicator.getBBox().y + " : " +
-				// 	pitchBarIndicator.getBBox().x2 + " : " + pitchBarIndicator.getBBox().y2);
-				initEvents(f);
-				initWeatherIndicator(f, Snap);
-				// #lbl-aircraft is the label displayed on the active display
-				// after the aircraft type has been
-				// chosen from the previous aircraft
-				// #opt-aircraft-id-indicator holds the text.
+          // get last brightness setting
+		  brightness = localStorage.getItem("brightness");
+		  brightness = parseFloat(brightness).toFixed(1);
+		  
+          if (
+            (brightness ===
+              "" ||
+              brightness === "undefined" ||
+              brightness === null ||
+              brightness < 0 ||
+              brightness > 1 || isNaN(brightness))
+          ) {
+            localStorage.removeItem("brightness");
+            brightness = parseFloat(0.5).toFixed(1);
+          }
+          brightnessScreen.attr({ opacity: brightness });
 
-				// CSSPlugin.defaultSmoothOrigin = true;
+          // ------------------- On Off Knob ---------------------
+          svgOnOffKnob.click(() => {
+            doOnOffKnob(f);
+          });
 
+          svgOffKnob.click(() => {
+            doOnOffKnob(f);
+          });
 
-				// #lbl-aircraft-id the group for the aircraft conditions code
-				// #opt-aircraft-id-indicator using this for the text for the
-				// conditions code
+          // ------------------- Pitch and Roll Animations ---------------------
+          // console.log(pitchBarIndicator.getBBox().x + " : " + pitchBarIndicator.getBBox().y + " : " +
+          // 	pitchBarIndicator.getBBox().x2 + " : " + pitchBarIndicator.getBBox().y2);
+          initEvents(f);
 
-				// show the whole panel and display ========================
-				s.append(f);
+        //   grpPlots.transform("t500, 205");
 
-				s.attr({
-					viewbox: viewBox,
-					width: screenWidth,
-					height: screenHeight
-				});
+          initWeatherIndicator(f, Snap);
+          // #lbl-aircraft is the label displayed on the active display
+          // after the aircraft type has been
+          // chosen from the previous aircraft
+          // #opt-aircraft-id-indicator holds the text.
+          // #lbl-aircraft-id the group for the aircraft conditions code
+          // #opt-aircraft-id-indicator using this for the text for the
+          // conditions code
 
+          // show the whole panel and display ========================
+          s.append(f);
 
-				// let test = $("#svg-pitch-bar-indicator");
-				// var pitch = TweenLite.to(test, 1, {
-				// 	attr: {
-				// 		ease: Sine.easeInOut,
-				// 		rotationX: 180,
-				// 		height: 150,
-				// 		repeat: -1,
-				// 		yoyo: true,
-				// 		transformOrigin: "50% 50%"
-				// 	}
-				// });
+          screenWidth = screen.width;
+          screenHeight = screen.height;
+          vpWidth = screenWidth;
+          vpHeight = screenHeight;
+          viewBox = "0 0 " + vpWidth + " " + vpHeight;
 
-				// pitch.timeScale(0.18);
-
-				// var roll = TweenLite.to("#svg-roll-bar-indicator", 1, {
-				// 	attr: {
-				// 		ease: Sine.easeInOut,
-				// 		rotationY: 180,
-				// 		scaleX: 1,
-				// 		repeat: -1,
-				// 		yoyo: true,
-				// 		transformOrigin: "50% 50%"
-				// 	}
-				// });
-
-				// roll.timeScale(0.1);				
-			});
-		};
-	</script>
-</body>
-
+        //   s.attr({
+        //     x: 0,
+        //     y: 0,
+        //     width: screenWidth,
+        //     height: screenHeight,
+        //     viewBox: viewBox
+        //   });
+        });
+      };
+    </script>
+  </body>
 </html>

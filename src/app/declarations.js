@@ -1,10 +1,5 @@
-var screenWidth = screen.availWidth,
-    vpWidth = screenWidth,
-    screenHeight = screen.availHeight,
-    vpHeight = screenHeight,
-    vpX,
-    vpY,
-    deadend,
+var deadend,
+    grpPlots,
     selectedAircraft,
     onOffKnob,
     g,
@@ -18,6 +13,7 @@ var screenWidth = screen.availWidth,
     optMh60r,
     optS70a9,
     optCh47f,
+    brightnessScreen,
     aircraftSholMenu, // group
     optionsTopAircraftSholSelect, // group
     optMenuAircraftSholSelect,
@@ -144,6 +140,12 @@ var screenWidth = screen.availWidth,
     onOffKnobShadow,
     buttonsTop,
     btnSpareTop, // group
+    btnBright,
+    gradientBright,
+    faceBright,
+    gradientDim,
+    faceDim,
+    btnDim,
     lightSpare,
     lightOutlineSpareTop,
     gradientSpareTop,
@@ -323,92 +325,9 @@ var screenWidth = screen.availWidth,
     rightInset,
     leftInset,
     outerPanel,
-    // isDay,
-    // isNight,
-    // isFwd,
-    // isAft,
-    // isIntoWind,
-    // isCda,
-    // is6,
-    // is5,
-    // is4,
-    // is3,
-    // is2,
-    // is1,
-    // isCdf,
-    // isEngage,
-    // isTaxi,
-    // isLaunch,
-    // isLand,
-    // isVertrep,
-    // isXfer,
-    // isRecovery,
-    // isSpreadFold,
-    // isLight,
-    // isMedium,
-    // isHeavy,
-    // isHotHeavy,
-    // isEmergency,
-    selectedAircraft;    // group
-var filteredArray = [];
-var btnStatus = [
-    false, false, false, false, false, false,
-    false, false, false, false, false, false,
-    false, false, false, false, false, false,
-    false, false, false, false, false, false,
-    false, false
-];
+    selectedAircraft; // group
 
 var plot; // array of plotted wind
-// Aircraft types supposed to be constants
-var MRH90;
-var MH60R;
-var S70A9;
-var CH47F;
-var ARH_TIGER;
-var FOREIGN;
-
-var ACTIONS;
-var WEIGHTS;
-var POSITIONS;
-var DIRECTIONS;
-var TIMES;
-
-// TIMES
-var DAY;
-var NIGHT;
-
-// WIND DIRECTIONS
-var FWD;
-var AFT;
-var INTOWIND;
-
-// POSITIONS
-var CDA;
-var POS6;
-var POS5;
-var POS4;
-var POS3;
-var POS2;
-var POS1;
-var CDF;
-
-// ACTIONS
-var ENGAGE;
-var TAXI;
-var LAUNCH;
-var LAND;
-var VERTREP;
-var XFER;
-var EMERGENCY; // DEGRADED
-var RECOVERY;
-var SPREADFOLD;
-
-// WEIGHTS
-var LIGHT;
-var MEDIUM;
-var HEAVY;
-var HOTHEAVY;
 
 var clickFromBtnMH60R;
 var clickFromBtnS70A9;
@@ -417,5 +336,7 @@ var clickFromBtnS70A9;
 var wiPosX;
 var wiPosY;
 
-// the Snap global SVG reference
-var gSnap;
+var isInsidePolygon;
+var isInsidePolarGraph;
+
+var brightness;

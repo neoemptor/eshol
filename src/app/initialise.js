@@ -1,4 +1,6 @@
 function initialise(f) {
+    grpPlots = f.select("#grp-plots");
+    brightnessScreen = f.select("#brightness-screen");
     svgOnOffKnob = f.select("#on-off-knob");
     svgOffKnob = f.select("#off-knob");
     svgOnOffKnobCx = svgOnOffKnob.attr("cx");
@@ -138,6 +140,12 @@ function initialise(f) {
     lightOutlineSpareTop = f.select("#light-outline-spare-top");
     gradientSpareTop = f.select("#gradient-spare-top");
     faceSpareTop = f.select("#face-spare-top");
+    btnBright = f.select("#btn-bright");
+    gradientBright = f.select("#gradient-bright");
+    faceBright = f.select("#face-bright");
+    btnDim = f.select("#btn-dim");
+    gradientDim = f.select("#gradient-dim");
+    faceDim = f.select("#face-dim");
     btnMH60R = f.select("#btn-mh60r");
     lightMH60R = f.select("#light-mh60r");
     lightOutlineMH60R = f.select("#light-outline-mh60r");
@@ -321,127 +329,110 @@ function initialise(f) {
     rightInset = f.select("#right-inset");
     leftInset = f.select("#left-inset");
     outerPanel = f.select("#outer-panel"); // group
-    // isDay = false;
-    // isNight = false;
-    // isFwd = false;
-    // isAft = false;
-    // isIntoWind = false;
-    // isCda = false;
-    // is6 = false;
-    // is5 = false;
-    // is4 = false;
-    // is3 = false;
-    // is2 = false;
-    // is1 = false;
-    // isCdf = false;
-    // isEngage = false;
-    // isTaxi = false;
-    // isLaunch = false;
-    // isLand = false;
-    // isVertrep = false;
-    // isXfer = false;
-    // isRecovery = false;
-    // isSpreadFold = false;
-    // isLight = false;
-    // isMedium = false;
-    // isHeavy = false;
-    // isHotHeavy = false;
-    // isEmergency = false;
+
     onOffKnob = new OnOffKnob();
     selectedAircraft = "";
+    plot = [
+        "id900-spots-1-6",
+        "id900cda-day-only",
+        "id901-fwd-facing-cda",
+        "id901-fwd-facing-1-6",
+        "id901-aft-facing-2-6",
+        "id902",
+        "id911-spot-1-light-medium",
+        "id911-spot-1-heavy",
+        "id911-spot-1-hot-heavy",
+        "id921-light-medium",
+        "id921-heavy",
+        "id921-hot-heavy",
+        "id922-light-medium",
+        "id922-heavy",
+        "id923-light-medium-heavy",
+        "id923-hot-heavy",
+        "id951-light-medium-heavy",
+        "id951-hot-heavy",
+        "id952-light-medium",
+        "id952-heavy",
+        "id991-light-medium-heavy",
+        "id991-hot-heavy",
+        "id992",
+        "id993",
+        "id994",
+        "id600-spot-cda",
+        "id600-spots-1-6",
+        "id601",
+        "id611",
+        "id621-light-medium",
+        "id621-heavy",
+        "id622-light-medium",
+        "id651-light-medium",
+        "id651-heavy",
+        "id661-light-medium",
+        "id701",
+        "id721-light-medium"
+    ]    
 }
 
-plot = [
-    "id900-spots-1-6",
-    "id900cda-day-only",
-    "id901-fwd-facing-cda",
-    "id901-fwd-facing-1-6",
-    "id901-aft-facing-2-6",
-    "id902",
-    "id911-spot-1-light-medium",
-    "id911-spot-1-heavy",
-    "id911-spot-1-hot-heavy",
-    "id921-light-medium",
-    "id921-heavy",
-    "id921-hot-heavy",
-    "id922-light-medium",
-    "id922-heavy",
-    "id923-light-medium-heavy",
-    "id923-hot-heavy",
-    "id951-light-medium-heavy",
-    "id951-hot-heavy",
-    "id952-light-medium",
-    "id952-heavy",
-    "id991-light-medium-heavy",
-    "id991-hot-heavy",
-    "id992",
-    "id993",
-    "id994",
-    "id600-spot-cda",
-    "id600-spots-1-6",
-    "id601",
-    "id611",
-    "id621-light-medium",
-    "id621-heavy",
-    "id622-light-medium",
-    "id651-light-medium",
-    "id651-heavy",
-    "id661-light-medium",
-    "id701",
-    "id721-light-medium"
-]
+const MRH90 = 'MRH90';
+const MH60R = 'MH60R';
+const S70A9 = 'S70A-9';
+const CH47F = 'CH47F';
+const ARH_TIGER = 'ARH TIGER';
+const FOREIGN = 'FOREIGN';
 
-// Aircraft types supposed to be constants
-MRH90 = 'MRH90';
-MH60R = 'MH60R';
-S70A9 = 'S70A-9';
-CH47F = 'CH47F';
-ARH_TIGER = 'ARH TIGER';
-FOREIGN = 'FOREIGN';
-
-ACTIONS = 1;
-WEIGHTS = 2;
-POSITIONS = 3;
-DIRECTIONS = 4;
-TIMES = 5;
+const ACTIONS = 1;
+const WEIGHTS = 2;
+const POSITIONS = 3;
+const DIRECTIONS = 4;
+const TIMES = 5;
 
 // TIMES
- DAY = 7;
- NIGHT = 8;
+ const DAY = 7;
+ const NIGHT = 8;
 
 // WIND DIRECTIONS
- FWD =4;
- AFT = 5;
- INTOWIND = 6;
+ const FWD =4;
+ const AFT = 5;
+ const INTOWIND = 6;
 
 // POSITIONS
- CDA = 9;
- POS6 = 10;
- POS5 = 11;
- POS4 = 12;
- POS3 = 13;
- POS2 = 14;
- POS1 = 15;
- CDF = 16;
+ const CDA = 9;
+ const POS6 = 10;
+ const POS5 = 11;
+ const POS4 = 12;
+ const POS3 = 13;
+ const POS2 = 14;
+ const POS1 = 15;
+ const CDF = 16;
 
 // ACTIONS
- ENGAGE = 17;
- TAXI = 18;
- LAUNCH = 19;
- LAND = 20;
- VERTREP = 21;
- XFER = 22;
- EMERGENCY = 23; // DEGRADED
- RECOVERY = 24;
- SPREADFOLD = 25;
+ const ENGAGE = 17;
+ const TAXI = 18;
+ const LAUNCH = 19;
+ const LAND = 20;
+ const VERTREP = 21;
+ const XFER = 22;
+ const EMERGENCY = 23; // DEGRADED
+ const RECOVERY = 24;
+ const SPREADFOLD = 25;
 
 // WEIGHTS
- LIGHT = 0;
- MEDIUM = 1;
- HEAVY = 2;
- HOTHEAVY = 3;
+ const LIGHT = 0;
+ const MEDIUM = 1;
+ const HEAVY = 2;
+ const HOTHEAVY = 3;
+
  clickFromBtnMH60R = false;
 
  // for weather indicator
- let isInsidePolarGraph = true;
- let isInsidePolygon = false;
+isInsidePolarGraph = true;
+isInsidePolygon = false;
+
+var filteredArray = [];
+var btnStatus = [
+    false, false, false, false, false, false,
+    false, false, false, false, false, false,
+    false, false, false, false, false, false,
+    false, false, false, false, false, false,
+    false, false
+];

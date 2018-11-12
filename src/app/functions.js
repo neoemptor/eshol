@@ -38,6 +38,7 @@ function doOnOffKnob(f) {
     $("#active-shol-display").hide();
     $("#pitch-bar-indicator").hide();
     $("#roll-bar-indicator").hide();
+    $("#weather-indicator").hide();
     doExit();
   }
 }
@@ -45,6 +46,7 @@ function doOnOffKnob(f) {
 // exit application
 async function doExit() {
   console.log("do exit function executing");
+  localStorage.setItem("brightness", brightness);
   await sleep(5000);
   process.exit(0);
 }
@@ -161,6 +163,7 @@ function goBackToMainMenu(f) {
   $("#main-menu").show();
   $("#btn-taxi-dummy").hide();
   $("#btn-xfer-dummy").hide();
+  $("#weather-indicator").hide();
   doBtnUp(f, "#btn-aircraft-shols");
   doBtnUp(f, "#btn-mh60r");
 
@@ -191,6 +194,7 @@ function doBtnBack(f) {
   $("#opt-spread-fold").hide();
   $("#pitch-bar-indicator").hide();
   $("#roll-bar-indicator").hide();
+  $("#weather-indicator").hide();
 
   doBtnUp(f, "#btn-aircraft-shols");
   doBtnUp(f, "#btn-mh60r");
@@ -658,8 +662,11 @@ function doBtnDown(f, btn) {
   let foundFace;
 
   children.forEach(item => {
-    foundGradient = item.node.id.substr(0, 8);
-    foundFace = item.node.id.substr(0, 4);
+
+    if (item.node.id) {
+      foundGradient = item.node.id.substr(0, 8);
+      foundFace = item.node.id.substr(0, 4);
+    }
 
     if (foundGradient === "gradient") {
       item.attr({
@@ -670,11 +677,13 @@ function doBtnDown(f, btn) {
         stroke: "#9a9a9a"
       });
     }
+
     var grandchildren = item.children();
     grandchildren.forEach(item => {
-      foundGradient = item.node.id.substr(0, 8);
-      foundFace = item.node.id.substr(0, 4);
-
+      if (item.node.id) {
+        foundGradient = item.node.id.substr(0, 8);
+        foundFace = item.node.id.substr(0, 4);
+      }
       if (foundGradient === "gradient") {
         item.attr({
           opacity: 0
@@ -696,8 +705,10 @@ function doBtnUp(f, btn) {
   let foundFace;
 
   children.forEach(item => {
-    foundGradient = item.node.id.substr(0, 8);
-    foundFace = item.node.id.substr(0, 4);
+    if (item.node.id) {
+      foundGradient = item.node.id.substr(0, 8);
+      foundFace = item.node.id.substr(0, 4);
+    }
     if (foundGradient === "gradient") {
       item.attr({
         opacity: 0.33
@@ -709,9 +720,10 @@ function doBtnUp(f, btn) {
     }
     var grandchildren = item.children();
     grandchildren.forEach(item => {
-      foundGradient = item.node.id.substr(0, 8);
-      foundFace = item.node.id.substr(0, 4);
-
+      if (item.node.id) {
+        foundGradient = item.node.id.substr(0, 8);
+        foundFace = item.node.id.substr(0, 4);
+      }
       if (foundGradient === "gradient") {
         item.attr({
           opacity: 0.33
@@ -882,7 +894,8 @@ function filter() {
   // temporarily get scoredPoints records
   let tmpArray = [];
   for (let x = 0; x < scoredPoints.length; x++) {
-    let filteredObject = filteredArray[findFilteredArrayIdx(filteredArray, scoredPoints[x].id)];
+    let filteredObject =
+      filteredArray[findFilteredArrayIdx(filteredArray, scoredPoints[x].id)];
     tmpArray.push(filteredObject);
   }
 
@@ -908,7 +921,6 @@ function filter() {
     scoredPoints[0].score += 1;
   }
 
-
   scoredPoints.sort((a, b) => {
     return b.score - a.score;
   });
@@ -919,7 +931,8 @@ function filter() {
   let filteredArrayItem = null;
 
   if (scoredPoints.length > 0) {
-    filteredArrayItem = filteredArray[findFilteredArrayIdx(filteredArray, scoredPoints[0].id)];
+    filteredArrayItem =
+      filteredArray[findFilteredArrayIdx(filteredArray, scoredPoints[0].id)];
 
     finalScore = scoredPoints[0].score;
 
@@ -943,17 +956,24 @@ function filter() {
   let ROLLIDX = 31;
 
   // show the matching plot
-  if (filteredArray.length === 1 && btnCount === 5 && filteredArray[0] != null) {
+  if (
+    filteredArray.length === 1 &&
+    btnCount === 5 &&
+    filteredArray[0] != null
+  ) {
     optAircraftIdIndicator.attr({
       text: filteredArray[0][AIRCRAFTIDIDX]
     });
     $("#lbl-aircraft-id").show(); // show aircraft id
     $("#" + filteredArray[0][PLOTIDX]).show(); // show plotted wind data
     $("#weather-indicator").show();
-    setWeatherIndicator($("#" + filteredArray[0][PLOTIDX]), $("#weather-indicator"));
+
+    let plot = Snap("#" + filteredArray[0][PLOTIDX]);
+    let d = Snap.path.toAbsolute(plot);
+    setWeatherIndicator(d, Snap("#weather-indicator"));
+
     let pitch = filteredArray[0][PITCHIDX];
     let roll = filteredArray[0][ROLLIDX];
-
 
     // === Show the pitch and roll data ===
     showPitchAndRoll(pitch, roll);
@@ -975,7 +995,6 @@ function findFilteredArrayIdx(filteredArray, id) {
 
 // this is a fix function to allow user to select all 5 buttons for each group before processing
 function isCompleteMatch(filteredObject, btnStatus) {
-
   // weight: 0 - 3 inclusive
   // direction: 4 - 6 inclusive
   // time: 7 - 8 inclusive
@@ -998,7 +1017,11 @@ function isCompleteMatch(filteredObject, btnStatus) {
 
   for (let x = 0; x < btnStatus.length; x++) {
     let filterOption = parseInt(filteredObject[x + OFFSET]);
-    if (btnStatus[x] === true && filterOption > 0 && filterMatches < minMatches) {
+    if (
+      btnStatus[x] === true &&
+      filterOption > 0 &&
+      filterMatches < minMatches
+    ) {
       filterMatches++;
     }
   }
@@ -1207,79 +1230,72 @@ function initWeatherIndicator(f, Snap) {
   //      if false colour red
 
   let indicator = f.select("#weather-indicator");
-  let polarGraph = f.select("#polar-graph");
-  let pathLength = indicator.getTotalLength();
-  let bbox = indicator.getBBox();
-  let pt;
-  let prcnt = 1;
   let posX = 0;
   let posY = 0;
+  let outsideBoundary = f.select("#wi-outside-boundary");
+  let bbox = outsideBoundary.getBBox();
+  let bboxInd = indicator.getBBox();
+  let mathRand1;
+  let mathRand2;
+  let breakOnx = 50000;
+  let xBegin = 650; //455; change to these commented numbers to cover whole polar graph
+  let xEnd = 750; //881;
+  let yBegin = 207;
+  let yEnd = 400; // 633;
 
-  let outsideBoundary = f.select("wi-outside-boundary");
+  do {
+    breakOnx--;
+    mathRand1 = Math.random();
+    mathRand2 = Math.random();
 
-  posX = Math.floor(Math.random() * bbox.width + bbox.x);
-  posY = Math.floor(Math.random() * bbox.height + bbox.y);
-
-  // check if you can place marker on map
-  // isInsidePolarGraph = isWIInside({ posX, posY }, polarGraph);
-  // let plotArray = [];
-
-  // for (let x = 0; x <= pathLength; x++) {
-    // Get x and y values at a certain point in the line
-    // pt = indicator.getPointAtLength(prcnt);
-    indicator.x = Math.round(indicator.attr("x"));
-    indicator.y = Math.round(indicator.attr("y"));
-    isInsidePolarGraph = Snap.path.isPointInside(outsideBoundary, indicator.attr("x"), indicator.attr("y"));
-  if(isInsidePolarGraph) {
-    moveSVGElement(indicator, posX, posY);
-  }
-  
-  // isInsidePolarGraph = isWIInside({ posX, posY }, convertPathToArray($("#wi-outside-boundary")));
+    // max ranges for rnd
+    posX = Math.floor(mathRand1 * (xEnd - xBegin) + xBegin);
+    posY = Math.floor(mathRand2 * (yEnd - yBegin) + yBegin);
+    // var thePath = "M 673.11876,420.5027 A 5,5 0 0 1 668.11876,425.5027 5,5 0 0 1 663.11876,420.5027 5,5 0 0 1 668.11876,415.5027 5,5 0 0 1 673.11876,420.5027 Z";
+    // check if you can place marker on map
+    var polarGrphBndryPath =
+      "M 880.76157,419.82421 A 213,213 0 0 1 667.76157,632.82421 213,213 0 0 1 454.76157,419.82421 213,213 0 0 1 667.76157,206.82421 213,213 0 0 1 880.76157,419.82421 Z";
+    isInsidePolarGraph = Snap.path.isPointInside(
+      polarGrphBndryPath,
+      posX,
+      posY
+    );
+  } while (!isInsidePolarGraph && breakOnx > 0);
+  moveSVGElement(indicator, posX, posY);
 }
 
 function setWeatherIndicator(currentPlot, indicator) {
-  if(isInsidePolygon = Snap.path.isPointInside(currentPlot, indicator.x, indicator.y)) {
-    indicator.attr({"fill": "#00ff00"});
+  let bboxForIndicator = indicator.getBBox();
+  let f = Snap("#svg");
+  let activeSholDisplay = f.select("#active-shol-display ");
+  let polarGraph = f.select("#polar-graph");
+  let bbPolarGraph = polarGraph.getBBox();
+  let grpPlots = f.select("#grp-plots");
+  let bbAD = activeSholDisplay.getBBox();
+  let bbGrpPlots = grpPlots.getBBox();
+  let difX = bbAD.cx - bboxForIndicator.cx;
+  let difY = bbAD.cx - bboxForIndicator.cy;
+
+  difX += bbGrpPlots.cx;
+  difY += bbGrpPlots.cy;
+
+  if (
+    (isInsidePolygon = Snap.path.isPointInside(
+      currentPlot,
+      bboxForIndicator.x,
+      bboxForIndicator.y
+    ))
+  ) {
+    indicator.attr({
+      fill: "#00ff00"
+    });
   } else {
-    indicator.attr({"fill": "#ff0000"});
+    indicator.attr({
+      fill: "#ff0000"
+    });
   }
 }
 
-// function convertPathToArray(svgElement) {
-//   let theLen = svgElement.getTotalLength();
-//   let resultArray = [];
-
-//   for (let x = 0; x < theLen; x++) {
-//     resultArray.push(svgElement.getPointAtLength(x));
-//   }
-
-//   return resultArray;
-// }
-
-function moveSVGElement(indicator, x, y) {
-  indicator.transform("T " + x + "," + y)
+function moveSVGElement(el, x, y) {
+  el.transform("t" + x + "," + y);
 }
-
-// WI = Weather Indicator
-// function isWIInside(point, theArea) {
-//   var x = point[0],
-//     y = point[1];
-
-//   var inside = false;
-//   for (var i = 0, j = theArea.length - 1; i < theArea.length; j = i++) {
-//     var xi = theArea[i][0],
-//       yi = theArea[i][1];
-//     var xj = theArea[j][0],
-//       yj = theArea[j][1];
-
-//     var intersect =
-//       yi > y != yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi;
-//     if (intersect) inside = !inside;
-//   }
-
-//   return inside;
-// }
-
-// function wiCreateRandPoint() {
-//   let outsideBoundary;
-// }

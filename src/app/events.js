@@ -13,6 +13,52 @@ function initEvents(f) {
         console.log("back btn up");
     });
 
+    btnBright.mousedown(() => {
+        doBtnDown(f, "#btn-bright");
+        console.log("bright btn down");
+        let isVisASholMenu = (aircraftSholMenu.attr("display") != "none");
+        let isVisMainMenu = (mainMenu.attr("display") != "none");
+        let isVisASholDisplay = (activeSholDisplay.attr("display") != "none");
+
+        if (parseFloat(brightness).toFixed(1) > parseFloat(0.1).toFixed(1)) {
+            if (isVisASholDisplay || isVisASholMenu || isVisMainMenu) {
+                brightness = parseFloat(brightness).toFixed(1) - parseFloat(0.1).toFixed(1);
+                brightnessScreen.attr({
+                    opacity: brightness
+                });
+            }
+        }
+        console.log("brightness: " + parseFloat(brightness).toFixed(1));
+    });
+
+    btnBright.mouseup(() => {
+        doBtnUp(f, "#btn-bright");
+        console.log("bright btn up");
+    });
+
+    btnDim.mousedown(() => {
+        doBtnDown(f, "#btn-dim");
+        console.log("dim btn down");
+        let isVisASholMenu = (aircraftSholMenu.attr("display") != "none");
+        let isVisMainMenu = (mainMenu.attr("display") != "none");
+        let isVisASholDisplay = (activeSholDisplay.attr("display") != "none");
+        let tmpBrt = parseFloat(brightness).toFixed(1);
+        if (tmpBrt <= parseFloat(0.9).toFixed(1)) {
+            if (isVisASholDisplay || isVisASholMenu || isVisMainMenu) {
+                brightness = parseFloat(brightness) + parseFloat(0.1);
+                brightnessScreen.attr({
+                    opacity: brightness
+                });
+            }
+        }
+        console.log("brightness: " + parseFloat(brightness).toFixed(1));
+    });
+
+    btnDim.mouseup(() => {
+        doBtnUp(f, "#btn-dim");
+        console.log("dim btn up");
+    });
+
     btnMenu.mousedown(() => {
         doBtnDown(f, "#btn-menu");
         goBackToMainMenu(f);
