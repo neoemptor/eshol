@@ -11,9 +11,10 @@
 
       body,
       html {
+        position: relative;
         background-color: #222122;
-        margin: 0px;
-        padding: 0px;
+        /* margin: 0px;
+        padding: 0px; */
         overflow: hidden;
 
         -webkit-touch-callout: none;
@@ -23,47 +24,45 @@
         -ms-user-select: none;
         user-select: none;
       }
-
-      /* #svg-pitch-bar-indicator {
-			position: absolute;
-			top: 434px;
-			left: 565px;
-		} */
+      .centerDiv {
+        position: relative;
+        width: 1306px;
+        height: 906px;
+        margin: auto;
+        padding-top: 300px;
+        /* padding-top: 200px; */
+        
+      }
 
       #svg {
         position: absolute;
         top: 0;
-        left: 70px;
+        left: 0;
         right: 0;
-        bottom: 20px;
+        bottom: 0;
         margin: auto;
       }
-
-      /* #svg-roll-bar-indicator {
-			position: absolute;
-			top: 838px;
-			left: 922px;
-		} */
     </style>
   </head>
 
   <body>
-    <svg
-      id="svg"
-      version="1.1"
-      xml:space="preserve"
-      viewBox="-120 -20 1670 920"
-      width="1920"
-      height="1080"
-      enable-background="new -120 -20 1670 920"
-    >
-      <style>
-        * {
-          font-family: Arial, Helvetica, sans-serif;
-        }
-      </style>
-    </svg>
-
+    <div class="centerDiv">
+      <svg
+        id="svg"
+        version="1.1"
+        xml:space="preserve"
+        viewBox="-120 -20 1670 920"
+        width="1920"
+        height="1080"
+        enable-background="new -120 -20 1670 920"
+      >
+        <style>
+          * {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        </style>
+      </svg>
+    </div>
     <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
     <!-- <script src="../assets/js/TweenMax.js"></script> -->
     <script src="../node_modules/snapsvg/dist/snap.svg.js"></script>
@@ -104,16 +103,16 @@
           $("#roll-bar-indicator").hide();
 
           // get last brightness setting
-		  brightness = localStorage.getItem("brightness");
-		  brightness = parseFloat(brightness).toFixed(1);
-		  
+          brightness = localStorage.getItem("brightness");
+          brightness = parseFloat(brightness).toFixed(1);
+
           if (
-            (brightness ===
-              "" ||
-              brightness === "undefined" ||
-              brightness === null ||
-              brightness < 0 ||
-              brightness > 1 || isNaN(brightness))
+            brightness === "" ||
+            brightness === "undefined" ||
+            brightness === null ||
+            brightness < 0 ||
+            brightness > 1 ||
+            isNaN(brightness)
           ) {
             localStorage.removeItem("brightness");
             brightness = parseFloat(0.5).toFixed(1);
@@ -134,9 +133,22 @@
           // 	pitchBarIndicator.getBBox().x2 + " : " + pitchBarIndicator.getBBox().y2);
           initEvents(f);
 
-        //   grpPlots.transform("t500, 205");
+          //   grpPlots.transform("t500, 205");
 
           initWeatherIndicator(f, Snap);
+
+          updatePitchLoop();
+          setInterval(() => {
+            updatePitchLoop();
+          }, 20300);
+
+          setTimeout(() => {
+            updateRollLoop();
+            setInterval(() => {
+              updateRollLoop();
+            }, 20300);
+          }, Math.random() * (5000 - 2000) + 2000);
+
           // #lbl-aircraft is the label displayed on the active display
           // after the aircraft type has been
           // chosen from the previous aircraft
@@ -152,15 +164,17 @@
           screenHeight = screen.height;
           vpWidth = screenWidth;
           vpHeight = screenHeight;
+          // xCentre =
+          svgBbox = s.getBBox();
           viewBox = "0 0 " + vpWidth + " " + vpHeight;
 
-        //   s.attr({
-        //     x: 0,
-        //     y: 0,
-        //     width: screenWidth,
-        //     height: screenHeight,
-        //     viewBox: viewBox
-        //   });
+          s.attr({
+            x: 0,
+            y: 0,
+            width: screenWidth,
+            height: screenHeight,
+            viewBox: viewBox
+          });
         });
       };
     </script>

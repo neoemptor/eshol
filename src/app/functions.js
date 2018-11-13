@@ -1299,3 +1299,118 @@ function setWeatherIndicator(currentPlot, indicator) {
 function moveSVGElement(el, x, y) {
   el.transform("t" + x + "," + y);
 }
+
+function updateRollLoop() {
+  let cy = rollBarIndicator.getBBox().cy;
+  rollBarIndicator.transform(
+    "r180," + rollBarIndicator.attr("x") + ", " + cy
+  );
+  rollBarIndicator.animate(
+    {
+      width: "223"
+    },
+    5000,
+    mina.linear,
+    () => {
+      animRoll1();
+    }
+  );
+}
+
+function animRoll1() {
+  rollBarIndicator.animate(
+    {
+      width: "1"
+    },
+    5000,
+    mina.easeout,
+    () => {
+      animRoll2();
+    }
+  );
+}
+
+function animRoll2() {
+  let cy = rollBarIndicator.getBBox().cy;
+  rollBarIndicator.transform(
+    "r360," + rollBarIndicator.attr("x") + "," + cy
+  );
+
+  rollBarIndicator.animate(
+    {
+      width: "223"
+    },
+    5000,
+    mina.linear,
+    () => {
+      animRoll3();
+    }
+  );
+}
+
+function animRoll3() {
+  rollBarIndicator.animate(
+    {
+      width: "1"
+    },
+    5000,
+    mina.easeout
+  );
+}
+
+function updatePitchLoop() {
+  let cx = pitchBarIndicator.getBBox().cx;
+  pitchBarIndicator.transform(
+    "r360," + cx + ", " + pitchBarIndicator.attr("y")
+  );
+  pitchBarIndicator.animate(
+    {
+      height: "174"
+    },
+    5000,
+    mina.linear,
+    () => {
+      animPitch1();
+    }
+  );
+}
+
+function animPitch1() {
+  pitchBarIndicator.animate(
+    {
+      height: "1"
+    },
+    5000,
+    mina.easeout,
+    () => {
+      animPitch2();
+    }
+  );
+}
+
+function animPitch2() {
+  let cx = pitchBarIndicator.getBBox().cx;
+  pitchBarIndicator.transform(
+    "r180," + cx + ", " + pitchBarIndicator.attr("y")
+  );
+  pitchBarIndicator.animate(
+    {
+      height: "174"
+    },
+    5000,
+    mina.linear,
+    () => {
+      animPitch3();
+    }
+  );
+}
+
+function animPitch3() {
+  pitchBarIndicator.animate(
+    {
+      height: "1"
+    },
+    5000,
+    mina.easeout
+  );
+}
