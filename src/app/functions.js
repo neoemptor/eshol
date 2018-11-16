@@ -662,7 +662,6 @@ function doBtnDown(f, btn) {
   let foundFace;
 
   children.forEach(item => {
-
     if (item.node.id) {
       foundGradient = item.node.id.substr(0, 8);
       foundFace = item.node.id.substr(0, 4);
@@ -814,9 +813,6 @@ function resetFilter(theFilter, idx) {
       btnStatus[FWD] = false; // Forward
       btnStatus[AFT] = false; // Aft
       btnStatus[INTOWIND] = false; // Into Wind
-      // isFwd = false;
-      // isAft = false;
-      // isIntoWind = false;
 
       for (let x = FWD; x <= INTOWIND; x++) {
         // FWD - INTOWIND
@@ -968,9 +964,26 @@ function filter() {
     $("#" + filteredArray[0][PLOTIDX]).show(); // show plotted wind data
     $("#weather-indicator").show();
 
-    let plot = Snap("#" + filteredArray[0][PLOTIDX]);
-    let d = Snap.path.toAbsolute(plot);
-    setWeatherIndicator(d, Snap("#weather-indicator"));
+    let snapPlot = Snap("#" + filteredArray[0][PLOTIDX]);
+    let bbSnapPlot = snapPlot.getBBox();
+    let plot = document.getElementById(filteredArray[0][PLOTIDX]);
+    let convert = makeAbsoluteContext(plot, document.getElementById("svg"));
+    x = bbSnapPlot.x;
+    y = bbSnapPlot.y;
+
+    // let newPlotCoords = convert(x, y);
+    // let d = changeMoveLoc(
+    //   document.getElementById(filteredArray[0][PLOTIDX]).getAttribute("d"),
+    //   newPlotCoords.x,
+    //   newPlotCoords.y
+    // );
+
+    let d = document.getElementById(filteredArray[0][PLOTIDX]).getAttribute("d");
+
+    setWeatherIndicator(
+      d,
+      Snap("#weather-indicator")
+    );
 
     let pitch = filteredArray[0][PITCHIDX];
     let roll = filteredArray[0][ROLLIDX];
@@ -1064,39 +1077,6 @@ function resetFilterArray() {
   for (let y = 0; y < tblProfile.rows.length; y++) {
     filteredArray.push(tblProfile.rows[y]);
   }
-}
-
-// todo: remove
-function resetBtnStatus() {
-  for (let x = 0; x < btnStatus.length; x++) {
-    btnStatus[x] = false;
-  }
-  isDay = false;
-  isNight = false;
-  isFwd = false;
-  isAft = false;
-  isIntoWind = false;
-  isCda = false;
-  is6 = false;
-  is5 = false;
-  is4 = false;
-  is3 = false;
-  is2 = false;
-  is1 = false;
-  isCdf = false;
-  isEngage = false;
-  isTaxi = false;
-  isLaunch = false;
-  isLand = false;
-  isVertrep = false;
-  isXfer = false;
-  isLight = false;
-  isMedium = false;
-  isHeavy = false;
-  isHotHeavy = false;
-  isEmergency = false;
-  isRecovery = false;
-  isSpreadFold = false;
 }
 
 function showPitchAndRoll(pitch, roll) {
@@ -1237,21 +1217,23 @@ function initWeatherIndicator(f, Snap) {
   let bboxInd = indicator.getBBox();
   let mathRand1;
   let mathRand2;
-  let breakOnx = 50000;
-  let xBegin = 650; //455; change to these commented numbers to cover whole polar graph
-  let xEnd = 750; //881;
-  let yBegin = 207;
-  let yEnd = 400; // 633;
+  // let breakOnx = 50000;
+  let xBegin = 50;//455; // change to these commented numbers to cover whole polar graph
+  let xEnd = 250;//750; //881;
+  let yBegin = 7; //207;
+  let yEnd = 220;//400; // 633;
 
-  do {
-    breakOnx--;
+  // do {
+    // breakOnx--;
     mathRand1 = Math.random();
     mathRand2 = Math.random();
 
     // max ranges for rnd
     posX = Math.floor(mathRand1 * (xEnd - xBegin) + xBegin);
     posY = Math.floor(mathRand2 * (yEnd - yBegin) + yBegin);
-    // var thePath = "M 673.11876,420.5027 A 5,5 0 0 1 668.11876,425.5027 5,5 0 0 1 663.11876,420.5027 5,5 0 0 1 668.11876,415.5027 5,5 0 0 1 673.11876,420.5027 Z";
+    // posX = 150;
+    // posY = 196;
+
     // check if you can place marker on map
     var polarGrphBndryPath =
       "M 880.76157,419.82421 A 213,213 0 0 1 667.76157,632.82421 213,213 0 0 1 454.76157,419.82421 213,213 0 0 1 667.76157,206.82421 213,213 0 0 1 880.76157,419.82421 Z";
@@ -1260,31 +1242,27 @@ function initWeatherIndicator(f, Snap) {
       posX,
       posY
     );
-  } while (!isInsidePolarGraph && breakOnx > 0);
+  // } while (!isInsidePolarGraph && breakOnx > 0);
   moveSVGElement(indicator, posX, posY);
 }
 
 function setWeatherIndicator(currentPlot, indicator) {
   let bboxForIndicator = indicator.getBBox();
-  let f = Snap("#svg");
-  let activeSholDisplay = f.select("#active-shol-display ");
-  let polarGraph = f.select("#polar-graph");
-  let bbPolarGraph = polarGraph.getBBox();
-  let grpPlots = f.select("#grp-plots");
-  let bbAD = activeSholDisplay.getBBox();
-  let bbGrpPlots = grpPlots.getBBox();
-  let difX = bbAD.cx - bboxForIndicator.cx;
-  let difY = bbAD.cx - bboxForIndicator.cy;
+ 
+  let wi = document.getElementById("weather-indicator");
+  let convert = makeAbsoluteContext(wi, document.getElementById("svg"));
+  x = bboxForIndicator.x;
+  y = bboxForIndicator.y;
 
-  difX += bbGrpPlots.cx;
-  difY += bbGrpPlots.cy;
+  // let wiCoords = convert(x, y);
+  isInsidePolygon = Snap.path.isPointInside(
+    currentPlot,
+    bboxForIndicator.x,
+    bboxForIndicator.y
+  )
 
   if (
-    (isInsidePolygon = Snap.path.isPointInside(
-      currentPlot,
-      bboxForIndicator.x,
-      bboxForIndicator.y
-    ))
+    (isInsidePolygon)
   ) {
     indicator.attr({
       fill: "#00ff00"
@@ -1297,14 +1275,12 @@ function setWeatherIndicator(currentPlot, indicator) {
 }
 
 function moveSVGElement(el, x, y) {
-  el.transform("t" + x + "," + y);
+  el.transform("T" + x + "," + y);
 }
 
 function updateRollLoop() {
   let cy = rollBarIndicator.getBBox().cy;
-  rollBarIndicator.transform(
-    "r180," + rollBarIndicator.attr("x") + ", " + cy
-  );
+  rollBarIndicator.transform("r180," + rollBarIndicator.attr("x") + ", " + cy);
   rollBarIndicator.animate(
     {
       width: "223"
@@ -1332,9 +1308,7 @@ function animRoll1() {
 
 function animRoll2() {
   let cy = rollBarIndicator.getBBox().cy;
-  rollBarIndicator.transform(
-    "r360," + rollBarIndicator.attr("x") + "," + cy
-  );
+  rollBarIndicator.transform("r360," + rollBarIndicator.attr("x") + "," + cy);
 
   rollBarIndicator.animate(
     {
@@ -1413,4 +1387,28 @@ function animPitch3() {
     5000,
     mina.easeout
   );
+}
+
+function makeAbsoluteContext(element, svgDocument) {
+  return function(x, y) {
+    var offset = svgDocument.getBoundingClientRect();
+    var matrix = element.getScreenCTM();
+    return {
+      x: matrix.a * x + matrix.c * y + matrix.e - offset.left,
+      y: matrix.b * x + matrix.d * y + matrix.f - offset.top
+    };
+  };
+}
+
+function changeMoveLoc(dAttrib, x, y) {
+  if (dAttrib != "undefined" && dAttrib != null && dAttrib != "") {
+    let result;
+    let len = dAttrib.length;
+    let start = dAttrib.indexOf(" ");
+    let endPart = dAttrib.substr(start + 1, len);
+    let end = endPart.indexOf(" ");
+    result =
+      dAttrib.substr(0, 1) + " " + x + "," + y + endPart.substr(end, len);
+    return result;
+  }
 }

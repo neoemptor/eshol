@@ -19044,13 +19044,13 @@
    id="namedview104"
    showgrid="false"
    inkscape:snap-object-midpoints="false"
-   inkscape:zoom="2.8284272"
-   inkscape:cx="889.72595"
-   inkscape:cy="250.85267"
+   inkscape:zoom="0.70710682"
+   inkscape:cx="548.88823"
+   inkscape:cy="487.03916"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
-   inkscape:current-layer="grp-roll-graph"
+   inkscape:current-layer="grp-plots"
    inkscape:snap-text-baseline="false"
    inkscape:snap-bbox="false"
    inkscape:showpageshadow="false"
@@ -19730,6 +19730,10 @@
 
 
 
+
+
+
+
 	<text
    inkscape:label="lbl-on"
    style="font-size:16.13574982px;font-family:'Arial Narrow';fill:#e6e6e6;stroke-width:0.91301697"
@@ -19738,6 +19742,10 @@
    transform="scale(0.91301697,1.0952699)"
    x="115.55097"
    y="48.008259">ON</text>
+
+
+
+
 
 
 
@@ -20157,36 +20165,36 @@
    transform="translate(109.27508,259.16837)"
    style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
    id="roll-starboard-max-5"
-   points="308,434 302,428 295,434 295,440 295,446 302,446 308,446 308,440 "
+   points="302,428 295,434 295,440 295,446 302,446 308,446 308,440 308,434 "
    class="cls-8"
    inkscape:label="#roll-starboard-max-5" /><polygon
    inkscape:label="#roll-starboard-max-4"
    class="cls-8"
-   points="308,446 308,440 308,434 302,428 295,434 295,440 295,446 302,446 "
+   points="308,440 308,434 302,428 295,434 295,440 295,446 302,446 308,446 "
    id="roll-starboard-max-4"
    style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
    transform="translate(65.275083,259.16837)" /><polygon
    transform="translate(22.275083,259.16837)"
    style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
    id="roll-starboard-max-3"
-   points="295,440 295,446 302,446 308,446 308,440 308,434 302,428 295,434 "
+   points="295,446 302,446 308,446 308,440 308,434 302,428 295,434 295,440 "
    class="cls-8"
    inkscape:label="#roll-starboard-max-3" /><polygon
    inkscape:label="#roll-starboard-max-2"
    class="cls-8"
-   points="308,434 302,428 295,434 295,440 295,446 302,446 308,446 308,440 "
+   points="302,428 295,434 295,440 295,446 302,446 308,446 308,440 308,434 "
    id="roll-starboard-max-2"
    style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
    transform="translate(-20.602137,259.16837)" /><polygon
    transform="translate(-40.256167,259.16837)"
    style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
    id="roll-starboard-max-15"
-   points="308,446 308,440 308,434 302,428 295,434 295,440 295,446 302,446 "
+   points="308,440 308,434 302,428 295,434 295,440 295,446 302,446 308,446 "
    class="cls-8"
    inkscape:label="#roll-starboard-max-15" /><polygon
    inkscape:label="#roll-starboard-max-1"
    class="cls-8"
-   points="295,434 295,440 295,446 302,446 308,446 308,440 308,434 302,428 "
+   points="295,440 295,446 302,446 308,446 308,440 308,434 302,428 295,434 "
    id="roll-starboard-max-1"
    style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
    transform="translate(-63.756167,259.16837)" /><path
@@ -20203,36 +20211,36 @@
    transform="translate(-242.25617,259.16837)"
    style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
    id="roll-port-max-5"
-   points="209,440 209,446 216,446 222,446 222,440 222,434 216,428 209,434 "
+   points="209,446 216,446 222,446 222,440 222,434 216,428 209,434 209,440 "
    class="cls-8"
    inkscape:label="#roll-port-max-5" /><polygon
    inkscape:label="#roll-port-max-4"
    class="cls-8"
-   points="222,440 222,434 216,428 209,434 209,440 209,446 216,446 222,446 "
+   points="222,434 216,428 209,434 209,440 209,446 216,446 222,446 222,440 "
    id="roll-port-max-4"
    style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
    transform="translate(-193.75617,259.16837)" /><polygon
    transform="translate(-150.68416,259.16837)"
    style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
    id="roll-port-max-3"
-   points="222,446 222,440 222,434 216,428 209,434 209,440 209,446 216,446 "
+   points="222,440 222,434 216,428 209,434 209,440 209,446 216,446 222,446 "
    class="cls-8"
    inkscape:label="#roll-port-max-3" /><polygon
    inkscape:label="#roll-port-max-2"
    class="cls-8"
-   points="209,434 209,440 209,446 216,446 222,446 222,440 222,434 216,428 "
+   points="209,440 209,446 216,446 222,446 222,440 222,434 216,428 209,434 "
    id="roll-port-max-2"
    style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
    transform="translate(-106.68416,259.16837)" /><polygon
    transform="translate(-84.756167,259.16837)"
    style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
    id="roll-port-max-15"
-   points="222,434 216,428 209,434 209,440 209,446 216,446 222,446 222,440 "
+   points="216,428 209,434 209,440 209,446 216,446 222,446 222,440 222,434 "
    class="cls-8"
    inkscape:label="#roll-port-max-15" /><polygon
    inkscape:label="#roll-port-max-1"
    class="cls-8"
-   points="222,446 222,440 222,434 216,428 209,434 209,440 209,446 216,446 "
+   points="222,440 222,434 216,428 209,434 209,440 209,446 216,446 222,446 "
    id="roll-port-max-1"
    style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#f900fe;stroke-width:2px;stroke-miterlimit:10"
    transform="translate(-63.756167,259.16837)" /></g><g
@@ -20584,7 +20592,13 @@
      id="id600-spot-cda"
      d="M 177.71217,197.20162 C 177.71217,197.20162 165.51911,192.55283 157.18453,199.48437 L 96.396713,94.305698 118.92861,84.127148 102.09811,38.651591 C 102.09811,38.651591 153.69132,19.133154 202.72101,29.290009 L 194.46994,77.378493 218.95979,83.738683 Z"
      style="font-family:Arial, Helvetica, sans-serif;display:none;fill:#0000ff;fill-opacity:1;stroke:#0001ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     sodipodi:insensitive="true" /></g><g
+     sodipodi:insensitive="true" /><path
+     style="font-family:Arial, Helvetica, sans-serif;display:none;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     inkscape:transform-center-x="-4.5"
+     inkscape:transform-center-y="2"
+     d="M 10,4.833937 A 5,5 0 0 1 5,9.833936 5,5 0 0 1 0,4.833937 5,5 0 0 1 5,-0.166064 5,5 0 0 1 10,4.833937 Z"
+     id="weather-indicator"
+     inkscape:connector-curvature="0" /></g><g
    style="font-family:Arial, Helvetica, sans-serif;display:inline"
    inkscape:label="#polar-graph"
    transform="matrix(1.0670951,0,0,1.0670951,-392.46162,-150.05447)"
@@ -20607,7 +20621,7 @@
        inkscape:connector-curvature="0"><desc
          id="desc10873">Red port side arc</desc><title
          id="title10871">Port Side Arc</title></path></g><g
-     style="font-family:Arial, Helvetica, sans-serif;display:inline;fill:none"
+     style="font-family:Arial, Helvetica, sans-serif;display:inline;opacity:0.50268818;fill:none"
      id="polar-grid-lines"
      transform="translate(267.86865,143.25)"
      inkscape:label="#polar-grid-lines"
@@ -20901,12 +20915,20 @@
 
 
 
+
+
+
+
 <text
    y="351.25"
    x="434.86865"
    class="cls-5"
    id="lbl20kt-west"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">20KT</text>
+
+
+
+
 
 
 
@@ -21085,12 +21107,20 @@
 
 
 
+
+
+
+
 <text
    y="351.25"
    x="353.86865"
    class="cls-5"
    id="lbl40kt-west"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">40KT</text>
+
+
+
+
 
 
 
@@ -21269,12 +21299,20 @@
 
 
 
+
+
+
+
 <text
    y="351.25"
    x="551.86865"
    class="cls-5"
    id="lbl10kt-east"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">10KT</text>
+
+
+
+
 
 
 
@@ -21453,12 +21491,20 @@
 
 
 
+
+
+
+
 <text
    y="351.25"
    x="632.86865"
    class="cls-5"
    id="lbl30kt-east"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">30KT</text>
+
+
+
+
 
 
 
@@ -21637,12 +21683,20 @@
 
 
 
+
+
+
+
 <text
    y="351.25"
    x="712.86865"
    class="cls-5"
    id="lbl50kt-east"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">50KT</text>
+
+
+
+
 
 
 
@@ -21821,12 +21875,20 @@
 
 
 
+
+
+
+
 <text
    y="312.25"
    x="513.86865"
    class="cls-5"
    id="lbl10kt-north"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">10KT</text>
+
+
+
+
 
 
 
@@ -22005,12 +22067,20 @@
 
 
 
+
+
+
+
 <text
    y="469.25"
    x="513.86865"
    class="cls-5"
    id="lbl30kt-south"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">30KT</text>
+
+
+
+
 
 
 
@@ -22189,6 +22259,10 @@
 
 
 
+
+
+
+
 <text
    y="549.25"
    x="513.86865"
@@ -22281,12 +22355,20 @@
 
 
 
+
+
+
+
 <text
    y="152.25"
    x="513.86865"
    class="cls-5"
    id="lbl50kt-north"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">50KT</text>
+
+
+
+
 
 
 
@@ -22466,6 +22548,10 @@
 
 
 
+
+
+
+
 <text
    y="232.25"
    x="513.86865"
@@ -22558,12 +22644,20 @@
 
 
 
+
+
+
+
 <text
    y="192.25"
    x="513.86865"
    class="cls-5"
    id="lbl40kt-north"
    style="font-weight:700;font-size:10px;font-family:Arial;fill:#ffffff">40KT</text>
+
+
+
+
 
 
 
@@ -22750,6 +22844,10 @@
 
 
 
+
+
+
+
 <text
    id="r40"
    class="cls-1"
@@ -22757,6 +22855,10 @@
    y="-226.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#r40">R40</text>
+
+
+
+
 
 
 
@@ -22940,6 +23042,10 @@
 
 
 
+
+
+
+
 <text
    id="r80"
    class="cls-1"
@@ -23035,6 +23141,10 @@
 
 
 
+
+
+
+
 <text
    id="r100"
    class="cls-1"
@@ -23042,6 +23152,10 @@
    y="-30.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#r100">R100</text>
+
+
+
+
 
 
 
@@ -23229,6 +23343,10 @@
 
 
 
+
+
+
+
 <text
    id="r140"
    class="cls-1"
@@ -23236,6 +23354,10 @@
    y="93.969238"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#r140">R140</text>
+
+
+
+
 
 
 
@@ -23419,6 +23541,10 @@
 
 
 
+
+
+
+
 <text
    id="g20"
    class="cls-1"
@@ -23426,6 +23552,10 @@
    y="-260.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g20">G20</text>
+
+
+
+
 
 
 
@@ -23609,6 +23739,10 @@
 
 
 
+
+
+
+
 <text
    id="g60"
    class="cls-1"
@@ -23616,6 +23750,10 @@
    y="-171.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g60">G60</text>
+
+
+
+
 
 
 
@@ -23799,6 +23937,10 @@
 
 
 
+
+
+
+
 <text
    id="g100"
    class="cls-1"
@@ -23806,6 +23948,10 @@
    y="-30.03076"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g100">G100</text>
+
+
+
+
 
 
 
@@ -23993,6 +24139,10 @@
 
 
 
+
+
+
+
 <text
    id="g140"
    class="cls-1"
@@ -24000,6 +24150,10 @@
    y="93.969238"
    style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
    inkscape:label="#g140">G140</text>
+
+
+
+
 
 
 
@@ -24183,6 +24337,10 @@
 
 
 
+
+
+
+
 </g></g><g
    id="grp-opt-active-shol-display"
    style="font-family:Arial, Helvetica, sans-serif;display:inline"><g
@@ -24211,6 +24369,10 @@
      x="918.16034"
      y="131.7664"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;fill:#ffffff;fill-opacity:1">LIGHT</tspan></text>
+
+
+
+
 
 
 
@@ -24382,6 +24544,10 @@
 
 
 
+
+
+
+
 </g>
 
 
@@ -24424,6 +24590,10 @@
      y="323.38116"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2-5-9">HEAVY</tspan></text>
+
+
+
+
 
 
 
@@ -24595,6 +24765,10 @@
 
 
 
+
+
+
+
 </g>
 
 
@@ -24702,6 +24876,10 @@
 
 
 
+
+
+
+
 </g><g
    id="grp-spare"
    style="font-family:Arial, Helvetica, sans-serif;display:inline"
@@ -24724,6 +24902,10 @@
      y="617.51965"
      x="881.87909"
      sodipodi:role="line">EMERGENCY</tspan></text>
+
+
+
+
 
 
 
@@ -24912,6 +25094,10 @@
 
 
 
+
+
+
+
 <g
    style="font-family:Arial, Helvetica, sans-serif;display:inline"
    id="grp-day"><rect
@@ -24933,6 +25119,10 @@
      y="229.25429"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2">DAY</tspan></text>
+
+
+
+
 
 
 
@@ -25104,6 +25294,10 @@
 
 
 
+
+
+
+
 </g>
 
 
@@ -25145,6 +25339,10 @@
      y="418.66571"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2-5-4">FWD</tspan></text>
+
+
+
+
 
 
 
@@ -25316,6 +25514,10 @@
 
 
 
+
+
+
+
 </g>
 
 
@@ -25357,6 +25559,10 @@
      y="614.76324"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2-5-4-8-4">INTO WIND</tspan></text>
+
+
+
+
 
 
 
@@ -25552,6 +25758,10 @@
 
 
 
+
+
+
+
 </g>
 
 
@@ -25569,6 +25779,10 @@
      x="132.40964"
      id="tspan4725"
      sodipodi:role="line">MENU</tspan></text>
+
+
+
+
 
 
 
@@ -25764,6 +25978,10 @@
 
 
 
+
+
+
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:Arial, sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -25776,6 +25994,10 @@
      y="116.06002"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-8">SHUTDOWN</tspan></text>
+
+
+
+
 
 
 
@@ -25947,6 +26169,10 @@
 
 
 
+
+
+
+
 </g>
 
 
@@ -25990,6 +26216,10 @@
      y="30.578163"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-8-6">LAUNCH</tspan></text>
+
+
+
+
 
 
 
@@ -26161,6 +26391,10 @@
 
 
 
+
+
+
+
 </g>
 
 
@@ -26204,6 +26438,10 @@
      y="30.367226"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-8-6-5-0">VERTREP</tspan></text>
+
+
+
+
 
 
 
@@ -26375,6 +26613,10 @@
 
 
 
+
+
+
+
 </g>
 
 
@@ -26413,6 +26655,10 @@
      y="50.778336"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5389">FOLD</tspan></text>
+
+
+
+
 
 
 
@@ -26526,6 +26772,10 @@
 
 
 
+
+
+
+
 </g><g
    inkscape:label="#grp-recovery"
    id="grp-recovery"
@@ -26549,6 +26799,10 @@
      y="28.930151"
      x="851.47437"
      sodipodi:role="line">RECOVERY</tspan></text>
+
+
+
+
 
 
 
@@ -26718,6 +26972,10 @@
 
 
 
+
+
+
+
 </g>
 
 
@@ -26754,6 +27012,10 @@
      y="655.43268"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-8-6-5-0-8-3-4">CDF</tspan></text>
+
+
+
+
 
 
 
@@ -26942,6 +27204,10 @@
 
 
 
+
+
+
+
 </g>
 
 
@@ -27042,6 +27308,10 @@
 
 
 
+
+
+
+
 </g>
 
 
@@ -27078,6 +27348,10 @@
      y="655.65924"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-8-6-5-3">3</tspan></text>
+
+
+
+
 
 
 
@@ -27254,6 +27528,10 @@
 
 
 
+
+
+
+
 </g>
 
 
@@ -27290,6 +27568,10 @@
      y="655.65924"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-0">5</tspan></text>
+
+
+
+
 
 
 
@@ -27454,6 +27736,10 @@
 
 
 
+
+
+
+
 </g>
 
 
@@ -27491,6 +27777,10 @@
      x="133.51025"
      y="655.65924"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1">CDA</tspan></text>
+
+
+
+
 
 
 
@@ -29219,6 +29509,10 @@
 
 
 
+
+
+
+
 <text
    id="opt-arh-tiger"
    y="437.34113"
@@ -29232,6 +29526,10 @@
      y="437.34113"
      x="-339.55945"
      sodipodi:role="line">ARH TIGER (NOT AVAILABLE)</tspan></text>
+
+
+
+
 
 
 
@@ -29298,6 +29596,10 @@
 
 
 
+
+
+
+
 <text
    inkscape:label="#opt-s70a9"
    xml:space="preserve"
@@ -29310,6 +29612,10 @@
      y="240.04309"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2-5-1-8">S70A9</tspan></text>
+
+
+
+
 
 
 
@@ -29376,6 +29682,10 @@
 
 
 
+
+
+
+
 <text
    inkscape:label="#opt-mrh90"
    xml:space="preserve"
@@ -29388,6 +29698,10 @@
      y="48.313694"
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
      id="tspan5578-7-2-5-4-8-4-6-6">MRH90</tspan></text>
+
+
+
+
 
 
 
@@ -29563,6 +29877,10 @@
 
 
 
+
+
+
+
 <g
    id="options-top-aircraft-shol-select"
    inkscape:label="#options-top-aircraft-shol-select"
@@ -29584,6 +29902,10 @@
      x="132.40964"
      id="tspan4725-9"
      sodipodi:role="line">MENU</tspan></text>
+
+
+
+
 
 
 
@@ -30838,6 +31160,10 @@
 
 
 
+
+
+
+
 <text
    id="opt-flyco-emergency-checklists"
    y="240.04309"
@@ -30882,6 +31208,10 @@
 
 
 
+
+
+
+
 <text
    id="opt-mh60r"
    y="148.67265"
@@ -30894,6 +31224,10 @@
      y="148.67265"
      x="-339.73917"
      sodipodi:role="line">FLYCO STANDARD CHECKLISTS (NOT AVAILABLE)</tspan></text>
+
+
+
+
 
 
 
@@ -31116,6 +31450,10 @@
 
 
 
+
+
+
+
 <text
    inkscape:label="#lbl-main-menu"
    id="lbl-main-menu"
@@ -31129,6 +31467,10 @@
      style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff"
      id="tspan1390"
      sodipodi:role="line">MAIN MENU</tspan></text>
+
+
+
+
 
 
 
@@ -33405,12 +33747,6 @@
      class="cls-3"
      id="light-menu-active-display"
      inkscape:label="#light-menu-active-display" /></g><path
-   style="font-family:Arial, Helvetica, sans-serif;display:none;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-   inkscape:transform-center-x="-4.5"
-   inkscape:transform-center-y="2"
-   d="M 10,4.833937 A 5,5 0 0 1 5,9.833936 5,5 0 0 1 0,4.833937 5,5 0 0 1 5,-0.166064 5,5 0 0 1 10,4.833937 Z"
-   id="weather-indicator"
-   inkscape:connector-curvature="0" /><path
    style="font-family:Arial, Helvetica, sans-serif;display:none;fill:none;stroke:#ff0000;stroke-width:2.1089108;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
    d="M 880.76157,419.82421 A 213,213 0 0 1 667.76157,632.82421 213,213 0 0 1 454.76157,419.82421 213,213 0 0 1 667.76157,206.82421 213,213 0 0 1 880.76157,419.82421 Z"
    id="wi-outside-boundary"
@@ -33488,6 +33824,10 @@
 
 
 
+
+
+
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
@@ -33499,6 +33839,10 @@
      style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff;fill-opacity:1"
      x="22.7694"
      y="21.52429">+</tspan></text>
+
+
+
+
 
 
 
@@ -33516,6 +33860,10 @@
 
 
 
+
+
+
+
 <text
    id="text7049"
    y="30.649292"
@@ -33527,6 +33875,10 @@
      style="font-size:16px;font-family:Arial, Helvetica, sans-serif;fill:#ffffff;fill-opacity:1"
      id="tspan7047"
      sodipodi:role="line">BRT</tspan></text>
+
+
+
+
 
 
 
