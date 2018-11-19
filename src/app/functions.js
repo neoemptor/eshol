@@ -164,6 +164,11 @@ function goBackToMainMenu(f) {
   $("#btn-taxi-dummy").hide();
   $("#btn-xfer-dummy").hide();
   $("#weather-indicator").hide();
+  $("#pitch-up-overlimit").hide();
+  $("#pitch-down-overlimit").hide();
+  $("#roll-port-overlimit").hide();
+  $("#pitch-starboard-overlimit").hide();
+
   doBtnUp(f, "#btn-aircraft-shols");
   doBtnUp(f, "#btn-mh60r");
 
@@ -196,6 +201,10 @@ function doBtnBack(f) {
   $("#pitch-bar-indicator").hide();
   $("#roll-bar-indicator").hide();
   $("#weather-indicator").hide();
+  $("#pitch-up-overlimit").hide();
+  $("#pitch-down-overlimit").hide();
+  $("#roll-port-overlimit").hide();
+  $("#pitch-starboard-overlimit").hide();
 
   doBtnUp(f, "#btn-aircraft-shols");
   doBtnUp(f, "#btn-mh60r");
