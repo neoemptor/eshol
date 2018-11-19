@@ -167,7 +167,7 @@ function goBackToMainMenu(f) {
   $("#pitch-up-overlimit").hide();
   $("#pitch-down-overlimit").hide();
   $("#roll-port-overlimit").hide();
-  $("#pitch-starboard-overlimit").hide();
+  $("#roll-starboard-overlimit").hide();
 
   doBtnUp(f, "#btn-aircraft-shols");
   doBtnUp(f, "#btn-mh60r");
@@ -204,7 +204,7 @@ function doBtnBack(f) {
   $("#pitch-up-overlimit").hide();
   $("#pitch-down-overlimit").hide();
   $("#roll-port-overlimit").hide();
-  $("#pitch-starboard-overlimit").hide();
+  $("#roll-starboard-overlimit").hide();
 
   doBtnUp(f, "#btn-aircraft-shols");
   doBtnUp(f, "#btn-mh60r");
