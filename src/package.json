@@ -1,6 +1,6 @@
 {
     "name": "eshol",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "description": "Electronic Ship Helicopter Operating Limits System",
     "main": "views/main.html",
     "chromium-args": "--touch-events",

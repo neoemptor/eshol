@@ -1,182 +1,287 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>ESHOL</title>
 
+<head>
+  <meta charset="utf-8" />
+  <title>ESHOL</title>
+
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body,
+    html {
+      position: absolute;
+      background-color: #222122;
+      overflow: hidden;
+
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      height: 100%;
+      width: 100%;
+    }
+
+    #svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      display: none;
+    }
+
+    #settings-panel {
+      transition: all ease-out 0.5s;
+      color: white;
+      position: absolute;
+      left: 24px;
+      top: 0;
+      width: 40;
+      height: 50;
+      border: 1px white solid;
+      background-color: rgba(50, 50, 50, 0.95);
+      opacity: 1;
+      border-radius: 20px;
+      display: none;
+    }
+
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12pt;
+    }
+
+    #settings-inner-panel {
+      margin: 2em;
+    }
+
+    p {
+      padding-left: 3em;
+    }
+
+    .settings-subtitle {
+      background-color: #707070;
+    }
+
+    #settings-title,
+    .settings-subtitle {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      color: white;
+      height: auto;
+      padding: 1em;
+    }
+
+    .settings-subtitle {
+      padding-left: 3em;
+    }
+
+    #pop-out-icon {
+      width: 24;
+      height: 24;
+      background-color: none;
+      border-color: white;
+      display: none;
+      z-index: 999;
+    }
+
+    .pop-out-open {
+      transition: all ease-out 0.5s;
+      width: auto;
+      height: auto;
+      opacity: 1;
+    }
+
+    .pop-out-close {
+      transition: all ease-out 0.5s;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+
+    .pop-out-icon-rotate-0 {
+      transition: all ease-out 0.5s;
+      transform: rotate(0deg);
+    }
+
+    .pop-out-icon-rotate-90 {
+      transition: all ease-out 0.5s;
+      transform: rotate(-90deg);
+    }
+  </style>
+</head>
+
+<body>
+
+  <svg id="svg" version="1.1" xml:space="preserve" x="0" y="0" width="1306" height="906" viewBox="0 0 1306 906"
+    preserveAspectRatio="xMidYMid meet">
     <style>
       * {
         font-family: Arial, Helvetica, sans-serif;
       }
-
-      body,
-      html {
-        position: relative;
-        background-color: #222122;
-        /* margin: 0px;
-        padding: 0px; */
-        overflow: hidden;
-
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-      .centerDiv {
-        position: relative;
-        width: 1306px;
-        height: 906px;
-        margin: auto;
-        padding-top: 300px;
-        /* padding-top: 200px; */
-        
-      }
-
-      #svg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-      }
     </style>
-  </head>
+  </svg>
 
-  <body>
-    <div class="centerDiv">
-      <svg
-        id="svg"
-        version="1.1"
-        xml:space="preserve"
-        viewBox="-120 -20 1670 920"
-        width="1920"
-        height="1080"
-        enable-background="new -120 -20 1670 920"
-      >
-        <style>
-          * {
-            font-family: Arial, Helvetica, sans-serif;
-          }
-        </style>
-      </svg>
+  <!-- <svg id="pop-out-icon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" x="0" y="0" width="24"
+    height="24">
+    <title>Settings</title>
+    <g>
+      <circle cx="12.5" cy="12.5" r="12" fill="none" stroke="#fff" stroke-miterlimit="10" />
+      <polygon points="7.19 7.9 12.5 7.91 17.81 7.9 12.5 17.1 7.19 7.9" fill="#fff" stroke="#fff" stroke-miterlimit="10" />
+    </g>
+  </svg> -->
+
+  <!-- <div id="settings-panel" class="pop-out-close">
+    <div id="settings-inner-panel">
+      <h1>Settings</h1>
+      <div id="settings-title">Weather&nbsp;Conditions</div>
+      <div class="settings-subtitle">Pitch/Roll</div>
+      <p>
+        <input type="radio" name="weather" value="mild" checked>Mild<br>
+        <input type="radio" name="weather" value="medium">Medium<br>
+        <input type="radio" name="weather" value="rough">Rough<br>
+      </p>
     </div>
-    <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <!-- <script src="../assets/js/TweenMax.js"></script> -->
-    <script src="../node_modules/snapsvg/dist/snap.svg.js"></script>
-    <!--
-      <script src="../node_modules/greensock/dist/TweenMax.js"></script>
-      <script src="../node_modules/greensock/dist/jquery.gsap.js"></script>
-    -->
-    <!-- <script src="../app/controller.js"></script> -->
-    <script src="../app/buttons.js"></script>
-    <script src="../app/model.js"></script>
-    <script src="../app/declarations.js"></script>
-    <script src="../app/initialise.js"></script>
-    <script src="../app/functions.js"></script>
-    <script src="../app/events.js"></script>
+  </div> -->
+  <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="../node_modules/snapsvg/dist/snap.svg.js"></script>
+  <script src="../app/buttons.js"></script>
+  <script src="../app/model.js"></script>
+  <script src="../app/declarations.js"></script>
+  <script src="../app/initialise.js"></script>
+  <script src="../app/functions.js"></script>
+  <script src="../app/events.js"></script>
 
-    <script>
-      window.onload = function() {
-        var viewBox;
-        var s;
-        var screenWidth;
-        var screenHeight;
-        var vpWidth = screenWidth;
-        var vpHeight = screenHeight;
-        var screenPosX;
-        var screenPosY;
-        var vpX;
-        var vpY;
+  <script>
+    window.onload = function () {
+      let viewBox;
+      let s;
+      let screenWidth;
+      let screenHeight;
+      let vpWidth;
+      let vpHeight;
+      let svgWidth;
+      let svgHeight;
+      let divMarginWidth;
+      let divMarginHeight;
 
-        selectedAircraft = "";
+      const vpX = 0;
+      const vpY = 0;
 
-        s = Snap("#svg");
+      selectedAircraft = "";
 
-        Snap.load("../assets/panel.svg", function(f) {
-          initialise(f, s);
+      s = Snap("#svg");
 
-          // weather indicator initialisation
-          $("#pitch-bar-indicator").hide();
-          $("#roll-bar-indicator").hide();
+      Snap.load("../assets/panel.svg", function (f) {
+        initialise(f, s);
 
-          // get last brightness setting
-          brightness = localStorage.getItem("brightness");
-          brightness = parseFloat(brightness).toFixed(1);
+        // weather indicator initialisation
+        $("#pitch-bar-indicator").hide();
+        $("#roll-bar-indicator").hide();
 
-          if (
-            brightness === "" ||
-            brightness === "undefined" ||
-            brightness === null ||
-            brightness < 0 ||
-            brightness > 1 ||
-            isNaN(brightness)
-          ) {
-            localStorage.removeItem("brightness");
-            brightness = parseFloat(0.5).toFixed(1);
-          }
-          brightnessScreen.attr({ opacity: brightness });
+        // get last brightness setting
+        brightness = localStorage.getItem("brightness");
+        brightness = parseFloat(brightness).toFixed(1);
+        
+        weatherCondition = localStorage.getItem("weatherCondition");
 
-          // ------------------- On Off Knob ---------------------
-          svgOnOffKnob.click(() => {
-            doOnOffKnob(f);
-          });
 
-          svgOffKnob.click(() => {
-            doOnOffKnob(f);
-          });
-
-          // ------------------- Pitch and Roll Animations ---------------------
-          // console.log(pitchBarIndicator.getBBox().x + " : " + pitchBarIndicator.getBBox().y + " : " +
-          // 	pitchBarIndicator.getBBox().x2 + " : " + pitchBarIndicator.getBBox().y2);
-          initEvents(f);
-
-          //   grpPlots.transform("t500, 205");
-
-          initWeatherIndicator(f, Snap);
-
-          updatePitchLoop();
-          setInterval(() => {
-            updatePitchLoop();
-          }, 20300);
-
-          setTimeout(() => {
-            updateRollLoop();
-            setInterval(() => {
-              updateRollLoop();
-            }, 20300);
-          }, Math.random() * (5000 - 2000) + 2000);
-
-          // #lbl-aircraft is the label displayed on the active display
-          // after the aircraft type has been
-          // chosen from the previous aircraft
-          // #opt-aircraft-id-indicator holds the text.
-          // #lbl-aircraft-id the group for the aircraft conditions code
-          // #opt-aircraft-id-indicator using this for the text for the
-          // conditions code
-
-          // show the whole panel and display ========================
-          s.append(f);
-
-          screenWidth = screen.width;
-          screenHeight = screen.height;
-          vpWidth = screenWidth;
-          vpHeight = screenHeight;
-          // xCentre =
-          svgBbox = s.getBBox();
-          viewBox = "0 0 " + vpWidth + " " + vpHeight;
-
-          s.attr({
-            x: 0,
-            y: 0,
-            width: screenWidth,
-            height: screenHeight,
-            viewBox: viewBox
-          });
+        if (
+          brightness === "" ||
+          brightness === "undefined" ||
+          brightness === null ||
+          brightness < 0 ||
+          brightness > 1 ||
+          isNaN(brightness)
+        ) {
+          localStorage.removeItem("brightness");
+          brightness = parseFloat(0.5).toFixed(1);
+        }
+        brightnessScreen.attr({
+          opacity: brightness
         });
-      };
-    </script>
-  </body>
+
+        if (
+          weatherCondition === "" ||
+          weatherCondition === "undefined" ||
+          weatherCondition === null
+        ) {
+          localStorage.removeItem("weatherCondition");
+          weatherCondition = "mild";
+        }        
+        
+
+        // ------------------- On Off Knob ---------------------
+        svgOnOffKnob.click(() => {
+          doOnOffKnob(f);
+        });
+
+        svgOffKnob.click(() => {
+          doOnOffKnob(f);
+        });
+
+        initEvents(f);
+
+        initWeatherIndicator(f, Snap);
+        
+        // ------------------- Pitch and Roll Animations ---------------------
+        updatePitchLoop();
+        setInterval(() => {
+          updatePitchLoop();
+        }, 20300);
+
+        setTimeout(() => {
+          updateRollLoop();
+          setInterval(() => {
+            updateRollLoop();
+          }, 20300);
+        }, Math.random() * (5000 - 2000) + 2000);
+
+        // #lbl-aircraft is the label displayed on the active display
+        // after the aircraft type has been
+        // chosen from the previous aircraft
+        // #opt-aircraft-id-indicator holds the text.
+        // #lbl-aircraft-id the group for the aircraft conditions code
+        // #opt-aircraft-id-indicator using this for the text for the
+        // conditions code
+
+        // show the whole panel and display ========================
+        s.append(f);
+        setWeatherCondition();
+        // adjust position and size of panel
+        screenWidth = this.screen.width;
+        screenHeight = this.screen.height;
+        vpWidth = screenWidth * 0.95;
+        vpHeight = screenHeight * 0.95;
+        svgWidth = vpWidth;
+        svgHeight = vpHeight;
+
+        viewBox = 0 + " " + 0 + " " + 1306 + " " + 906;
+        svgWidth = vpWidth;
+        svgHeight = vpHeight;
+
+        s.attr({
+          x: 0,
+          y: 0,
+          width: svgWidth,
+          height: svgHeight,
+          viewBox: viewBox
+        });
+        $("#pitch-up-overlimit").hide();
+        $("#pitch-down-overlimit").hide();
+        $("#roll-port-overlimit").hide();
+        $("#roll-starboard-overlimit").hide();
+        $("#pop-out-icon").show();
+        $("#svg").show();
+        document.getElementsByName("weather").value = weatherCondition;
+      });
+    };
+  </script>
+</body>
+
 </html>

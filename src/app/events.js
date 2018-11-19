@@ -555,4 +555,26 @@ function initEvents(f) {
         filter();
         console.log("cdf btn up");
     });
+
+//     btnPopOut.click(() => {
+//         let popOutIcon = $("#pop-out-icon");
+//         let settingsPanel = $("#settings-panel");
+//         if (popOutToggle === false) {
+//             settingsPanel.show();
+//             popOutIcon.removeClass("pop-out-icon-rotate-0");
+//             popOutIcon.addClass("pop-out-icon-rotate-90");
+//             settingsPanel.removeClass("pop-out-close");
+//             settingsPanel.addClass("pop-out-open");
+//         } else {
+//             settingsPanel.hide();
+//             popOutIcon.removeClass("pop-out-icon-rotate-90");
+//             popOutIcon.addClass("pop-out-icon-rotate-0");
+//             settingsPanel.removeClass("pop-out-open");
+//             settingsPanel.addClass("pop-out-close");
+//             let weatherCond = document.getElementsByName("weather").value;
+//             weatherCondition = weatherCond;
+//             setWeatherCondition();
+//         }
+//         popOutToggle = !popOutToggle;
+//     });
 }

@@ -171,6 +171,7 @@ function goBackToMainMenu(f) {
   resetPitchRoll();
   hideAllPlots();
   resetBtnStatus();
+  // resetFilterArray();
   $("#opt-aircraft-id").hide();
   $("#lbl-aircraft-id").hide();
   $("#pitch-bar-indicator").hide();
@@ -203,7 +204,8 @@ function doBtnBack(f) {
   hideAllPlots();
   resetPitchRoll();
   resetBtnStatus();
-  filterByAircraft();
+  filterByAircraft(chosenAircraft);
+  // resetFilterArray();
   $("#opt-aircraft-id").hide();
   $("#lbl-aircraft-id").hide();
   clickFromBtnMH60R = false;
@@ -866,7 +868,6 @@ function filter() {
   score = 0;
 
   // assign scores to each option which is selected
-
   for (let x = 0; x < filteredArray.length; x++) {
     for (let y = 0; y < filteredArray[x].length; y++) {
       if (btnStatus[y]) {
@@ -962,21 +963,15 @@ function filter() {
     });
     $("#lbl-aircraft-id").show(); // show aircraft id
     $("#" + filteredArray[0][PLOTIDX]).show(); // show plotted wind data
-    $("#weather-indicator").show();
 
+    // === Weather Dot Indicator Processing ===    
+    $("#weather-indicator").show();
     let snapPlot = Snap("#" + filteredArray[0][PLOTIDX]);
     let bbSnapPlot = snapPlot.getBBox();
     let plot = document.getElementById(filteredArray[0][PLOTIDX]);
     let convert = makeAbsoluteContext(plot, document.getElementById("svg"));
     x = bbSnapPlot.x;
     y = bbSnapPlot.y;
-
-    // let newPlotCoords = convert(x, y);
-    // let d = changeMoveLoc(
-    //   document.getElementById(filteredArray[0][PLOTIDX]).getAttribute("d"),
-    //   newPlotCoords.x,
-    //   newPlotCoords.y
-    // );
 
     let d = document.getElementById(filteredArray[0][PLOTIDX]).getAttribute("d");
 
@@ -985,11 +980,14 @@ function filter() {
       Snap("#weather-indicator")
     );
 
+    // === Pitch and Roll Processing ===
     let pitch = filteredArray[0][PITCHIDX];
     let roll = filteredArray[0][ROLLIDX];
 
     // === Show the pitch and roll data ===
     showPitchAndRoll(pitch, roll);
+
+
   } else {
     $("#lbl-aircraft-id").hide();
     $("#weather-indicator").hide();
@@ -1086,6 +1084,10 @@ function showPitchAndRoll(pitch, roll) {
   let rollStarboardTag = "#roll-starboard-max-";
 
   resetPitchRoll();
+  // pitchDownTag += pitch.replace(".","");
+  // pitchUpTag += pitchDownTag;
+
+  // select pitch indicators
   switch (pitch) {
     case "0":
       pitchDownTag += "0";
@@ -1113,6 +1115,9 @@ function showPitchAndRoll(pitch, roll) {
       break;
   }
 
+  // select roll indicators
+  // rollDownTag += roll.replace(".","");
+  // rollUpTag += rollDownTag;
   switch (roll) {
     case "0":
       rollPortTag += "1";
@@ -1144,13 +1149,56 @@ function showPitchAndRoll(pitch, roll) {
       break;
   }
 
+
+
+  // === Set Pitch and Roll Limits
+  let pLen = pitchUpLimits.length;
+  let rLen = rollPortLimits.length;
+
+  let pUpLimit = Snap.select("#pitch-up-overlimit");
+  let bbPupLimit = pUpLimit.getBBox();
+  let pDownLimit = Snap.select("#pitch-down-overlimit");
+  let bbDownLimit = pDownLimit.getBBox();
+  let rPortLimit = Snap.select("#roll-port-overlimit");
+  let bbPortLimit = rPortLimit.getBBox();
+  let rStarboardLimit = Snap.select("#roll-starboard-overlimit");
+  let bbStarboardLimit = rStarboardLimit.getBBox();
+  let fPitch = parseFloat(pitch);
+  let fRoll = parseFloat(roll);
+
+  for (let x = 0; x < pLen; x++) {
+    if (parseFloat(pitchUpLimits[x].measure) === fPitch) {
+      document.getElementById('pitch-up-overlimit').setAttribute("height", pitchUpLimits[x].height);
+    }
+
+    if (parseFloat(pitchDownLimits[x].measure) === fPitch) {
+      document.getElementById('pitch-down-overlimit').setAttribute("height", pitchDownLimits[x].height);
+      document.getElementById('pitch-down-overlimit').setAttribute("y", pitchDownLimits[x].y);
+    }
+  }
+
+  for (let x = 0; x < rLen; x++) {
+    if (parseFloat(rollPortLimits[x].measure) === fRoll) {
+      document.getElementById('roll-port-overlimit').setAttribute("width", rollPortLimits[x].width);
+    }
+    if (parseFloat(rollStarboardLimits[x].measure) === fRoll) {
+      document.getElementById('roll-starboard-overlimit').setAttribute("width", rollStarboardLimits[x].width);
+      document.getElementById('roll-starboard-overlimit').setAttribute("x", rollStarboardLimits[x].x);
+    }
+  }
+
   if (pitch !== "0") {
     $(pitchDownTag).show();
     $(pitchUpTag).show();
+    $("#pitch-up-overlimit").show();
+    $("#pitch-down-overlimit").show();
+
   }
   if (roll !== "0") {
     $(rollPortTag).show();
     $(rollStarboardTag).show();
+    $("#roll-port-overlimit").show();
+    $("#roll-starboard-overlimit").show();
   }
 }
 
@@ -1162,6 +1210,8 @@ function resetPitchRoll() {
 function resetPitch() {
   let pitchDownTag = "#pitch-down-max-";
   let pitchUpTag = "#pitch-up-max-";
+  let pitchUpLimit = "#pitch-up-limit";
+  let pitchDownLimit = "#pitch-down-limit";
 
   $(pitchDownTag + "1").hide();
   $(pitchDownTag + "15").hide();
@@ -1173,11 +1223,15 @@ function resetPitch() {
   $(pitchUpTag + "2").hide();
   $(pitchUpTag + "3").hide();
   $(pitchUpTag + "4").hide();
+  $(pitchUpLimit).hide();
+  $(pitchDownLimit).hide();
 }
 
 function resetRoll() {
   let rollPortTag = "#roll-port-max-";
   let rollStarboardTag = "#roll-starboard-max-";
+  let rollPortLimit = "#roll-port-limit";
+  let rollStarboardLimit = "#roll-starboard-limit";
 
   $(rollPortTag + "1").hide();
   $(rollPortTag + "15").hide();
@@ -1191,6 +1245,8 @@ function resetRoll() {
   $(rollStarboardTag + "3").hide();
   $(rollStarboardTag + "4").hide();
   $(rollStarboardTag + "5").hide();
+  $(rollPortLimit).hide();
+  $(rollStarboardLimit).hide();
 }
 
 function resetButtonUps() {
@@ -1217,48 +1273,41 @@ function initWeatherIndicator(f, Snap) {
   let bboxInd = indicator.getBBox();
   let mathRand1;
   let mathRand2;
-  // let breakOnx = 50000;
-  let xBegin = 50;//455; // change to these commented numbers to cover whole polar graph
-  let xEnd = 250;//750; //881;
+  let xBegin = 50; //455; // change to these commented numbers to cover whole polar graph
+  let xEnd = 250; //750; //881;
   let yBegin = 7; //207;
-  let yEnd = 220;//400; // 633;
+  let yEnd = 220; //400; // 633;
 
-  // do {
-    // breakOnx--;
-    mathRand1 = Math.random();
-    mathRand2 = Math.random();
+  mathRand1 = Math.random();
+  mathRand2 = Math.random();
 
-    // max ranges for rnd
-    posX = Math.floor(mathRand1 * (xEnd - xBegin) + xBegin);
-    posY = Math.floor(mathRand2 * (yEnd - yBegin) + yBegin);
-    // posX = 150;
-    // posY = 196;
+  // max ranges for rnd
+  posX = Math.floor(mathRand1 * (xEnd - xBegin) + xBegin);
+  posY = Math.floor(mathRand2 * (yEnd - yBegin) + yBegin);
 
-    // check if you can place marker on map
-    var polarGrphBndryPath =
-      "M 880.76157,419.82421 A 213,213 0 0 1 667.76157,632.82421 213,213 0 0 1 454.76157,419.82421 213,213 0 0 1 667.76157,206.82421 213,213 0 0 1 880.76157,419.82421 Z";
-    isInsidePolarGraph = Snap.path.isPointInside(
-      polarGrphBndryPath,
-      posX,
-      posY
-    );
-  // } while (!isInsidePolarGraph && breakOnx > 0);
+  // posX = 140;
+  // posY = 110;
+  // check if you can place marker on map
+  var polarGrphBndryPath =
+    "M 880.76157,419.82421 A 213,213 0 0 1 667.76157,632.82421 213,213 0 0 1 454.76157,419.82421 213,213 0 0 1 667.76157,206.82421 213,213 0 0 1 880.76157,419.82421 Z";
+  isInsidePolarGraph = Snap.path.isPointInside(
+    polarGrphBndryPath,
+    posX,
+    posY
+  );
   moveSVGElement(indicator, posX, posY);
 }
 
 function setWeatherIndicator(currentPlot, indicator) {
   let bboxForIndicator = indicator.getBBox();
- 
-  let wi = document.getElementById("weather-indicator");
-  let convert = makeAbsoluteContext(wi, document.getElementById("svg"));
-  x = bboxForIndicator.x;
-  y = bboxForIndicator.y;
 
-  // let wiCoords = convert(x, y);
+  let x = bboxForIndicator.cx;
+  let y = bboxForIndicator.cy;
+
   isInsidePolygon = Snap.path.isPointInside(
     currentPlot,
-    bboxForIndicator.x,
-    bboxForIndicator.y
+    x,
+    y
   )
 
   if (
@@ -1281,9 +1330,8 @@ function moveSVGElement(el, x, y) {
 function updateRollLoop() {
   let cy = rollBarIndicator.getBBox().cy;
   rollBarIndicator.transform("r180," + rollBarIndicator.attr("x") + ", " + cy);
-  rollBarIndicator.animate(
-    {
-      width: "223"
+  rollBarIndicator.animate({
+      width: "222"
     },
     5000,
     mina.linear,
@@ -1294,9 +1342,8 @@ function updateRollLoop() {
 }
 
 function animRoll1() {
-  rollBarIndicator.animate(
-    {
-      width: "1"
+  rollBarIndicator.animate({
+      width: "0"
     },
     5000,
     mina.easeout,
@@ -1310,9 +1357,8 @@ function animRoll2() {
   let cy = rollBarIndicator.getBBox().cy;
   rollBarIndicator.transform("r360," + rollBarIndicator.attr("x") + "," + cy);
 
-  rollBarIndicator.animate(
-    {
-      width: "223"
+  rollBarIndicator.animate({
+      width: "222"
     },
     5000,
     mina.linear,
@@ -1323,9 +1369,8 @@ function animRoll2() {
 }
 
 function animRoll3() {
-  rollBarIndicator.animate(
-    {
-      width: "1"
+  rollBarIndicator.animate({
+      width: "0"
     },
     5000,
     mina.easeout
@@ -1337,9 +1382,8 @@ function updatePitchLoop() {
   pitchBarIndicator.transform(
     "r360," + cx + ", " + pitchBarIndicator.attr("y")
   );
-  pitchBarIndicator.animate(
-    {
-      height: "174"
+  pitchBarIndicator.animate({
+      height: "173"
     },
     5000,
     mina.linear,
@@ -1350,9 +1394,8 @@ function updatePitchLoop() {
 }
 
 function animPitch1() {
-  pitchBarIndicator.animate(
-    {
-      height: "1"
+  pitchBarIndicator.animate({
+      height: "0"
     },
     5000,
     mina.easeout,
@@ -1367,9 +1410,8 @@ function animPitch2() {
   pitchBarIndicator.transform(
     "r180," + cx + ", " + pitchBarIndicator.attr("y")
   );
-  pitchBarIndicator.animate(
-    {
-      height: "174"
+  pitchBarIndicator.animate({
+      height: "173"
     },
     5000,
     mina.linear,
@@ -1380,9 +1422,8 @@ function animPitch2() {
 }
 
 function animPitch3() {
-  pitchBarIndicator.animate(
-    {
-      height: "1"
+  pitchBarIndicator.animate({
+      height: "0"
     },
     5000,
     mina.easeout
@@ -1390,7 +1431,7 @@ function animPitch3() {
 }
 
 function makeAbsoluteContext(element, svgDocument) {
-  return function(x, y) {
+  return function (x, y) {
     var offset = svgDocument.getBoundingClientRect();
     var matrix = element.getScreenCTM();
     return {
@@ -1411,4 +1452,59 @@ function changeMoveLoc(dAttrib, x, y) {
       dAttrib.substr(0, 1) + " " + x + "," + y + endPart.substr(end, len);
     return result;
   }
+}
+
+function resetBtnStatus() {
+  for (let x = 0; x < btnStatus.length; x++) {
+    btnStatus[x] = false;
+  }
+  isDay = false;
+  isNight = false;
+  isFwd = false;
+  isAft = false;
+  isIntoWind = false;
+  isCda = false;
+  is6 = false;
+  is5 = false;
+  is4 = false;
+  is3 = false;
+  is2 = false;
+  is1 = false;
+  isCdf = false;
+  isEngage = false;
+  isTaxi = false;
+  isLaunch = false;
+  isLand = false;
+  isVertrep = false;
+  isXfer = false;
+  isLight = false;
+  isMedium = false;
+  isHeavy = false;
+  isHotHeavy = false;
+  isEmergency = false;
+  isRecovery = false;
+  isSpreadFold = false;
+}
+
+function setWeatherCondition() {
+  let variation = Math.random() * 20;
+  let thePitch;
+  let theRoll;
+
+  // mild weather
+  if (weatherCondition === "mild") {
+    thePitch = 50;
+    theRoll = 50;
+  } else if (weatherCondition === "medium") {
+    thePitch = 124;
+    theRoll = 124;
+  } else {
+    thePitch = 224;
+    theRoll = 224;
+  }
+
+  pitchLength = thePitch;
+  rollLength = theRoll;
+  // updatePitchLoop();
+  // updateRollLoop();
 }

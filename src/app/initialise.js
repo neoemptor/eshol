@@ -1,4 +1,6 @@
 function initialise(f) {
+    btnPopOut = Snap.select("#pop-out-icon");
+    popOutToggle = false;
     grpPlots = f.select("#grp-plots");
     brightnessScreen = f.select("#brightness-screen");
     svgOnOffKnob = f.select("#on-off-knob");
@@ -370,7 +372,7 @@ function initialise(f) {
         "id661-light-medium",
         "id701",
         "id721-light-medium"
-    ]    
+    ]
 }
 
 const MRH90 = 'MRH90';
@@ -387,44 +389,44 @@ const DIRECTIONS = 4;
 const TIMES = 5;
 
 // TIMES
- const DAY = 7;
- const NIGHT = 8;
+const DAY = 7;
+const NIGHT = 8;
 
 // WIND DIRECTIONS
- const FWD =4;
- const AFT = 5;
- const INTOWIND = 6;
+const FWD = 4;
+const AFT = 5;
+const INTOWIND = 6;
 
 // POSITIONS
- const CDA = 9;
- const POS6 = 10;
- const POS5 = 11;
- const POS4 = 12;
- const POS3 = 13;
- const POS2 = 14;
- const POS1 = 15;
- const CDF = 16;
+const CDA = 9;
+const POS6 = 10;
+const POS5 = 11;
+const POS4 = 12;
+const POS3 = 13;
+const POS2 = 14;
+const POS1 = 15;
+const CDF = 16;
 
 // ACTIONS
- const ENGAGE = 17;
- const TAXI = 18;
- const LAUNCH = 19;
- const LAND = 20;
- const VERTREP = 21;
- const XFER = 22;
- const EMERGENCY = 23; // DEGRADED
- const RECOVERY = 24;
- const SPREADFOLD = 25;
+const ENGAGE = 17;
+const TAXI = 18;
+const LAUNCH = 19;
+const LAND = 20;
+const VERTREP = 21;
+const XFER = 22;
+const EMERGENCY = 23; // DEGRADED
+const RECOVERY = 24;
+const SPREADFOLD = 25;
 
 // WEIGHTS
- const LIGHT = 0;
- const MEDIUM = 1;
- const HEAVY = 2;
- const HOTHEAVY = 3;
+const LIGHT = 0;
+const MEDIUM = 1;
+const HEAVY = 2;
+const HOTHEAVY = 3;
 
- clickFromBtnMH60R = false;
+clickFromBtnMH60R = false;
 
- // for weather indicator
+// for weather indicator
 isInsidePolarGraph = true;
 isInsidePolygon = false;
 
@@ -436,3 +438,122 @@ var btnStatus = [
     false, false, false, false, false, false,
     false, false
 ];
+var rollPortLimits = [{
+    "measure": 0.5,
+    "width": 205
+}, {
+    "measure": 1,
+    "width": 184
+}, {
+    "measure": 1.5,
+    "width": 163
+}, {
+    "measure": 2,
+    "width": 140.5
+}, {
+    "measure": 2.5,
+    "width": 119.75
+}, {
+    "measure": 3,
+    "width": 98
+}, {
+    "measure": 3.5,
+    "width": 76
+}, {
+    "measure": 4,
+    "width": 54
+}, {
+    "measure": 4.5,
+    "width": 30.5
+}];
+
+var rollStarboardLimits = [{
+    "measure": 0.5,
+    "x": 218.5,
+    "width": 198.5
+}, {
+    "measure": 1,
+    "x": 240,
+    "width": 177
+}, {
+    "measure": 1.5,
+    "x": 260,
+    "width": 157
+}, {
+    "measure": 2,
+    "x": 282,
+    "width": 135
+}, {
+    "measure": 2.5,
+    "x": 304,
+    "width": 113
+}, {
+    "measure": 3,
+    "x": 326,
+    "width": 91
+}, {
+    "measure": 3.5,
+    "x": 347,
+    "width": 70
+}, {
+    "measure": 4,
+    "x": 369,
+    "width": 48
+}, {
+    "measure": 4.5,
+    "x": 392.75,
+    "width": 24.25
+}]
+
+var pitchUpLimits = [{
+    "measure": 0.5,
+    "height": 378,
+}, {
+    "measure": 1,
+    "height": 358,
+}, {
+    "measure": 1.5,
+    "height": 337,
+}, {
+    "measure": 2,
+    "height": 314,
+}, {
+    "measure": 2.5,
+    "height": 293,
+}, {
+    "measure": 3,
+    "height": 271,
+}, {
+    "measure": 3.5,
+    "height": 249,
+}];
+
+var pitchDownLimits = [{
+    "measure": 0.5,
+    "y": 421,
+    "height": 154,
+}, {
+    "measure": 1,
+    "y": 442,
+    "height": 133,
+}, {
+    "measure": 1.5,
+    "y": 463,
+    "height": 112,
+}, {
+    "measure": 2,
+    "y": 485,
+    "height": 90,
+}, {
+    "measure": 2.5,
+    "y": 508,
+    "height": 67,
+}, {
+    "measure": 3,
+    "y": 528,
+    "height": 47,
+}, {
+    "measure": 3.5,
+    "y": 550,
+    "height": 25,
+}];
